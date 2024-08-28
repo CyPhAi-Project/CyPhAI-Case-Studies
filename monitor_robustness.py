@@ -12,6 +12,8 @@ NUM_SCENARIOS = 1
 
 def batch_simglucose() -> list[DataFrame]:
     perturb = True
+
+    # Define meals as a list of tuples (time, meal_size) where time is the hour in a day in 24-hour format.
     meals = [(7, 45), (12, 70), (16, 15), (18, 80), (23, 10)]
     if perturb:
         # TODO different purterbation strategies
