@@ -1,14 +1,17 @@
+from collections.abc import Callable, Generator
 from datetime import datetime, timedelta
-from typing import Literal, get_args
+from typing import Literal, Sequence, Tuple, Union, get_args
 
 from simglucose.actuator.pump import InsulinPump
 from simglucose.controller.basal_bolus_ctrller import BBController
 from simglucose.patient.t1dpatient import T1DPatient
 from simglucose.sensor.cgm import CGMSensor
 from simglucose.simulation.env import T1DSimEnv
-from simglucose.simulation.scenario import CustomScenario
+from simglucose.simulation.scenario import Action, Scenario, CustomScenario, parseTime
 from simglucose.simulation.sim_engine import SimObj
 
+
+TIME_TYPE = Union[int, float, timedelta, datetime]
 
 # See Name column in params/vpatient_params.csv
 PATIENT_TYPE = Literal[
@@ -30,7 +33,34 @@ START_TIME = datetime.combine(datetime.now().date(), datetime.min.time())
 RESULT_PATH = './robustness'
 
 
+class GenerativeScenario(Scenario):
+    def __init__(self, start_time: datetime,
+                 scen_gen_fun: Callable[[], Generator[Tuple[TIME_TYPE, Action], None, None]]):
+        '''
+        scen_gen - a generator function yielding tuples (time, action), where time is a datetime or
+                   timedelta or double, action is a namedtuple defined by
+                   scenario.Action. When time is a timedelta, it is
+                   interpreted as the time of start_time + time. Time in double
+                   type is interpreted as time in timedelta with unit of hours
+        '''
+        Scenario.__init__(self, start_time=start_time)
+        self._prev_itvl = (None, start_time)
+        self._scen_gen_fun = scen_gen_fun
+        self.reset()
+
+    def get_action(self, t):
+        assert t >= self._prev_itvl[0]
+        try:
+            raise NotImplementedError("TODO: Get meal size at a timepoint give the possibly infinite iterable.")
+        except StopIteration:
+            return Action(meal=0)  # Return dummy meal after reaching the end of the iterable
+
+    def reset(self):
+        self._scen_iter = self._scen_gen_fun()  # Create a new generator
+
+
 def build_sim_obj(
+        meals: Sequence[Tuple[TIME_TYPE, float]],
         patient_name: PATIENT_TYPE,
         patient_init_state = None,
         patient_random_init_bg: bool = False,
@@ -38,8 +68,7 @@ def build_sim_obj(
         patient_t0: float = 0.0,
         sensor_name: SENSOR_TYPE = "Dexcom",
         sensor_seed: int = 1,
-        pump_name: PUMP_TYPE = "Insulet",
-        perturb: bool = False) -> SimObj:
+        pump_name: PUMP_TYPE = "Insulet") -> SimObj:
     # Create a simulation environment
     patient = T1DPatient.withName(
         name=patient_name,
@@ -51,13 +80,7 @@ def build_sim_obj(
     pump = InsulinPump.withName(pump_name)
 
     # Custom scenario is a list of tuples (time, meal_size)
-    scen = [(7, 45), (12, 70), (16, 15), (18, 80), (23, 10)]
-    if perturb:
-        # TODO
-        scen.insert(5, (21, 0))
-        scen.insert(3, (14, 0))
-        scen.insert(1, (10, 0))
-    scenario = CustomScenario(start_time=START_TIME, scenario=scen)
+    scenario = CustomScenario(start_time=START_TIME, scenario=meals)
     env = T1DSimEnv(patient, sensor, pump, scenario)
 
     # Create a controller
