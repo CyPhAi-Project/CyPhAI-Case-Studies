@@ -30,7 +30,7 @@ SENSOR_TYPE = Literal["Dexcom", "GuardianRT", "Navigator"]
 # specify start_time as the beginning of today
 START_TIME = datetime.combine(datetime.now().date(), datetime.min.time())
 # Specify results saving path
-RESULT_PATH = './robustness'
+RESULT_PATH = './out'
 
 
 class GenerativeScenario(Scenario):

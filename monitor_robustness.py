@@ -55,7 +55,7 @@ def main():
         t = (t_datetime - t0) / timedelta(minutes=1)  # Shift time stamps and scale to minutes
         stl_monitor.add_sample([t, value])
 
-    print("Robustness Interval:", stl_monitor.get_online_rob("safety", t0))
+    print("Robustness Interval:", stl_monitor.get_online_rob("safety", 0.0))
 
 
 if __name__ == "__main__":
