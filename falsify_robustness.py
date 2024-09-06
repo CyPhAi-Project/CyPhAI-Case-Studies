@@ -39,7 +39,6 @@ options = TestOptions(
     iterations=10,
     tspan=(0.0, 1000.0),
     static_inputs={
-        "patient_name": (0, len(PATIENT_NAMES)),
         # Meal times and sizes defined for RandomScenario in simglucose
         # Bound on meal size is (mu-3*sigma, mu+3*sigma)
         "breakfast_time": (5, 9), "breakfast_size": (45-3*10, 45+3*10),
@@ -58,7 +57,7 @@ runs = staliro(
 run = runs[0]
 
 figure = go.Figure()
-figure.update_layout(xaxis_title="time (s)", yaxis_title=BG)
+figure.update_layout(xaxis_title="time (min)", yaxis_title=BG)
 figure.add_hline(y=70, line_color="red")
 figure.add_hline(y=350, line_color="red")
 
