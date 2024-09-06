@@ -1,6 +1,8 @@
 from datetime import timedelta
 from pandas import DataFrame
 
+from simglucose.controller.basal_bolus_ctrller import BBController
+from simglucose.controller.pid_ctrller import PIDController
 from simglucose.simulation.sim_engine import batch_sim
 import stlrom
 
@@ -21,8 +23,19 @@ def batch_simglucose() -> list[DataFrame]:
         meals.insert(3, (14, 0))  # add a dummy meal of size 0
         meals.insert(1, (10, 0))  # add a dummy meal of size 0
 
+    # Build controller
+    pid_ctrl = True
+    if pid_ctrl:
+        ctrl = PIDController(P=0.001, I=0.00001, D=0.001, target=140)
+    else:
+        ctrl = BBController(target=140)  # Specify target BG
+
     # Create scenarios
-    sim_obj_list = [build_sim_obj(meals, name) for name in PATIENT_NAMES[:NUM_SCENARIOS]]
+    sim_obj_list = [build_sim_obj(
+        meals=meals,
+        patient_name=name,
+        controller=ctrl
+    ) for name in PATIENT_NAMES[:NUM_SCENARIOS]]
 
     # Batch simulation
     return batch_sim(sim_obj_list, parallel=True)
