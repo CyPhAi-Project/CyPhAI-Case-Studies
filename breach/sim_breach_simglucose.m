@@ -1,0 +1,58 @@
+function [t_out, X,p, status] = sim_breach_simglucose(Sys, t_in, p) 
+%
+%  [t_out,X,p] = sim_breach_glucose(Sys,p,t_in) 
+%  
+%  Inputs: Sys, p and t_in are provided by Breach. 
+%  - Sys is a structure with information about signals and parameters. In
+%  particular,  Sys.ParamList is a cell of signals and parameter names such
+%  that:
+%     - Sys.ParamList(1:Sys.DimX) returns names of all signals
+%     - Sys.ParamList(Sys.DimX+1:Sys.DimP) returns the names of constant parameters    
+%  -  p is an array of length Sys.DimX+Sys.DimP. 
+%  -  t_in is of the form [0 t_in(end)]  or [0 t_in(2) ... t_in(end)], strictly increasing
+% 
+%  Outputs:  simfn has to return the following:    
+%      - t_out must be such that t_out(1) =0 and t_out(end) = t_in(end). 
+%        In addition, if t_in has more than two elements, then t_out must be
+%        equal to t_in. Otherwise, t_out can have as many elements as
+%        returned by the simulation.
+%     - X must be of dimensions (Sys.DimX, t_out). The rows of X must
+%     contain simulation results for signals named in Sys.ParamList(1:DimX)
+%    -  p is the same as p unless the simulator changes it (outputs scalars
+%           in addition to signals)
+
+% recover parameters from p - for legacy reason, the first elements in p
+% are for signals, and parameters start at index Sys.DimX+1 = 3
+
+cfg.patient.range = [0,29];
+cfg.patient.value = p(8);
+cfg.meal.breakfast_time.value = p(9);
+cfg.meal.breakfast_size.value = p(10);
+
+cfg.meal.snack1_time.value = p(11);
+cfg.meal.snack1_size.value = p(12);
+
+cfg.meal.lunch_time.value = p(13);
+cfg.meal.lunch_size.value = p(14);
+
+cfg.meal.snack2_time.value = p(15);
+cfg.meal.snack2_size.value = p(16);
+
+cfg.meal.dinner_time.value = p(17);
+cfg.meal.dinner_size.value = p(18);
+
+cfg.meal.snack3_time.value = p(19);
+cfg.meal.snack3_size.value = p(20);
+
+WriteYaml('simglucose_cfg.yml',cfg);
+pause(.1)
+
+[status, output] = system('python simglucose_breach_wrapper.py');
+
+
+% format outputs as expected by Breach
+X = csvread('trace.csv',1,1)';
+t_out = [0:3:24*60]/60;             
+
+status = 0; % everything went well, should be -1 otherwise
+end

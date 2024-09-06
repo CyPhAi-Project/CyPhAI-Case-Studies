@@ -1,0 +1,10 @@
+param low_bg = 70, high_bg = 350
+
+phi_lgood := alw (BG[t]>low_bg and BG[t]<high_bg)
+
+low_BG := BG[t]<low_bg
+
+param deadly_duration = 1 # 1 hour
+deadly_low_BG := alw_[0, deadly_duration] (low_BG)
+
+phi_lalive := not ev_[0, 24-deadly_duration] (deadly_low_BG)
