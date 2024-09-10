@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from typing import Literal, Sequence, Tuple, Union, get_args
 
 from simglucose.actuator.pump import InsulinPump
+from simglucose.controller.base import Controller
 from simglucose.controller.basal_bolus_ctrller import BBController
 from simglucose.patient.t1dpatient import T1DPatient
 from simglucose.sensor.cgm import CGMSensor
@@ -68,7 +69,8 @@ def build_sim_obj(
         patient_t0: float = 0.0,
         sensor_name: SENSOR_TYPE = "Dexcom",
         sensor_seed: int = 1,
-        pump_name: PUMP_TYPE = "Insulet") -> SimObj:
+        pump_name: PUMP_TYPE = "Insulet",
+        controller: Controller = BBController()) -> SimObj:
     # Create a simulation environment
     patient = T1DPatient.withName(
         name=patient_name,
@@ -82,9 +84,6 @@ def build_sim_obj(
     # Custom scenario is a list of tuples (time, meal_size)
     scenario = CustomScenario(start_time=START_TIME, scenario=meals)
     env = T1DSimEnv(patient, sensor, pump, scenario)
-
-    # Create a controller
-    controller = BBController()
 
     # Put them together to create a simulation object
     return SimObj(env, controller, timedelta(days=1), animate=False, path=RESULT_PATH)
