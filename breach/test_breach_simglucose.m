@@ -32,9 +32,19 @@ Bnom.PlotSignals();
 
 %% 
 Btest = Bsimglucose.copy();
-Btest.SetParam('patient',0:3:30)
-Btest.SetParam('breakfast_size', [0 50 100],'combine'); % skip breakfast or not
+Btest.SetParam('patient',0:10:29)
+Btest.SetParamRanges('breakfast_size', cfg.meal.breakfast_size.range);
+%Btest.SetParam('breakfast_size', cfg.meal.breakfast_size.range);
+Btest.SampleDomain('breakfast_size', 2, 'grid', 'combine')
 Btest.Sim()
+
+%% 
+Bskip_lunch = Bsimglucose.copy();
+Bskip_lunch.SetParam('patient',0:1:29)
+Bskip_lunch.SetParam('lunch_size', [0:20:120],'combine'); % skip lunch or not
+Bskip_lunch.Sim()
+
+
 
 %%
 close all
