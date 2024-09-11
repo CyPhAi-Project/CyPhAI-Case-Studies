@@ -24,25 +24,35 @@ function [t_out, X,p, status] = sim_breach_simglucose(Sys, t_in, p)
 % recover parameters from p - for legacy reason, the first elements in p
 % are for signals, and parameters start at index Sys.DimX+1 = 3
 
-cfg.patient.range = [0,29];
+
+% Patient
 cfg.patient.value = p(8);
-cfg.meal.breakfast_time.value = p(9);
-cfg.meal.breakfast_size.value = p(10);
 
-cfg.meal.snack1_time.value = p(11);
-cfg.meal.snack1_size.value = p(12);
+% Controller
+cfg.controller.target.value = p(9);
+cfg.controller.type.value = p(10);
+cfg.controller.PID.P.value = p(11);
+cfg.controller.PID.I.value = p(12);
+cfg.controller.PID.D.value = p(13);
 
-cfg.meal.lunch_time.value = p(13);
-cfg.meal.lunch_size.value = p(14);
+% Meal
+cfg.meal.breakfast_time.value = p(14);
+cfg.meal.breakfast_size.value = p(15);
 
-cfg.meal.snack2_time.value = p(15);
-cfg.meal.snack2_size.value = p(16);
+cfg.meal.snack1_time.value = p(16);
+cfg.meal.snack1_size.value = p(17);
 
-cfg.meal.dinner_time.value = p(17);
-cfg.meal.dinner_size.value = p(18);
+cfg.meal.lunch_time.value = p(18);
+cfg.meal.lunch_size.value = p(19);
 
-cfg.meal.snack3_time.value = p(19);
-cfg.meal.snack3_size.value = p(20);
+cfg.meal.snack2_time.value = p(20);
+cfg.meal.snack2_size.value = p(21);
+
+cfg.meal.dinner_time.value = p(22);
+cfg.meal.dinner_size.value = p(23);
+
+cfg.meal.snack3_time.value = p(24);
+cfg.meal.snack3_size.value = p(25);
 
 WriteYaml('simglucose_cfg.yml',cfg);
 pause(.1)

@@ -1,3 +1,5 @@
+*.asv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -206,3 +208,4 @@ fabric.properties
 
 # Sonarlint plugin
 .idea/sonarlint
+breach/T1D_specs.asv
