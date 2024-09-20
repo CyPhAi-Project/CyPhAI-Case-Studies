@@ -3,12 +3,12 @@ from datetime import datetime, timedelta
 from typing import Literal, Sequence, Tuple, Union, get_args
 
 from simglucose.actuator.pump import InsulinPump
-from simglucose.controller.base import Controller
+from simglucose.controller.base import Action as ControlAction, Controller
 from simglucose.controller.basal_bolus_ctrller import BBController
 from simglucose.patient.t1dpatient import T1DPatient
 from simglucose.sensor.cgm import CGMSensor
 from simglucose.simulation.env import T1DSimEnv
-from simglucose.simulation.scenario import Action, Scenario, CustomScenario, parseTime
+from simglucose.simulation.scenario import Action as ScenarioAction, Scenario, CustomScenario
 from simglucose.simulation.sim_engine import SimObj
 
 
@@ -34,9 +34,47 @@ START_TIME = datetime.combine(datetime.now().date(), datetime.min.time())
 RESULT_PATH = './out'
 
 
+class FoxPIDController(Controller):
+    def __init__(self, setpoint, kp, ki, kd, basal=None):
+        self.kp = kp
+        self.ki = ki
+        self.kd = kd
+        self.integral = 0
+        self.previous_error = 0
+        self.basal = basal
+        self.setpoint = setpoint
+
+    def policy(self, observation, reward, done, **kwargs):
+        value=observation.CGM
+        error = self.setpoint - value
+        p_act = self.kp * error
+        # print('p: {}'.format(p_act))
+        self.integral += error
+        i_act = self.ki * self.integral
+        # print('i: {}'.format(i_act))
+        d_act = self.kd * (error - self.previous_error)
+        try:
+            if self.basal is not None:
+                b_act = self.basal
+            else:
+                b_act = 0
+        except:
+            b_act = 0
+        # print('d: {}'.format(d_act))
+        self.previous_error = error
+        control_input = p_act + i_act + d_act + b_act
+        action = ControlAction(basal=control_input, bolus=0)
+        #print('error=', error,'A=',action)
+        return action
+
+    def reset(self):
+        self.integral = 0
+        self.previous_error = 0
+
+
 class GenerativeScenario(Scenario):
     def __init__(self, start_time: datetime,
-                 scen_gen_fun: Callable[[], Generator[Tuple[TIME_TYPE, Action], None, None]]):
+                 scen_gen_fun: Callable[[], Generator[Tuple[TIME_TYPE, ScenarioAction], None, None]]):
         '''
         scen_gen - a generator function yielding tuples (time, action), where time is a datetime or
                    timedelta or double, action is a namedtuple defined by
@@ -54,7 +92,7 @@ class GenerativeScenario(Scenario):
         try:
             raise NotImplementedError("TODO: Get meal size at a timepoint give the possibly infinite iterable.")
         except StopIteration:
-            return Action(meal=0)  # Return dummy meal after reaching the end of the iterable
+            return ScenarioAction(meal=0)  # Return dummy meal after reaching the end of the iterable
 
     def reset(self):
         self._scen_iter = self._scen_gen_fun()  # Create a new generator
