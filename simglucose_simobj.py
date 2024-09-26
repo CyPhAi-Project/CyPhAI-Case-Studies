@@ -16,11 +16,43 @@ TIME_TYPE = Union[int, float, timedelta, datetime]
 
 # See Name column in params/vpatient_params.csv
 PATIENT_TYPE = Literal[
-    "adolescent#001", "adolescent#002",  "adolescent#003", "adolescent#004",  "adolescent#005", "adolescent#006", "adolescent#007", "adolescent#008", "adolescent#009", "adolescent#010",
-    "adult#001", "adult#002",  "adult#003", "adult#004",  "adult#005", "adult#006", "adult#007", "adult#008", "adult#009", "adult#010",
-    "child#001", "child#002",  "child#003", "child#004",  "child#005", "child#006", "child#007", "child#008", "child#009", "child#010"
+    "child#001", "child#002",  "child#003", "child#004",  "child#005", "child#006", "child#007", "child#008", "child#009", "child#010",
+    "adolescent#001", "adoldescent#002",  "adolescent#003", "adolescent#004",  "adolescent#005", "adolescent#006", "adolescent#007", "adolescent#008", "adolescent#009", "adolescent#010",
+    "adult#001", "adult#002",  "adult#003", "adult#004",  "adult#005", "adult#006", "adult#007", "adult#008", "adult#009", "adult#010"
 ]
 PATIENT_NAMES = get_args(PATIENT_TYPE)
+
+FOXPID_PARAMS = {
+    'child#001': [-3.49E-05,-1.00E-07,-1.00E-03],
+    'child#002': [-3.98E-05,-2.87E-08,-3.98E-03],
+    'child#003': [-6.31E-05,-1.74E-08,-1.00E-03],
+    'child#004': [-6.31E-05,-1.00E-07,-1.00E-03],
+    'child#005': [-1.00E-04,-2.87E-08,-6.31E-03],
+    'child#006': [-3.49E-05,-1.00E-07,-1.00E-03],
+    'child#007': [-3.98E-05,-6.07E-08,-2.51E-03],
+    'child#008': [-3.49E-05,-3.68E-08,-1.00E-03],
+    'child#009': [-3.49E-05,-1.00E-07,-1.00E-03],
+    'child#010': [-4.54E-06,-3.68E-08,-2.51E-03],
+    'adolescent#001': [-1.74E-04,-1.00E-07,-1.00E-02],
+    'adolescent#002': [-1.00E-04,-1.00E-07,-6.31E-03],
+    'adolescent#003': [-1.00E-04,-1.00E-07,-3.98E-03],
+    'adolescent#004': [-1.00E-04,-1.00E-07,-4.79E-03],
+    'adolescent#005': [-6.31E-05,-1.00E-07,-6.31E-03],
+    'adolescent#006': [-4.54E-10,-1.58E-11,-1.00E-02],
+    'adolescent#007': [-1.07E-07,-6.07E-08,-6.31E-03],
+    'adolescent#008': [-4.54E-10,-4.54E-12,-1.00E-02],
+    'adolescent#009': [-6.31E-05,-1.00E-07,-3.98E-03],
+    'adolescent#010': [-4.54E-10,-4.54E-12,-1.00E-02],
+    'adult#001': [-1.58E-04,-1.00E-07,-1.00E-02],
+    'adult#002': [-3.98E-04,-1.00E-07,-1.00E-02],
+    'adult#003': [-4.54E-10,-1.00E-07,-1.00E-02],
+    'adult#004': [-1.00E-04,-1.00E-07,-3.98E-03],
+    'adult#005': [-3.02E-04,-1.00E-07,-1.00E-02],
+    'adult#006': [-2.51E-04,-2.51E-07,-1.00E-02],
+    'adult#007': [-1.22E-04,-3.49E-07,-2.87E-03],
+    'adult#008': [-1.00E-04,-1.00E-07,-1.00E-02],
+    'adult#009': [-1.00E-04,-1.00E-07,-1.00E-02],
+    'adult#010': [-1.00E-04,-1.00E-07,-1.00E-02]}
 
 
 # See Name column in params/pump_params.csv

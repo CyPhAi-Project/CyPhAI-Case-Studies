@@ -2,7 +2,7 @@
 %% Default cfg
 cfg = struct();
 
-cfg.controller.type.value = 0; % 0: default, 1: PiD
+cfg.controller.type.value = 0; % 0: default, 1: PiD, 2: FoxPiD
 cfg.controller.PID.P.value = 0.001;
 cfg.controller.PID.I.value = 0.0001;
 cfg.controller.PID.D.value = 0.001;
@@ -39,6 +39,7 @@ cfg.meal.snack3_time.value = 20;
 cfg.meal.snack3_time.range = [19, 21];
 cfg.meal.snack3_size.value = 20;
 cfg.meal.snack3_size.range = [10, 30];
+
 
 %% Breach wrapper
 signals = {'BG','CGM','CHO','insulin','LBGI','HBGI','Risk'};

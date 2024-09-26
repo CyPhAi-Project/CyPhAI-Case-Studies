@@ -25,44 +25,54 @@ function [t_out, X,p, status] = sim_breach_simglucose(Sys, t_in, p)
 % are for signals, and parameters start at index Sys.DimX+1 = 3
 
 
-% Patient
-cfg.patient.value = p(8);
+try
+    % sim time
+    t_out = [0:3:24*60]/60;
 
-% Controller
-cfg.controller.target.value = p(9);
-cfg.controller.type.value = p(10);
-cfg.controller.PID.P.value = p(11);
-cfg.controller.PID.I.value = p(12);
-cfg.controller.PID.D.value = p(13);
+    % Patient
+    cfg.patient.value = p(8);
 
-% Meal
-cfg.meal.breakfast_time.value = p(14);
-cfg.meal.breakfast_size.value = p(15);
+    % Controller
+    cfg.controller.target.value = p(9);
+    cfg.controller.type.value = p(10);
+    cfg.controller.PID.P.value = p(11);
+    cfg.controller.PID.I.value = p(12);
+    cfg.controller.PID.D.value = p(13);
 
-cfg.meal.snack1_time.value = p(16);
-cfg.meal.snack1_size.value = p(17);
+    % Meal
+    cfg.meal.breakfast_time.value = p(14);
+    cfg.meal.breakfast_size.value = p(15);
 
-cfg.meal.lunch_time.value = p(18);
-cfg.meal.lunch_size.value = p(19);
+    cfg.meal.snack1_time.value = p(16);
+    cfg.meal.snack1_size.value = p(17);
 
-cfg.meal.snack2_time.value = p(20);
-cfg.meal.snack2_size.value = p(21);
+    cfg.meal.lunch_time.value = p(18);
+    cfg.meal.lunch_size.value = p(19);
 
-cfg.meal.dinner_time.value = p(22);
-cfg.meal.dinner_size.value = p(23);
+    cfg.meal.snack2_time.value = p(20);
+    cfg.meal.snack2_size.value = p(21);
 
-cfg.meal.snack3_time.value = p(24);
-cfg.meal.snack3_size.value = p(25);
+    cfg.meal.dinner_time.value = p(22);
+    cfg.meal.dinner_size.value = p(23);
 
-WriteYaml('simglucose_cfg.yml',cfg);
-pause(.1)
+    cfg.meal.snack3_time.value = p(24);
+    cfg.meal.snack3_size.value = p(25);
+    [cfg_fname, res_fname] = cfg2fname(cfg);
+    cfg.out = res_fname;
 
-[status, output] = system('python simglucose_breach_wrapper.py');
+    WriteYaml(cfg_fname, cfg);
+    pause(.1)
 
+    if exist(res_fname, 'file')~=2
+        cmd = ['python simglucose_breach_wrapper.py ' cfg_fname];
+        [status, output] = system(['python simglucose_breach_wrapper.py ' cfg_fname]);
+    end
 
-% format outputs as expected by Breach
-X = csvread('trace.csv',1,1)';
-t_out = [0:3:24*60]/60;             
-
-status = 0; % everything went well, should be -1 otherwise
+    % format outputs as expected by Breach
+    X = csvread(res_fname,1,1)';
+    status = 0; % everything went well, should be -1 otherwise
+catch ME
+    warning(ME.identifier, '%s', ME.message);
+    X = zeros([Sys.DimX numel(t_out)]);
+    status = -1;
 end
