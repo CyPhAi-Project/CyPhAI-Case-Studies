@@ -1,6 +1,9 @@
 # Installation
 
-Install required Python packages in `requirements.txt`.
+Install required Python packages in `requirements.txt` (requires `cmake`).
+
+## Sampling with Symbolic Timed Automata
+Follow the instructions in ```lib/README.md```
 
 
 # Runtime Monitoring
@@ -22,3 +25,11 @@ The script is tested with Python 3.11
 python falsify_robustness.py
 ```
 This script will visualize the simulation traces in `out/bg.jpeg`
+
+
+# Runtime monitoring with Symbolic Timed Automata for input generation
+The script is tested with Python 3.10
+
+```bash
+python monitor_robustness_sta.py
+```
