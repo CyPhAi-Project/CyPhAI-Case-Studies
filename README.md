@@ -3,7 +3,7 @@
 Install required Python packages in `requirements.txt` (requires `cmake`).
 
 ## Sampling with Symbolic Timed Automata
-Follow the instructions in ```lib/README.md```
+Follow the instructions in ```sta/lib/README.md```
 
 
 # Runtime Monitoring
