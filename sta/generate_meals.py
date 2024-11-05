@@ -1,41 +1,35 @@
 from typing import List, Dict, Tuple
 
-from sta.build_automaton import build_sa
+from syma.automaton.symbolic_timed_automaton import SymbolicTimedAutomaton
+
+from sta.build_automaton_simplified import build_sa
 from sta.input_generator import InputGenerator
 
-'''
--n
-30
--l
-15
--o
-examples/pancreas/output/traces/data_{}{}.mat
--a
-examples/pancreas/output/abstract_trajectories.json
--c
-examples/pancreas/output/concrete_trajectories.json
---sta
-examples/pancreas/output/sta_product.prism
---dt
-0.001
---wg
-lib/wordgen
-'''
+
 STA_OUT_FNAME = "sta/output/sta_product.prism"
 ABSTRACT_TRAJ_FNAME = "sta/output/abstract_trajectories.json"
 CONCRETE_TRAJ_FNAME = "sta/output/concrete_trajectories.json"
-def generate_meals(n_scenarios: int, generator:InputGenerator=None):
-    sta, volume_dict, abstraction_dict, constraints_mapping, sta_prism, sta_prism_constr, var_names, var_bounds \
-        = build_sa()
+INITIAL_VALUES = {"m": 0}
+
+
+def initialize(n_meals:int = 5, generator:InputGenerator=None):
+    sta: SymbolicTimedAutomaton = build_sa()
 
     if not generator:
         sta_input_gen: InputGenerator = InputGenerator(
-            sta,var_names,var_bounds,STA_OUT_FNAME,"lib/wordgen",postprocessing_fun=build_meals
+            sta, STA_OUT_FNAME, "lib/wordgen",
+            length=n_meals,
+            postprocessing_fun=build_meals_simplified
         )
     else:
         sta_input_gen = generator
+    return sta, sta_input_gen
 
-    scenarios = sta_input_gen.generate(6, ABSTRACT_TRAJ_FNAME,CONCRETE_TRAJ_FNAME,n=n_scenarios)
+
+def generate_meals(n_meals:int = 5, n_scenarios: int = 1, generator:InputGenerator=None):
+    sta, sta_input_gen = initialize(n_meals, generator)
+
+    scenarios = sta_input_gen.generate_uniform(ABSTRACT_TRAJ_FNAME,CONCRETE_TRAJ_FNAME, n_scenarios)
     return scenarios, sta_input_gen
 
 def build_meals(concrete_trajectory: dict) -> List[Tuple[float, List[float]]]:
@@ -101,3 +95,19 @@ def build_meals(concrete_trajectory: dict) -> List[Tuple[float, List[float]]]:
         if loc == "need_breakfast":
             t = int(t+ (24 - t%24))
     return meals #, meals_print
+
+
+def build_meals_simplified(concrete_trajectory: dict) -> List[Tuple[float, List[float]]]:
+    meals: List[Tuple[float, List[float]]] = []
+    t = 0
+
+    for meal in concrete_trajectory:
+        d = round(meal['delay'], 2)
+        m = round(meal['vars']['m'], 1)
+        action = meal['action']
+
+        t += d
+        meals += [(t, float(m))]
+        if action == "to_breakfast":
+            t = int(t+ (24 - t%24))
+    return meals

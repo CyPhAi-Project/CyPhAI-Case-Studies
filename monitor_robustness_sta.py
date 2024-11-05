@@ -7,17 +7,28 @@ from simglucose.controller.basal_bolus_ctrller import BBController
 from simglucose.controller.pid_ctrller import PIDController
 from simglucose.simulation.sim_engine import batch_sim
 import stlrom
+import numpy as np
 
 from simglucose_simobj import PATIENT_NAMES, build_sim_obj, FoxPIDController, FOXPID_PARAMS
-from sta.generate_meals import generate_meals
+from sta.build_automaton_simplified import build_sa
+from sta.generate_meals import generate_meals, build_meals_simplified
+from sta.input_generator import InputGenerator
 
-NUM_SCENARIOS = 1
-
+NUM_SCENARIOS = 100
+NUM_MEALS = 3
+STA_OUT_FNAME = "sta/output/sta_product.prism"
 def batch_simglucose() -> list[DataFrame]:
 
-    # Define meals as a list of tuples (time, meal_size) where time is the hour in a day in 24-hour format.
+    sta = build_sa()
+    sta_input_generator: InputGenerator = InputGenerator(
+            sta, STA_OUT_FNAME, "sta/lib/wordgen",
+            length=NUM_MEALS,
+            postprocessing_fun=build_meals_simplified
+        )
 
-    meal_plans, sta_input_generator = generate_meals(NUM_SCENARIOS)
+
+    # Define meals as a list of tuples (time, meal_size) where time is the hour in a day in 24-hour format.
+    meal_plans, _ = generate_meals(NUM_MEALS, NUM_SCENARIOS, sta_input_generator)
     sta_input_generator.to_file(meal_plans, "out/meal_plans.json")
 
     # meals = [(7, 45), (12, 70), (16, 15), (18, 80), (23, 10)]
@@ -25,6 +36,8 @@ def batch_simglucose() -> list[DataFrame]:
 
     sim_obj_list = []
     for patient_name in PATIENT_NAMES:
+        if patient_name != 'adolescent#001':
+            continue # JUST FOR TESTING
         try:
             # Build controller
             sel_ctrl = "FoxPID"  # type: Literal["BB", "PID", "FoxPID"]

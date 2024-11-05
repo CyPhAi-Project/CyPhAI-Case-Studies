@@ -4,3 +4,5 @@ pandas
 plotly
 simglucose
 stlrom
+psy-taliro
+kaleido
