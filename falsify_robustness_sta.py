@@ -3,6 +3,8 @@ from typing import Callable
 
 import plotly.graph_objects as go
 
+import numpy as np
+
 from staliro import Trace, optimizers, staliro
 from staliro.models import blackbox, Blackbox
 from staliro.specifications import rtamt
@@ -14,28 +16,13 @@ from sta.build_automaton_simplified import build_sa
 from sta.generate_meals import build_meals_simplified
 from sta.input_generator import InputGenerator
 
-NUM_MEALS = 10
 
-'''sta = build_sa()
-sta_input_generator: InputGenerator = InputGenerator(
-        sta, STA_OUT_FNAME, "sta/lib/wordgen",
-        length=NUM_MEALS,
-        postprocessing_fun=build_meals_simplified
-    )
-
-meal_plans = []
-n_var = len(sta_input_generator.sta.var_names)
-for _ in range(100):
-    r = np.random.rand(NUM_MEALS*(2+n_var))
-    meal_plan: dict[str, float] = dict()
-    for i in range(1, NUM_MEALS + 1):
-        start_idx = (i-1)*(2+n_var)
-        meal_plan[f"delay_{i}"] = float(r[start_idx])
-        meal_plan[f"transition_{i}"] = float(r[start_idx+1])
-        for j in range(1, n_var + 1):
-            meal_plan[f"{sta_input_generator.sta.var_names[j-1]}_{i}"] = float(r[start_idx + 1 + j])
-    meals = sta_input_generator.generate_from_dict(meal_plan)
-    meal_plans.append(meals)'''
+np.random.seed(104)
+NUM_MEALS = 5
+PATIENT = PATIENT_NAMES[10]
+MAX_OPT_ITERATIONS = 10
+SIM_TIME_DAYS = 2
+STL_TIME_SPAN = 30*60 # in minutes
 
 
 
@@ -50,10 +37,9 @@ def build_wrapper(input_generator: InputGenerator, patient_name) -> Callable[[Bl
         # 2) the value in [0,1] used to choose the transition
         # 3) for each symbolic variable, the value in [0,1] used to generate its value
 
-
         meals = input_generator.generate_from_dict(inputs.static)
         print(meals)
-        sim_obj = build_sim_obj(meals, patient_name, sim_time_days=1)
+        sim_obj = build_sim_obj(meals, patient_name, sim_time_days=SIM_TIME_DAYS)
         trace = sim(sim_obj)
 
         # Shift time stamps and scale to minutes
@@ -75,9 +61,9 @@ sta_input_gen: InputGenerator = InputGenerator(
             postprocessing_fun=build_meals_simplified
         )
 
-optimizer = optimizers.DualAnnealing(min_cost=0.0)
+optimizer = optimizers.DualAnnealing(min_cost=1e-6)
 
-blackbox_function = build_wrapper(sta_input_gen,PATIENT_NAMES[10])
+blackbox_function = build_wrapper(sta_input_gen, PATIENT)
 
 n_var = len(sta_input_gen.sta.var_names)
 
@@ -97,8 +83,8 @@ requirement = f"always ({BG} > 70.0 and {BG} < 350.0)"
 spec = rtamt.parse_dense(requirement, {BG: BG_COL})
 options = TestOptions(
     runs=1,
-    iterations=12,
-    tspan=(0.0, 2880.0),
+    iterations=MAX_OPT_ITERATIONS,
+    tspan=(0.0, STL_TIME_SPAN),
     static_inputs=search_space)
 
 
@@ -129,4 +115,4 @@ for i, ev in enumerate(run.evaluations):
         )
     )
 
-figure.write_image("out/bg.jpeg")
+figure.write_image("out/falsification/sta_staliro/bg.jpeg")

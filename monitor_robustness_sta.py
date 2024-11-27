@@ -14,8 +14,8 @@ from sta.build_automaton_simplified import build_sa
 from sta.generate_meals import generate_meals, build_meals_simplified
 from sta.input_generator import InputGenerator
 
-NUM_SCENARIOS = 100
-NUM_MEALS = 3
+NUM_SCENARIOS = 10
+NUM_MEALS = 5
 STA_OUT_FNAME = "sta/output/sta_product.prism"
 def batch_simglucose() -> list[DataFrame]:
 
@@ -26,13 +26,11 @@ def batch_simglucose() -> list[DataFrame]:
             postprocessing_fun=build_meals_simplified
         )
 
-
     # Define meals as a list of tuples (time, meal_size) where time is the hour in a day in 24-hour format.
     meal_plans, _ = generate_meals(NUM_MEALS, NUM_SCENARIOS, sta_input_generator)
     sta_input_generator.to_file(meal_plans, "out/meal_plans.json")
 
     # meals = [(7, 45), (12, 70), (16, 15), (18, 80), (23, 10)]
-
 
     sim_obj_list = []
     for patient_name in PATIENT_NAMES:

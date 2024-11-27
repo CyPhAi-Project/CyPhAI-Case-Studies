@@ -8,8 +8,7 @@ from syma.constraint.node.node import Node, VariableNode, AddNode, GreaterNode, 
 
 from syma.volume.hyperrectangle_abstraction import HyperrectangleAbstraction
 
-# from syma.volume.polyhedron_abstraction import PolyhedronAbstraction
-DIST_FACTOR = 0.1
+DIST_FACTOR = 1.0
 
 inputs={
         # Meal times and sizes defined for RandomScenario in simglucose

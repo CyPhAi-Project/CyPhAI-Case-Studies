@@ -141,7 +141,7 @@ def build_sim_obj(
         sensor_seed: int = 1,
         pump_name: PUMP_TYPE = "Insulet",
         controller: Controller = BBController(),
-        sim_time_days: int = 1) -> SimObj:
+        sim_time_minutes: int = 1440) -> SimObj:
     # Create a simulation environment
     patient = T1DPatient.withName(
         name=patient_name,
@@ -157,4 +157,4 @@ def build_sim_obj(
     env = T1DSimEnv(patient, sensor, pump, scenario)
 
     # Put them together to create a simulation object
-    return SimObj(env, controller, timedelta(days=sim_time_days), animate=False, path=RESULT_PATH)
+    return SimObj(env, controller, timedelta(days=sim_time_minutes), animate=False, path=RESULT_PATH)
