@@ -2,6 +2,7 @@ from typing import List, Dict, Tuple
 
 from syma.automaton.symbolic_timed_automaton import SymbolicTimedAutomaton
 
+from sta.automaton_three_snacks import build_sa_three_snacks
 from sta.build_automaton_simplified import build_sa
 from sta.input_generator import InputGenerator
 
@@ -12,8 +13,8 @@ CONCRETE_TRAJ_FNAME = "sta/output/concrete_trajectories.json"
 INITIAL_VALUES = {"m": 0}
 
 
-def initialize(n_meals:int = 5, generator:InputGenerator=None):
-    sta: SymbolicTimedAutomaton = build_sa()
+'''def initialize(n_meals, dist_factor, generator:InputGenerator=None):
+    # sta: SymbolicTimedAutomaton = build_sa_three_snacks(dist_factor)
 
     if not generator:
         sta_input_gen: InputGenerator = InputGenerator(
@@ -23,13 +24,18 @@ def initialize(n_meals:int = 5, generator:InputGenerator=None):
         )
     else:
         sta_input_gen = generator
-    return sta, sta_input_gen
+    return sta, sta_input_gen'''
 
 
-def generate_meals(n_meals:int = 5, n_scenarios: int = 1, generator:InputGenerator=None):
-    sta, sta_input_gen = initialize(n_meals, generator)
+def generate_meals(n_scenarios, sta_input_gen: InputGenerator,
+                   abstract_traj_fname=None, concrete_traj_fname=None):
+    # sta, sta_input_gen = initialize(n_meals, generator)
 
-    scenarios = sta_input_gen.generate_uniform(ABSTRACT_TRAJ_FNAME,CONCRETE_TRAJ_FNAME, n_scenarios)
+    if not abstract_traj_fname:
+        abstract_traj_fname = ABSTRACT_TRAJ_FNAME
+    if not concrete_traj_fname:
+        concrete_traj_fname = CONCRETE_TRAJ_FNAME
+    scenarios = sta_input_gen.generate_uniform(abstract_traj_fname,concrete_traj_fname, n_scenarios)
     return scenarios, sta_input_gen
 
 def build_meals(concrete_trajectory: dict) -> List[Tuple[float, List[float]]]:
@@ -108,6 +114,6 @@ def build_meals_simplified(concrete_trajectory: dict) -> List[Tuple[float, List[
 
         t += d
         meals += [(t, float(m))]
-        if action == "to_breakfast":
+        if "to_breakfast" in action:
             t = int(t+ (24 - t%24))
     return meals

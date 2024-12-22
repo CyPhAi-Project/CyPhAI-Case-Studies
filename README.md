@@ -22,7 +22,7 @@ Run the following command to collect traces from `simglucose` and try to violate
 The script is tested with Python 3.11
 
 ```bash
-python falsify_robustness.py
+python falsify_staliro_unconstrained.py
 ```
 This script will visualize the simulation traces in `out/bg.jpeg`
 
@@ -31,5 +31,5 @@ This script will visualize the simulation traces in `out/bg.jpeg`
 The script is tested with Python 3.10
 
 ```bash
-python monitor_robustness_sta.py
+python uniform_sampling_sta.py
 ```

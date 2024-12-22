@@ -157,4 +157,4 @@ def build_sim_obj(
     env = T1DSimEnv(patient, sensor, pump, scenario)
 
     # Put them together to create a simulation object
-    return SimObj(env, controller, timedelta(days=sim_time_minutes), animate=False, path=RESULT_PATH)
+    return SimObj(env, controller, timedelta(minutes=sim_time_minutes), animate=False, path=RESULT_PATH)

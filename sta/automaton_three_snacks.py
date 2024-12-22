@@ -10,42 +10,10 @@ from syma.volume.hyperrectangle_abstraction import HyperrectangleAbstraction
 
 from params import get_meal_space
 
-'''inputs={
-        # Meal times and sizes defined for RandomScenario in simglucose
-        # Bound on meal size is (mu-3*sigma, mu+3*sigma)
-        "breakfast_time": (5, 9), "breakfast_size": (45-1, 45+1),
-        "snack1_time": (9, 11), "snack1_size": (10-1, 10+1),
-        "lunch_time": (12, 15), "lunch_size": (70-1, 70+1),
-        "snack2_time": (14, 16), "snack2_size": (10-1, 10+1),
-        "dinner_time": (16, 20), "dinner_size": (80-1, 80+1),
-        "snack3_time": (20, 23), "snack3_size": (10-1, 10+1),
-    }'''
+def build_sa_three_snacks(dist_factor: float) -> SymbolicTimedAutomaton:
 
-def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
-    '''inputs = {
-        # Meal times and sizes defined for RandomScenario in simglucose
-        # Bound on meal size is (mu-3*sigma, mu+3*sigma)
-        "breakfast_time": (5, 9),
-        "breakfast_size": (45 - (3 * 10) * dist_factor, 45 + (3 * 10) * dist_factor),
-
-        "snack1_time": (9, 11),
-        "snack1_size": (max(0.0, 10 - (3 * 5) * dist_factor), 10 + (3 * 5) * dist_factor),
-
-        "lunch_time": (12, 15),
-        "lunch_size": (70 - (3 * 10) * dist_factor, 70 + (3 * 10) * dist_factor),
-
-        "snack2_time": (14, 16),
-        "snack2_size": (max(0.0, 10 - (3 * 5) * dist_factor), 10 + (3 * 5) * dist_factor),
-
-        "dinner_time": (16, 20),
-        "dinner_size": (80 - (3 * 10) * dist_factor, 80 + (3 * 10) * dist_factor),
-        "snack3_time": (20, 23), "snack3_size": (10 - (3 * 5) * dist_factor, 10 + (3 * 5) * dist_factor),
-    }'''
     inputs = get_meal_space(dist_factor)
-    MIN_DIST_LUNCH = 4
-    MAX_DIST_LUNCH = 6
-    MIN_DIST_DINNER = 5
-    MAX_DIST_DINNER = 7
+
 
     # Automaton "C", manages the sum constraint
     sta = SymbolicTimedAutomaton(clocks="h,d,t", invariants="")
@@ -60,6 +28,7 @@ def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
     l_no_s1 = Location("l_no_s1", initial=False, final=False)
     s2 = Location("s2", initial=False, final=False)
     d = Location("d", initial=False, final=False)
+    s3 = Location("s3", initial=False, final=False)
 
 
     sta.add_location(b)
@@ -68,6 +37,7 @@ def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
     sta.add_location(l_no_s1)
     sta.add_location(s2)
     sta.add_location(d)
+    sta.add_location(s3)
 
     # Constraints
     var_node_m = VariableNode('m')
@@ -84,28 +54,28 @@ def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
         source=b,
         target=s1,
         constraint=RealConstraint(
-            formula=meal_bounds(inputs["breakfast_size"][0], inputs["breakfast_size"][1]),
+            formula=meal_bounds(inputs["breakfast_size_with_snack1"][0], inputs["breakfast_size_with_snack1"][1]),
             alphabet=sta.alphabet),
-        time_constraint=f"(h>={inputs['breakfast_time'][0]})&(h<={inputs['breakfast_time'][1]})",
+        time_constraint=f"(h>={inputs['breakfast_time_with_snack1'][0]})&(h<={inputs['breakfast_time_with_snack1'][1]})",
         clock_resets="d,t",
         abstraction_type=HyperrectangleAbstraction,
-        label="to_snack_1"
+        label="breakfast_to_snack_1"
     )
 
-    # have breakfast and go to need lunch
+    # have breakfast and go to need lunch (skip snack 1)
     sta.add_transition(
         source=b,
         target=l_no_s1,
         constraint=RealConstraint(
-            formula=meal_bounds(inputs["breakfast_size"][0], inputs["breakfast_size"][1]),
+            formula=meal_bounds(inputs["breakfast_size_no_snack1"][0], inputs["breakfast_size_no_snack1"][1]),
             alphabet=sta.alphabet),
-        time_constraint=f"(h>={inputs['breakfast_time'][0]})&(h<={inputs['breakfast_time'][1]})",
+        time_constraint=f"(h>={inputs['breakfast_time_no_snack1'][0]})&(h<={inputs['breakfast_time_no_snack1'][1]})",
         clock_resets="d,t",
         abstraction_type=HyperrectangleAbstraction,
-        label="to_lunch"
+        label="breakfast_to_lunch"
     )
 
-    # have snack and go to need lunch
+    # have snack 1 and go to need lunch
     sta.add_transition(
         source=s1,
         target=l,
@@ -115,7 +85,7 @@ def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
         time_constraint=f"(h>={inputs['snack1_time'][0]})&(h<={inputs['snack1_time'][1]})",
         clock_resets="t",
         abstraction_type=HyperrectangleAbstraction,
-        label="snack_to_lunch"
+        label="snack_1_to_lunch"
     )
 
     # have lunch (having had snack 1) and go to need snack 2
@@ -123,25 +93,31 @@ def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
         source=l,
         target=s2,
         constraint=RealConstraint(
-            formula=meal_bounds(inputs["lunch_size"][0], inputs["lunch_size"][1]),
+            formula=meal_bounds(inputs["lunch_size_with_snack1_and_2"][0], inputs["lunch_size_with_snack1_and_2"][1]),
             alphabet=sta.alphabet),
-        time_constraint=f"(h>={inputs['lunch_time'][0]})&(h<={inputs['lunch_time'][1]})&(d>=4)&(d<=6)",
+        time_constraint=f"(h>={inputs['lunch_time'][0]})"
+                        f"&(h<={inputs['lunch_time'][1]})"
+                        f"&(d>={inputs['lunch_d_with_snack1'][0]})"
+                        f"&(d<={inputs['lunch_d_with_snack1'][1]})",
         clock_resets="d,t",
         abstraction_type=HyperrectangleAbstraction,
-        label="to_snack_2_w_s1"
+        label="lunch_to_snack_2_with_s1"
     )
 
-    # have lunch (having had snack 1) and go to need dinner
+    # have lunch (having had snack 1) and go to need dinner (skip snack 2)
     sta.add_transition(
         source=l,
         target=d,
         constraint=RealConstraint(
-            formula=meal_bounds(inputs["lunch_size"][0], inputs["lunch_size"][1]),
+            formula=meal_bounds(inputs["lunch_size_with_snack1_no_snack2"][0], inputs["lunch_size_with_snack1_no_snack2"][1]),
             alphabet=sta.alphabet),
-        time_constraint=f"(h>={inputs['lunch_time'][0]})&(h<={inputs['lunch_time'][0]})&(d>=4)&(d<=6)",
+        time_constraint=f"(h>={inputs['lunch_time'][0]})"
+                        f"&(h<={inputs['lunch_time'][1]})"
+                        f"&(d>={inputs['lunch_d_with_snack1'][0]})"
+                        f"&(d<={inputs['lunch_d_with_snack1'][1]})",
         clock_resets="d,t",
         abstraction_type=HyperrectangleAbstraction,
-        label="to_dinner"
+        label="lunch_with_snack_1_to_dinner"
     )
 
     # have lunch (without having had snack 1) and go to need snack 2)
@@ -149,12 +125,15 @@ def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
         source=l_no_s1,
         target=s2,
         constraint=RealConstraint(
-            formula=meal_bounds(inputs["lunch_size"][0], inputs["lunch_size"][1]),
+            formula=meal_bounds(inputs["lunch_size_no_snack1_with_snack2"][0], inputs["lunch_size_no_snack1_with_snack2"][1]),
             alphabet=sta.alphabet),
-        time_constraint=f"(h>={inputs['lunch_time'][0]})&(h<={inputs['lunch_time'][0]})&(d>=4)&(d<=6)",
+        time_constraint=f"(h>={inputs['lunch_time'][0]})"
+                        f"&(h<={inputs['lunch_time'][1]})"
+                        f"&(d>={inputs['lunch_d_no_snack1'][0]})"
+                        f"&(d<={inputs['lunch_d_no_snack1'][1]})",
         clock_resets="d,t",
         abstraction_type=HyperrectangleAbstraction,
-        label="to_snack_2_wo_s1"
+        label="lunch_to_snack_2_no_snack_1"
     )
 
     # have snack 2 and go to have dinner
@@ -164,23 +143,63 @@ def build_sa(dist_factor: float) -> SymbolicTimedAutomaton:
         constraint=RealConstraint(
             formula=meal_bounds(inputs["snack2_size"][0], inputs["snack2_size"][1]),
             alphabet=sta.alphabet),
-        time_constraint=f"(h>={inputs['snack2_time'][0]})&(h<={inputs['snack2_time'][1]})",
+        time_constraint=f"(h>={inputs['snack2_time'][0]})"
+                        f"&(h<={inputs['snack2_time'][1]})",
         clock_resets="t",
         abstraction_type=HyperrectangleAbstraction,
-        label="snack_to_dinner"
+        label="snack_2_to_dinner"
     )
 
+    # Have dinner and go to breakfast (skip snack 3)
     sta.add_transition(
         source=d,
         target=b,
         constraint=RealConstraint(
-            formula=meal_bounds(inputs["dinner_size"][0], inputs["dinner_size"][1]),
+            formula=meal_bounds(inputs["dinner_size_no_snack3"][0], inputs["dinner_size_no_snack3"][1]),
             alphabet=sta.alphabet),
-        time_constraint=f"(h>={inputs['dinner_time'][0]})&(h<={inputs['dinner_time'][1]})&(d>=5)&(d<=7)",
+        time_constraint=f"(h>={inputs['dinner_time_no_snack3'][0]})"
+                        f"&(h<={inputs['dinner_time_no_snack3'][1]})"
+                        f"&(d>={inputs['dinner_d_no_snack3'][0]})"
+                        f"&(d<={inputs['dinner_d_no_snack3'][1]})",
         clock_resets="d,h,t",
         abstraction_type=HyperrectangleAbstraction,
-        label="to_breakfast"
+        label="dinner_to_breakfast_no_snack_3"
     )
+
+    # Have dinner and go to need snack 3
+    sta.add_transition(
+        source=d,
+        target=s3,
+        constraint=RealConstraint(
+            formula=meal_bounds(inputs["dinner_size_with_snack3"][0], inputs["dinner_size_with_snack3"][1]),
+            alphabet=sta.alphabet),
+        time_constraint=f"(h>={inputs['dinner_time_with_snack3'][0]})"
+                        f"&(h<={inputs['dinner_time_with_snack3'][1]})"
+                        f"&(d>={inputs['dinner_d_with_snack3'][0]})"
+                        f"&(d<={inputs['dinner_d_with_snack3'][1]})",
+        clock_resets="t",
+        abstraction_type=HyperrectangleAbstraction,
+        label="dinner_to_snack_3"
+    )
+
+    sta.add_transition(
+        source=s3,
+        target=b,
+        constraint=RealConstraint(
+            formula=meal_bounds(inputs["snack3_size"][0], inputs["snack3_size"][1]),
+            alphabet=sta.alphabet),
+        time_constraint=f"(h>={inputs['snack3_time'][0]})"
+                        f"&(h<={inputs['snack3_time'][1]})",
+        clock_resets="d,h,t",
+        abstraction_type=HyperrectangleAbstraction,
+        label="snack3_to_breakfast"
+    )
+
+
+
+
+
+
 
     # volume_dict, abstraction_dict = volume_estimate(sta)
 
