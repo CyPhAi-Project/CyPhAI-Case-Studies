@@ -1,0 +1,8 @@
+pta
+module m
+	state:[0..0] init 0;
+	x:clock;
+	y:clock;
+	[a] (state=0) & (x<1)&(y<1) -> (1.9999600007999844e-05) : (state'=0) & (y'=0);
+	[b] (state=0) & (x<1)&(y<1) -> (0.999980000399992) : (state'=0) & (x'=0);
+endmodule

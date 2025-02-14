@@ -208,4 +208,13 @@ fabric.properties
 
 # Sonarlint plugin
 .idea/sonarlint
-breach/T1D_specs.asv
+simglucose/breach/T1D_specs.asv
+
+# Syma repo
+symbolic_timed_automata/lib/syma
+
+# Wordgen executable
+symbolic_timed_automata/lib/wordgen
+
+# Large output files
+*.npz

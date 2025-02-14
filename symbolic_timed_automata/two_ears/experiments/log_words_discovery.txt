@@ -1,0 +1,1513 @@
+/home/marco/work/dev/cyphai/CyPhAI-Case-Studies/env/bin/python /home/marco/work/dev/cyphai/CyPhAI-Case-Studies/sample_two_ears.py 
+Computing abstraction of constraint a
+Computing abstraction of constraint b
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found but file have change discard !
+Reading Prism automaton file. [0.00s]
+Computing forward reachability graph ... 3 states found. [0.00s]
+Splitting reachability graph ... 3 states and 6 DBMs found. [0.00s]
+Computing Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5: [|||||] [0.00s]
+Volume in initial state:0.0363683127572, degree of liberty:5
+Saving Precomputation [0.00s]
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.75s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 17.1 seconds
+	Completed generating 100000 signals in 24.1 seconds
+STA: Found 99370 new words after 100000 samples
+Isotropic: Found 86774 new words after 100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.90s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 17.4 seconds
+	Completed generating 100000 signals in 24.1 seconds
+STA: Found 197344 new words after 200000 samples
+Isotropic: Found 164142 new words after 200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.73s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 16.8 seconds
+	Completed generating 100000 signals in 24.3 seconds
+STA: Found 294091 new words after 300000 samples
+Isotropic: Found 236791 new words after 300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.77s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 17.3 seconds
+	Completed generating 100000 signals in 24.0 seconds
+STA: Found 389499 new words after 400000 samples
+Isotropic: Found 306439 new words after 400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.79s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 17.3 seconds
+	Completed generating 100000 signals in 24.2 seconds
+STA: Found 483648 new words after 500000 samples
+Isotropic: Found 373714 new words after 500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.72s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 17.5 seconds
+	Completed generating 100000 signals in 24.4 seconds
+STA: Found 576618 new words after 600000 samples
+Isotropic: Found 439284 new words after 600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.79s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 17.5 seconds
+	Completed generating 100000 signals in 24.5 seconds
+STA: Found 668376 new words after 700000 samples
+Isotropic: Found 503119 new words after 700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.74s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.3 seconds
+	Completed generating 100000 signals in 25.4 seconds
+STA: Found 758997 new words after 800000 samples
+Isotropic: Found 565321 new words after 800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.84s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 17.8 seconds
+	Completed generating 100000 signals in 25.3 seconds
+STA: Found 848487 new words after 900000 samples
+Isotropic: Found 626015 new words after 900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.58s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.7 seconds
+	Completed generating 100000 signals in 25.6 seconds
+STA: Found 936893 new words after 1000000 samples
+Isotropic: Found 686007 new words after 1000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.82s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.1 seconds
+	Completed generating 100000 signals in 25.2 seconds
+STA: Found 1024240 new words after 1100000 samples
+Isotropic: Found 744480 new words after 1100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.77s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.1 seconds
+	Completed generating 100000 signals in 25.4 seconds
+STA: Found 1110336 new words after 1200000 samples
+Isotropic: Found 802009 new words after 1200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.84s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.4 seconds
+	Completed generating 100000 signals in 25.8 seconds
+STA: Found 1195514 new words after 1300000 samples
+Isotropic: Found 858737 new words after 1300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.2 seconds
+	Completed generating 100000 signals in 25.4 seconds
+STA: Found 1279584 new words after 1400000 samples
+Isotropic: Found 914626 new words after 1400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.84s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.7 seconds
+	Completed generating 100000 signals in 25.6 seconds
+STA: Found 1362478 new words after 1500000 samples
+Isotropic: Found 969487 new words after 1500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.72s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.2 seconds
+	Completed generating 100000 signals in 25.1 seconds
+STA: Found 1444569 new words after 1600000 samples
+Isotropic: Found 1023839 new words after 1600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [7.02s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.3 seconds
+	Completed generating 100000 signals in 26.5 seconds
+STA: Found 1525733 new words after 1700000 samples
+Isotropic: Found 1077619 new words after 1700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.36s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.3 seconds
+	Completed generating 100000 signals in 27.6 seconds
+STA: Found 1605978 new words after 1800000 samples
+Isotropic: Found 1130801 new words after 1800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.84s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.7 seconds
+	Completed generating 100000 signals in 43.6 seconds
+STA: Found 1685460 new words after 1900000 samples
+Isotropic: Found 1183107 new words after 1900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.7 seconds
+	Completed generating 100000 signals in 26.7 seconds
+STA: Found 1763760 new words after 2000000 samples
+Isotropic: Found 1234779 new words after 2000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.81s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.7 seconds
+	Completed generating 100000 signals in 26.0 seconds
+STA: Found 1841203 new words after 2100000 samples
+Isotropic: Found 1285740 new words after 2100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.82s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.2 seconds
+	Completed generating 100000 signals in 26.0 seconds
+STA: Found 1917925 new words after 2200000 samples
+Isotropic: Found 1336422 new words after 2200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.0 seconds
+	Completed generating 100000 signals in 26.1 seconds
+STA: Found 1993584 new words after 2300000 samples
+Isotropic: Found 1385961 new words after 2300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.81s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.4 seconds
+	Completed generating 100000 signals in 26.9 seconds
+STA: Found 2068534 new words after 2400000 samples
+Isotropic: Found 1435414 new words after 2400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.82s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.9 seconds
+	Completed generating 100000 signals in 25.7 seconds
+STA: Found 2142917 new words after 2500000 samples
+Isotropic: Found 1484099 new words after 2500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.76s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 18.5 seconds
+	Completed generating 100000 signals in 26.0 seconds
+STA: Found 2216335 new words after 2600000 samples
+Isotropic: Found 1532850 new words after 2600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.7 seconds
+	Completed generating 100000 signals in 26.5 seconds
+STA: Found 2289041 new words after 2700000 samples
+Isotropic: Found 1581244 new words after 2700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.01s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.5 seconds
+	Completed generating 100000 signals in 26.4 seconds
+STA: Found 2360910 new words after 2800000 samples
+Isotropic: Found 1628829 new words after 2800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.83s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.7 seconds
+	Completed generating 100000 signals in 26.6 seconds
+STA: Found 2431940 new words after 2900000 samples
+Isotropic: Found 1676131 new words after 2900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.5 seconds
+	Completed generating 100000 signals in 26.7 seconds
+STA: Found 2502093 new words after 3000000 samples
+Isotropic: Found 1722778 new words after 3000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.9 seconds
+	Completed generating 100000 signals in 27.0 seconds
+STA: Found 2571686 new words after 3100000 samples
+Isotropic: Found 1768928 new words after 3100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [7.04s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.1 seconds
+	Completed generating 100000 signals in 28.1 seconds
+STA: Found 2640346 new words after 3200000 samples
+Isotropic: Found 1814864 new words after 3200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.76s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.2 seconds
+	Completed generating 100000 signals in 30.0 seconds
+STA: Found 2708573 new words after 3300000 samples
+Isotropic: Found 1860503 new words after 3300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.82s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.7 seconds
+	Completed generating 100000 signals in 26.6 seconds
+STA: Found 2775829 new words after 3400000 samples
+Isotropic: Found 1905633 new words after 3400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.78s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.2 seconds
+	Completed generating 100000 signals in 27.2 seconds
+STA: Found 2842827 new words after 3500000 samples
+Isotropic: Found 1950203 new words after 3500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.73s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.4 seconds
+	Completed generating 100000 signals in 27.9 seconds
+STA: Found 2908812 new words after 3600000 samples
+Isotropic: Found 1994530 new words after 3600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.93s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.3 seconds
+	Completed generating 100000 signals in 28.4 seconds
+STA: Found 2974283 new words after 3700000 samples
+Isotropic: Found 2038327 new words after 3700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.3 seconds
+	Completed generating 100000 signals in 27.2 seconds
+STA: Found 3039014 new words after 3800000 samples
+Isotropic: Found 2082024 new words after 3800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.4 seconds
+	Completed generating 100000 signals in 28.3 seconds
+STA: Found 3103117 new words after 3900000 samples
+Isotropic: Found 2125318 new words after 3900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.87s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.8 seconds
+	Completed generating 100000 signals in 28.8 seconds
+STA: Found 3166590 new words after 4000000 samples
+Isotropic: Found 2168489 new words after 4000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.76s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.4 seconds
+	Completed generating 100000 signals in 27.5 seconds
+STA: Found 3229279 new words after 4100000 samples
+Isotropic: Found 2211258 new words after 4100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.81s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.2 seconds
+	Completed generating 100000 signals in 28.2 seconds
+STA: Found 3292035 new words after 4200000 samples
+Isotropic: Found 2253946 new words after 4200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [7.04s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.4 seconds
+	Completed generating 100000 signals in 29.0 seconds
+STA: Found 3353765 new words after 4300000 samples
+Isotropic: Found 2296102 new words after 4300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.72s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 19.6 seconds
+	Completed generating 100000 signals in 31.5 seconds
+STA: Found 3414815 new words after 4400000 samples
+Isotropic: Found 2337846 new words after 4400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.92s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.2 seconds
+	Completed generating 100000 signals in 28.1 seconds
+STA: Found 3475233 new words after 4500000 samples
+Isotropic: Found 2379578 new words after 4500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.7 seconds
+	Completed generating 100000 signals in 27.7 seconds
+STA: Found 3534898 new words after 4600000 samples
+Isotropic: Found 2420679 new words after 4600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.79s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.8 seconds
+	Completed generating 100000 signals in 28.2 seconds
+STA: Found 3594163 new words after 4700000 samples
+Isotropic: Found 2462018 new words after 4700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [7.02s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.0 seconds
+	Completed generating 100000 signals in 30.2 seconds
+STA: Found 3653087 new words after 4800000 samples
+Isotropic: Found 2502725 new words after 4800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.4 seconds
+	Completed generating 100000 signals in 28.6 seconds
+STA: Found 3711768 new words after 4900000 samples
+Isotropic: Found 2543328 new words after 4900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.77s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.2 seconds
+	Completed generating 100000 signals in 28.1 seconds
+STA: Found 3769496 new words after 5000000 samples
+Isotropic: Found 2583768 new words after 5000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.71s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.7 seconds
+	Completed generating 100000 signals in 28.5 seconds
+STA: Found 3826871 new words after 5100000 samples
+Isotropic: Found 2623670 new words after 5100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.69s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.6 seconds
+	Completed generating 100000 signals in 27.5 seconds
+STA: Found 3883576 new words after 5200000 samples
+Isotropic: Found 2663112 new words after 5200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.72s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.0 seconds
+	Completed generating 100000 signals in 28.1 seconds
+STA: Found 3939792 new words after 5300000 samples
+Isotropic: Found 2702530 new words after 5300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.76s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.9 seconds
+	Completed generating 100000 signals in 29.3 seconds
+STA: Found 3995495 new words after 5400000 samples
+Isotropic: Found 2741932 new words after 5400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.71s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.3 seconds
+	Completed generating 100000 signals in 29.3 seconds
+STA: Found 4050777 new words after 5500000 samples
+Isotropic: Found 2781114 new words after 5500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.81s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.5 seconds
+	Completed generating 100000 signals in 28.4 seconds
+STA: Found 4105604 new words after 5600000 samples
+Isotropic: Found 2820020 new words after 5600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.78s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.5 seconds
+	Completed generating 100000 signals in 28.8 seconds
+STA: Found 4160171 new words after 5700000 samples
+Isotropic: Found 2858428 new words after 5700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.74s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.1 seconds
+	Completed generating 100000 signals in 30.6 seconds
+STA: Found 4214189 new words after 5800000 samples
+Isotropic: Found 2896943 new words after 5800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.81s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.7 seconds
+	Completed generating 100000 signals in 28.8 seconds
+STA: Found 4267778 new words after 5900000 samples
+Isotropic: Found 2935468 new words after 5900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.83s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.5 seconds
+	Completed generating 100000 signals in 29.4 seconds
+STA: Found 4320317 new words after 6000000 samples
+Isotropic: Found 2973441 new words after 6000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.88s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.4 seconds
+	Completed generating 100000 signals in 28.6 seconds
+STA: Found 4372981 new words after 6100000 samples
+Isotropic: Found 3010994 new words after 6100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.99s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.8 seconds
+	Completed generating 100000 signals in 30.0 seconds
+STA: Found 4425325 new words after 6200000 samples
+Isotropic: Found 3048556 new words after 6200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.76s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.5 seconds
+	Completed generating 100000 signals in 29.6 seconds
+STA: Found 4477194 new words after 6300000 samples
+Isotropic: Found 3085961 new words after 6300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.71s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.9 seconds
+	Completed generating 100000 signals in 29.5 seconds
+STA: Found 4528523 new words after 6400000 samples
+Isotropic: Found 3122732 new words after 6400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.82s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.0 seconds
+	Completed generating 100000 signals in 29.0 seconds
+STA: Found 4579071 new words after 6500000 samples
+Isotropic: Found 3159723 new words after 6500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.1 seconds
+	Completed generating 100000 signals in 29.7 seconds
+STA: Found 4629498 new words after 6600000 samples
+Isotropic: Found 3196341 new words after 6600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.77s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.7 seconds
+	Completed generating 100000 signals in 29.6 seconds
+STA: Found 4679426 new words after 6700000 samples
+Isotropic: Found 3232794 new words after 6700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.73s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.1 seconds
+	Completed generating 100000 signals in 29.0 seconds
+STA: Found 4728750 new words after 6800000 samples
+Isotropic: Found 3269146 new words after 6800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.71s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.9 seconds
+	Completed generating 100000 signals in 31.1 seconds
+STA: Found 4778024 new words after 6900000 samples
+Isotropic: Found 3305213 new words after 6900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.79s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 21.7 seconds
+	Completed generating 100000 signals in 28.9 seconds
+STA: Found 4826796 new words after 7000000 samples
+Isotropic: Found 3340838 new words after 7000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.79s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 20.9 seconds
+	Completed generating 100000 signals in 29.2 seconds
+STA: Found 4875295 new words after 7100000 samples
+Isotropic: Found 3376672 new words after 7100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.77s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.0 seconds
+	Completed generating 100000 signals in 29.9 seconds
+STA: Found 4922931 new words after 7200000 samples
+Isotropic: Found 3412270 new words after 7200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.76s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.4 seconds
+	Completed generating 100000 signals in 29.3 seconds
+STA: Found 4970204 new words after 7300000 samples
+Isotropic: Found 3447916 new words after 7300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.75s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.4 seconds
+	Completed generating 100000 signals in 29.5 seconds
+STA: Found 5017098 new words after 7400000 samples
+Isotropic: Found 3483288 new words after 7400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.84s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.6 seconds
+	Completed generating 100000 signals in 30.3 seconds
+STA: Found 5063987 new words after 7500000 samples
+Isotropic: Found 3518093 new words after 7500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.81s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.9 seconds
+	Completed generating 100000 signals in 31.0 seconds
+STA: Found 5110289 new words after 7600000 samples
+Isotropic: Found 3553011 new words after 7600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.91s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 24.3 seconds
+	Completed generating 100000 signals in 31.3 seconds
+STA: Found 5156530 new words after 7700000 samples
+Isotropic: Found 3587753 new words after 7700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.75s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 24.0 seconds
+	Completed generating 100000 signals in 31.0 seconds
+STA: Found 5202237 new words after 7800000 samples
+Isotropic: Found 3622488 new words after 7800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.5 seconds
+	Completed generating 100000 signals in 29.7 seconds
+STA: Found 5247747 new words after 7900000 samples
+Isotropic: Found 3657119 new words after 7900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.88s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.0 seconds
+	Completed generating 100000 signals in 30.6 seconds
+STA: Found 5293222 new words after 8000000 samples
+Isotropic: Found 3690958 new words after 8000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.48s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 25.2 seconds
+	Completed generating 100000 signals in 32.3 seconds
+STA: Found 5337994 new words after 8100000 samples
+Isotropic: Found 3724762 new words after 8100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.79s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.4 seconds
+	Completed generating 100000 signals in 30.5 seconds
+STA: Found 5382348 new words after 8200000 samples
+Isotropic: Found 3758586 new words after 8200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.79s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.4 seconds
+	Completed generating 100000 signals in 33.8 seconds
+STA: Found 5426819 new words after 8300000 samples
+Isotropic: Found 3792192 new words after 8300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.98s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.8 seconds
+	Completed generating 100000 signals in 31.5 seconds
+STA: Found 5470568 new words after 8400000 samples
+Isotropic: Found 3825475 new words after 8400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.87s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 25.9 seconds
+	Completed generating 100000 signals in 32.9 seconds
+STA: Found 5513744 new words after 8500000 samples
+Isotropic: Found 3859014 new words after 8500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.9 seconds
+	Completed generating 100000 signals in 31.0 seconds
+STA: Found 5556928 new words after 8600000 samples
+Isotropic: Found 3892128 new words after 8600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.84s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 25.3 seconds
+	Completed generating 100000 signals in 32.5 seconds
+STA: Found 5599403 new words after 8700000 samples
+Isotropic: Found 3924748 new words after 8700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.00s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.7 seconds
+	Completed generating 100000 signals in 30.8 seconds
+STA: Found 5641739 new words after 8800000 samples
+Isotropic: Found 3957437 new words after 8800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.97s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 22.9 seconds
+	Completed generating 100000 signals in 31.8 seconds
+STA: Found 5683869 new words after 8900000 samples
+Isotropic: Found 3990011 new words after 8900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 25.4 seconds
+	Completed generating 100000 signals in 32.8 seconds
+STA: Found 5725730 new words after 9000000 samples
+Isotropic: Found 4022728 new words after 9000000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.88s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 24.2 seconds
+	Completed generating 100000 signals in 31.3 seconds
+STA: Found 5767191 new words after 9100000 samples
+Isotropic: Found 4055239 new words after 9100000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.50s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 30.5 seconds
+	Completed generating 100000 signals in 38.9 seconds
+STA: Found 5808305 new words after 9200000 samples
+Isotropic: Found 4087390 new words after 9200000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.88s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 24.6 seconds
+	Completed generating 100000 signals in 32.5 seconds
+STA: Found 5849411 new words after 9300000 samples
+Isotropic: Found 4119680 new words after 9300000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.26s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 26.2 seconds
+	Completed generating 100000 signals in 33.1 seconds
+STA: Found 5890060 new words after 9400000 samples
+Isotropic: Found 4151820 new words after 9400000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.85s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 24.2 seconds
+	Completed generating 100000 signals in 31.3 seconds
+STA: Found 5930428 new words after 9500000 samples
+Isotropic: Found 4183666 new words after 9500000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.81s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 25.0 seconds
+	Completed generating 100000 signals in 32.0 seconds
+STA: Found 5970427 new words after 9600000 samples
+Isotropic: Found 4215741 new words after 9600000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.86s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.5 seconds
+	Completed generating 100000 signals in 30.5 seconds
+STA: Found 6010276 new words after 9700000 samples
+Isotropic: Found 4247128 new words after 9700000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.66s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 23.2 seconds
+	Completed generating 100000 signals in 32.2 seconds
+STA: Found 6049721 new words after 9800000 samples
+Isotropic: Found 4278407 new words after 9800000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [5.80s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 25.2 seconds
+	Completed generating 100000 signals in 32.8 seconds
+STA: Found 6088995 new words after 9900000 samples
+Isotropic: Found 4309762 new words after 9900000 samples
+
+
+Wordgen command:
+sta/lib/wordgen sta/output/synthetic/two_ears/sta.prism --poly 5 --traj 100000 --receding 5 --output-format  json sta/output/synthetic/two_ears/abstract_trajectories.json.broken
+Precomputation file found ! [0.00]
+Reading Distribution[floating point; Poly; no s; clocks:{y; x; }; vars:{t; z; s; T; }] -> 5
+Sampling: [|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||] [6.33s]
+
+
+======================
+Generating concrete trajectories
+	Completed generating 10000000 signals in 25.5 seconds
+	Completed generating 100000 signals in 33.4 seconds
+STA: Found 6127867 new words after 10000000 samples
+Isotropic: Found 4340950 new words after 10000000 samples
+	Completed generating 10000000 signals in 2896.8 seconds
+[(100000, 99370), (200000, 197344), (300000, 294091), (400000, 389499), (500000, 483648), (600000, 576618), (700000, 668376), (800000, 758997), (900000, 848487), (1000000, 936893), (1100000, 1024240), (1200000, 1110336), (1300000, 1195514), (1400000, 1279584), (1500000, 1362478), (1600000, 1444569), (1700000, 1525733), (1800000, 1605978), (1900000, 1685460), (2000000, 1763760), (2100000, 1841203), (2200000, 1917925), (2300000, 1993584), (2400000, 2068534), (2500000, 2142917), (2600000, 2216335), (2700000, 2289041), (2800000, 2360910), (2900000, 2431940), (3000000, 2502093), (3100000, 2571686), (3200000, 2640346), (3300000, 2708573), (3400000, 2775829), (3500000, 2842827), (3600000, 2908812), (3700000, 2974283), (3800000, 3039014), (3900000, 3103117), (4000000, 3166590), (4100000, 3229279), (4200000, 3292035), (4300000, 3353765), (4400000, 3414815), (4500000, 3475233), (4600000, 3534898), (4700000, 3594163), (4800000, 3653087), (4900000, 3711768), (5000000, 3769496), (5100000, 3826871), (5200000, 3883576), (5300000, 3939792), (5400000, 3995495), (5500000, 4050777), (5600000, 4105604), (5700000, 4160171), (5800000, 4214189), (5900000, 4267778), (6000000, 4320317), (6100000, 4372981), (6200000, 4425325), (6300000, 4477194), (6400000, 4528523), (6500000, 4579071), (6600000, 4629498), (6700000, 4679426), (6800000, 4728750), (6900000, 4778024), (7000000, 4826796), (7100000, 4875295), (7200000, 4922931), (7300000, 4970204), (7400000, 5017098), (7500000, 5063987), (7600000, 5110289), (7700000, 5156530), (7800000, 5202237), (7900000, 5247747), (8000000, 5293222), (8100000, 5337994), (8200000, 5382348), (8300000, 5426819), (8400000, 5470568), (8500000, 5513744), (8600000, 5556928), (8700000, 5599403), (8800000, 5641739), (8900000, 5683869), (9000000, 5725730), (9100000, 5767191), (9200000, 5808305), (9300000, 5849411), (9400000, 5890060), (9500000, 5930428), (9600000, 5970427), (9700000, 6010276), (9800000, 6049721), (9900000, 6088995), (10000000, 6127867)]
+[(100000, 86774), (200000, 164142), (300000, 236791), (400000, 306439), (500000, 373714), (600000, 439284), (700000, 503119), (800000, 565321), (900000, 626015), (1000000, 686007), (1100000, 744480), (1200000, 802009), (1300000, 858737), (1400000, 914626), (1500000, 969487), (1600000, 1023839), (1700000, 1077619), (1800000, 1130801), (1900000, 1183107), (2000000, 1234779), (2100000, 1285740), (2200000, 1336422), (2300000, 1385961), (2400000, 1435414), (2500000, 1484099), (2600000, 1532850), (2700000, 1581244), (2800000, 1628829), (2900000, 1676131), (3000000, 1722778), (3100000, 1768928), (3200000, 1814864), (3300000, 1860503), (3400000, 1905633), (3500000, 1950203), (3600000, 1994530), (3700000, 2038327), (3800000, 2082024), (3900000, 2125318), (4000000, 2168489), (4100000, 2211258), (4200000, 2253946), (4300000, 2296102), (4400000, 2337846), (4500000, 2379578), (4600000, 2420679), (4700000, 2462018), (4800000, 2502725), (4900000, 2543328), (5000000, 2583768), (5100000, 2623670), (5200000, 2663112), (5300000, 2702530), (5400000, 2741932), (5500000, 2781114), (5600000, 2820020), (5700000, 2858428), (5800000, 2896943), (5900000, 2935468), (6000000, 2973441), (6100000, 3010994), (6200000, 3048556), (6300000, 3085961), (6400000, 3122732), (6500000, 3159723), (6600000, 3196341), (6700000, 3232794), (6800000, 3269146), (6900000, 3305213), (7000000, 3340838), (7100000, 3376672), (7200000, 3412270), (7300000, 3447916), (7400000, 3483288), (7500000, 3518093), (7600000, 3553011), (7700000, 3587753), (7800000, 3622488), (7900000, 3657119), (8000000, 3690958), (8100000, 3724762), (8200000, 3758586), (8300000, 3792192), (8400000, 3825475), (8500000, 3859014), (8600000, 3892128), (8700000, 3924748), (8800000, 3957437), (8900000, 3990011), (9000000, 4022728), (9100000, 4055239), (9200000, 4087390), (9300000, 4119680), (9400000, 4151820), (9500000, 4183666), (9600000, 4215741), (9700000, 4247128), (9800000, 4278407), (9900000, 4309762), (10000000, 4340950)]
+
+Process finished with exit code 0
