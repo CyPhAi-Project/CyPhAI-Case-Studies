@@ -8,9 +8,9 @@ from syma.automaton.symbolic_timed_automaton import SymbolicTimedAutomaton
 from syma.generation.input_generator import InputGenerator
 from symbolic_timed_automata.two_ears.two_ears_sta import build_two_ears_sta, CLOCK_UB
 
-STA_OUT_FNAME = "sta/output/synthetic/two_ears/sta.prism"
-ABSTRACT_TRAJ_FNAME = "sta/output/synthetic/two_ears/abstract_trajectories.json"
-CONCRETE_TRAJ_FNAME = "sta/output/synthetic/two_ears/concrete_trajectories.json"
+STA_OUT_FNAME = "symbolic_timed_automata/two_ears/output/sta.prism"
+ABSTRACT_TRAJ_FNAME = "symbolic_timed_automata/two_ears/output/abstract_trajectories.json"
+CONCRETE_TRAJ_FNAME = "symbolic_timed_automata/two_ears/output/concrete_trajectories.json"
 
 SIGNAL_LENGTH = 4
 TOT_N_SIGNALS = 10**6
