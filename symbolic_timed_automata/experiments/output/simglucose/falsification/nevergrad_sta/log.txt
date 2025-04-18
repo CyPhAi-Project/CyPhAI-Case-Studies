@@ -1,0 +1,1178 @@
+Computing abstraction of constraint snack3_to_breakfast
+Computing abstraction of constraint snack_2_to_dinner
+Computing abstraction of constraint breakfast_to_snack_1
+Computing abstraction of constraint breakfast_to_lunch
+Computing abstraction of constraint lunch_to_snack_2_with_s1
+Computing abstraction of constraint lunch_with_snack_1_to_dinner
+Computing abstraction of constraint lunch_to_snack_2_no_snack_1
+Computing abstraction of constraint snack_1_to_lunch
+Computing abstraction of constraint dinner_to_breakfast_no_snack_3
+Computing abstraction of constraint dinner_to_snack_3
+Starting Nevergrad run #1
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 31.14672238555113 
+iteration 2 cost: 31.297534325746597 
+iteration 3 cost: 31.14672238555113 
+iteration 4 cost: 30.51669038353417 
+iteration 5 cost: 30.505679610069024 
+iteration 6 cost: 30.505679610069024 
+iteration 7 cost: 28.350878035740664 
+iteration 8 cost: 26.66971592526008 
+iteration 9 cost: 26.66971592526008 
+iteration 10 cost: 20.861528199656533 
+iteration 11 cost: 22.25536876475499 
+iteration 12 cost: 20.861528199656533 
+iteration 13 cost: 13.943373249442814 
+iteration 14 cost: 13.943373249442814 
+iteration 15 cost: 13.943373249442814 
+iteration 16 cost: 13.943373249442814 
+iteration 17 cost: 13.943373249442814 
+iteration 18 cost: 13.943373249442814 
+iteration 19 cost: 13.943373249442814 
+iteration 20 cost: 5.590340965601371 
+iteration 21 cost: -1.0955543280616098 == VIOLATED
+Starting Nevergrad run #2
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 12.446460273713868 
+iteration 2 cost: 12.38167949914758 
+iteration 3 cost: 12.38167949914758 
+iteration 4 cost: 11.97705132630216 
+iteration 5 cost: 11.331649009317019 
+iteration 6 cost: 11.331649009317019 
+iteration 7 cost: 9.283033025994953 
+iteration 8 cost: 7.7422622160697046 
+iteration 9 cost: 7.7422622160697046 
+iteration 10 cost: 3.3294678361929897 
+iteration 11 cost: -2.529436236903777 == VIOLATED
+Starting Nevergrad run #3
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 51.863654077052786 
+iteration 2 cost: 51.80806116305784 
+iteration 3 cost: 51.80806116305784 
+iteration 4 cost: 51.62514503176229 
+iteration 5 cost: 51.399292073425755 
+iteration 6 cost: 51.399292073425755 
+iteration 7 cost: 49.96239673481371 
+iteration 8 cost: 50.04293965983183 
+iteration 9 cost: 49.96239673481371 
+iteration 10 cost: 47.5563513370185 
+iteration 11 cost: 47.71624726203035 
+iteration 12 cost: 47.5563513370185 
+iteration 13 cost: 38.63754950027831 
+iteration 14 cost: 38.63754950027831 
+iteration 15 cost: 38.63754950027831 
+iteration 16 cost: 38.63754950027831 
+iteration 17 cost: 38.63754950027831 
+iteration 18 cost: 38.63754950027831 
+iteration 19 cost: 38.63754950027831 
+iteration 20 cost: 30.08261389419394 
+iteration 21 cost: 42.61105048580178 
+iteration 22 cost: 30.25338294300485 
+iteration 23 cost: 42.61105048580178 
+iteration 24 cost: 30.08261389419394 
+iteration 25 cost: 42.61105048580178 
+iteration 26 cost: 30.107855117498048 
+iteration 27 cost: 42.613744478550785 
+iteration 28 cost: 29.91936986938626 
+iteration 29 cost: 42.44657079501732 
+iteration 30 cost: 29.91936986938626 
+iteration 31 cost: 42.44657079501732 
+iteration 32 cost: 48.54541232327168 
+iteration 33 cost: 28.35066532906582 
+iteration 34 cost: 28.352219455172303 
+iteration 35 cost: 21.39542767754422 
+iteration 36 cost: 39.98063855445436 
+iteration 37 cost: 21.39542767754422 
+iteration 38 cost: 19.914801339298407 
+iteration 39 cost: 18.797586180318433 
+iteration 40 cost: 21.409776499787426 
+iteration 41 cost: 18.797586180318433 
+iteration 42 cost: 16.274823854239784 
+iteration 43 cost: 16.274823854239784 
+iteration 44 cost: 15.407222651950917 
+iteration 45 cost: 15.407222651950917 
+iteration 46 cost: 14.564336122207436 
+iteration 47 cost: 14.564336122207436 
+iteration 48 cost: 14.64034583194561 
+iteration 49 cost: 14.948997994477708 
+iteration 50 cost: 16.24027784378643 
+iteration 51 cost: 15.061042502503383 
+iteration 52 cost: 17.95572530301429 
+iteration 53 cost: 15.076234406240687 
+iteration 54 cost: 13.543395706548537 
+iteration 55 cost: 13.543395706548537 
+iteration 56 cost: 9.70881636829455 
+iteration 57 cost: 10.440621146283632 
+iteration 58 cost: 10.683083445985403 
+iteration 59 cost: 8.140118127161472 
+iteration 60 cost: 7.847551133831928 
+iteration 61 cost: 7.847551133831928 
+iteration 62 cost: 8.367694390411671 
+iteration 63 cost: 8.196557645562294 
+iteration 64 cost: 9.69438046681148 
+iteration 65 cost: 7.847551133831928 
+iteration 66 cost: 7.832991824761521 
+iteration 67 cost: 8.565964370849983 
+iteration 68 cost: 8.478958628578425 
+iteration 69 cost: 7.566619484874991 
+iteration 70 cost: 7.88516430512486 
+iteration 71 cost: 7.566619484874991 
+iteration 72 cost: 7.859978698665984 
+iteration 73 cost: 7.566619484874991 
+iteration 74 cost: 7.806255819473279 
+iteration 75 cost: 10.795772841428928 
+iteration 76 cost: 5.236035699990111 
+iteration 77 cost: 2.6141828577913486 
+iteration 78 cost: 8.078664102830956 
+iteration 79 cost: 2.174067335263601 
+iteration 80 cost: 3.064290206806234 
+iteration 81 cost: 2.304751043786368 
+iteration 82 cost: 2.805266028156865 
+iteration 83 cost: 2.515461170766841 
+iteration 84 cost: 0.5614137177025782 
+iteration 85 cost: 1.8591577436717586 
+iteration 86 cost: 0.5614137177025782 
+iteration 87 cost: -0.9205073286398999 == VIOLATED
+Starting Nevergrad run #4
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 6.679488670769118 
+iteration 2 cost: 6.461420396278385 
+iteration 3 cost: 22.06325448231121 
+iteration 4 cost: 6.137606343556001 
+iteration 5 cost: 5.379402995768686 
+iteration 6 cost: 5.379402995768686 
+iteration 7 cost: 3.796879133233176 
+iteration 8 cost: 3.2727581931791434 
+iteration 9 cost: 3.2727581931791434 
+iteration 10 cost: 2.835919026935912 
+iteration 11 cost: 2.7333469658702256 
+iteration 12 cost: -0.5693578381825404 == VIOLATED
+Starting Nevergrad run #5
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 23.20374481432259 
+iteration 2 cost: 22.979441158384375 
+iteration 3 cost: 35.23064600777718 
+iteration 4 cost: 22.463120656247142 
+iteration 5 cost: 22.433669763815203 
+iteration 6 cost: 22.433669763815203 
+iteration 7 cost: 20.2643408395636 
+iteration 8 cost: 18.341289826291018 
+iteration 9 cost: 18.341289826291018 
+iteration 10 cost: 14.113031046461046 
+iteration 11 cost: 14.86012354286649 
+iteration 12 cost: 14.113031046461046 
+iteration 13 cost: 7.311530063378299 
+iteration 14 cost: 7.311530063378299 
+iteration 15 cost: 7.311530063378299 
+iteration 16 cost: 7.311530063378299 
+iteration 17 cost: 7.311530063378299 
+iteration 18 cost: 7.311530063378299 
+iteration 19 cost: 7.311530063378299 
+iteration 20 cost: 2.6754343197822408 
+iteration 21 cost: -0.8771913943151617 == VIOLATED
+Starting Nevergrad run #6
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 40.77424127994631 
+iteration 2 cost: 41.017967783601605 
+iteration 3 cost: 41.1263429018386 
+iteration 4 cost: 40.57970182497908 
+iteration 5 cost: 40.821119207299944 
+iteration 6 cost: 40.57970182497908 
+iteration 7 cost: 38.5416505666374 
+iteration 8 cost: 37.75052989901269 
+iteration 9 cost: 37.75052989901269 
+iteration 10 cost: 32.43127792897049 
+iteration 11 cost: 32.21531072833666 
+iteration 12 cost: 32.21531072833666 
+iteration 13 cost: 26.472681085612265 
+iteration 14 cost: 26.472681085612265 
+iteration 15 cost: 26.472681085612265 
+iteration 16 cost: 26.472681085612265 
+iteration 17 cost: 26.472681085612265 
+iteration 18 cost: 26.472681085612265 
+iteration 19 cost: 26.472681085612265 
+iteration 20 cost: 19.130682541559437 
+iteration 21 cost: 13.183686169307478 
+iteration 22 cost: 6.883942485519995 
+iteration 23 cost: 4.812975914213467 
+iteration 24 cost: 4.903222586432733 
+iteration 25 cost: 4.589995210606716 
+iteration 26 cost: 5.6118894157400945 
+iteration 27 cost: 4.697544780854244 
+iteration 28 cost: 6.185126716463117 
+iteration 29 cost: 4.589694049565381 
+iteration 30 cost: 5.979600371864706 
+iteration 31 cost: 3.37112565756361 
+iteration 32 cost: 4.346847237794549 
+iteration 33 cost: 3.37112565756361 
+iteration 34 cost: -0.0307782578136937 == VIOLATED
+Starting Nevergrad run #7
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 16.523687347895546 
+iteration 2 cost: 16.52953555626216 
+iteration 3 cost: 16.523687347895546 
+iteration 4 cost: 19.343438568812957 
+iteration 5 cost: 17.911767179984892 
+iteration 6 cost: 16.523687347895546 
+iteration 7 cost: 14.30379224196615 
+iteration 8 cost: 14.80940619747716 
+iteration 9 cost: 14.30379224196615 
+iteration 10 cost: 14.795184899317334 
+iteration 11 cost: 18.108303743514995 
+iteration 12 cost: 14.30379224196615 
+iteration 13 cost: 11.475000029386308 
+iteration 14 cost: 11.475000029386308 
+iteration 15 cost: 11.475000029386308 
+iteration 16 cost: 11.475000029386308 
+iteration 17 cost: 11.475000029386308 
+iteration 18 cost: 11.475000029386308 
+iteration 19 cost: 11.475000029386308 
+iteration 20 cost: 6.552508351364466 
+iteration 21 cost: 2.466723664013614 
+iteration 22 cost: 2.347215837547722 
+iteration 23 cost: 4.10912335023049 
+iteration 24 cost: 3.4329007644845717 
+iteration 25 cost: 3.849184696603288 
+iteration 26 cost: 4.236829192450102 
+iteration 27 cost: 2.347215837547722 
+iteration 28 cost: 4.164958922674913 
+iteration 29 cost: 2.8060107986703287 
+iteration 30 cost: 2.6122317742264727 
+iteration 31 cost: 1.602558868734505 
+iteration 32 cost: -1.217222273162676 == VIOLATED
+Starting Nevergrad run #8
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 27.45048106162625 
+iteration 2 cost: 27.36204702339512 
+iteration 3 cost: 26.35481739516746 
+iteration 4 cost: 25.82658339553724 
+iteration 5 cost: 27.00062526834199 
+iteration 6 cost: 25.82658339553724 
+iteration 7 cost: 23.65953593670453 
+iteration 8 cost: 23.423336410440655 
+iteration 9 cost: 23.423336410440655 
+iteration 10 cost: 18.939475895839195 
+iteration 11 cost: 21.795632212530094 
+iteration 12 cost: 18.939475895839195 
+iteration 13 cost: 14.11043362314237 
+iteration 14 cost: 14.11043362314237 
+iteration 15 cost: 14.11043362314237 
+iteration 16 cost: 14.11043362314237 
+iteration 17 cost: 14.11043362314237 
+iteration 18 cost: 14.11043362314237 
+iteration 19 cost: 14.11043362314237 
+iteration 20 cost: 6.763408309053958 
+iteration 21 cost: 1.1083455043324477 
+iteration 22 cost: 1.432850638964041 
+iteration 23 cost: 1.1953624551350828 
+iteration 24 cost: 0.608537206392981 
+iteration 25 cost: 1.0311859096955516 
+iteration 26 cost: 1.0031675983460246 
+iteration 27 cost: 0.608537206392981 
+iteration 28 cost: 0.553242567268029 
+iteration 29 cost: 0.7205325052414793 
+iteration 30 cost: 0.4310915773271802 
+iteration 31 cost: 0.4310915773271802 
+iteration 32 cost: 0.780203115610874 
+iteration 33 cost: -0.5861008061860389 == VIOLATED
+Starting Nevergrad run #9
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 3.6874852882038596 
+iteration 2 cost: 3.137518321155909 
+iteration 3 cost: 3.137518321155909 
+iteration 4 cost: 2.8257277928453135 
+iteration 5 cost: 4.890364681156527 
+iteration 6 cost: 2.8257277928453135 
+iteration 7 cost: 3.4342000656370715 
+iteration 8 cost: 2.913104209661171 
+iteration 9 cost: 2.8257277928453135 
+iteration 10 cost: 0.8033070396986233 
+iteration 11 cost: 6.091742421856949 
+iteration 12 cost: 0.8033070396986233 
+iteration 13 cost: 1.2601011924136998 
+iteration 14 cost: 0.8033070396986233 
+iteration 15 cost: 0.8033070396986233 
+iteration 16 cost: 0.8033070396986233 
+iteration 17 cost: 0.8033070396986233 
+iteration 18 cost: 0.8033070396986233 
+iteration 19 cost: 0.8033070396986233 
+iteration 20 cost: -3.824199480352675 == VIOLATED
+Starting Nevergrad run #10
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Process ID: 69166
+Simulation starts ...
+Simulation Completed!
+Reached target objective - the meal plan falsifies the safety property!
+iteration 1 cost: 13.983527728343446 
+iteration 2 cost: 13.720262330317496 
+iteration 3 cost: 13.720262330317496 
+iteration 4 cost: 13.566053616710377 
+iteration 5 cost: 13.02127594499332 
+iteration 6 cost: 13.02127594499332 
+iteration 7 cost: 12.121664500103563 
+iteration 8 cost: 12.095318995094203 
+iteration 9 cost: 4.018991444260379 
+iteration 10 cost: 2.082838686657027 
+iteration 11 cost: 0.3262127528921752 
+iteration 12 cost: 0.3262127528921752 
+iteration 13 cost: 2.3575651755905938 
+iteration 14 cost: 2.9813845884957573 
+iteration 15 cost: 0.3262127528921752 
+iteration 16 cost: -3.23435064481383 == VIOLATED

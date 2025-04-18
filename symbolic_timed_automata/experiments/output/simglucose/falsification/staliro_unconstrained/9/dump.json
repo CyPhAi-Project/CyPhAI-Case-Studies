@@ -1,0 +1,176 @@
+{
+  "elapsed_time": 39.145771503448486,
+  "falsified": true,
+  "history": [
+    {
+      "cost": 13.32864825784938,
+      "feasible": false,
+      "iteration": 0,
+      "violated": false
+    },
+    {
+      "cost": 19.544080390949844,
+      "feasible": false,
+      "iteration": 1,
+      "violated": false
+    },
+    {
+      "cost": 41.71380931510737,
+      "feasible": false,
+      "iteration": 2,
+      "violated": false
+    },
+    {
+      "cost": 20.962213632289533,
+      "feasible": false,
+      "iteration": 3,
+      "violated": false
+    },
+    {
+      "cost": 28.451429935806146,
+      "feasible": false,
+      "iteration": 4,
+      "violated": false
+    },
+    {
+      "cost": 25.189906925365847,
+      "feasible": false,
+      "iteration": 5,
+      "violated": false
+    },
+    {
+      "cost": 20.689805465032094,
+      "feasible": true,
+      "iteration": 6,
+      "violated": false
+    },
+    {
+      "cost": 0.7540569863827642,
+      "feasible": false,
+      "iteration": 7,
+      "violated": false
+    },
+    {
+      "cost": 0.98155519087409,
+      "feasible": false,
+      "iteration": 8,
+      "violated": false
+    },
+    {
+      "cost": 5.788619230566852,
+      "feasible": false,
+      "iteration": 9,
+      "violated": false
+    },
+    {
+      "cost": 18.598947183581743,
+      "feasible": false,
+      "iteration": 10,
+      "violated": false
+    },
+    {
+      "cost": 20.24097782811917,
+      "feasible": false,
+      "iteration": 11,
+      "violated": false
+    },
+    {
+      "cost": 25.53294900984737,
+      "feasible": false,
+      "iteration": 12,
+      "violated": false
+    },
+    {
+      "cost": 26.64878908422915,
+      "feasible": false,
+      "iteration": 13,
+      "violated": false
+    },
+    {
+      "cost": 35.5048301130434,
+      "feasible": false,
+      "iteration": 14,
+      "violated": false
+    },
+    {
+      "cost": 35.11127585169774,
+      "feasible": false,
+      "iteration": 15,
+      "violated": false
+    },
+    {
+      "cost": 35.85745268001466,
+      "feasible": false,
+      "iteration": 16,
+      "violated": false
+    },
+    {
+      "cost": 36.60408481689221,
+      "feasible": false,
+      "iteration": 17,
+      "violated": false
+    },
+    {
+      "cost": 32.61997727856462,
+      "feasible": false,
+      "iteration": 18,
+      "violated": false
+    },
+    {
+      "cost": 32.37729923699766,
+      "feasible": false,
+      "iteration": 19,
+      "violated": false
+    },
+    {
+      "cost": 32.95125430288729,
+      "feasible": false,
+      "iteration": 20,
+      "violated": false
+    },
+    {
+      "cost": 27.46550560130646,
+      "feasible": false,
+      "iteration": 21,
+      "violated": false
+    },
+    {
+      "cost": 16.32773806560344,
+      "feasible": false,
+      "iteration": 22,
+      "violated": false
+    },
+    {
+      "cost": 15.259502132508388,
+      "feasible": false,
+      "iteration": 23,
+      "violated": false
+    },
+    {
+      "cost": 14.14632759176098,
+      "feasible": false,
+      "iteration": 24,
+      "violated": false
+    },
+    {
+      "cost": 27.26197070040834,
+      "feasible": false,
+      "iteration": 25,
+      "violated": false
+    },
+    {
+      "cost": 9.959836216190084,
+      "feasible": false,
+      "iteration": 26,
+      "violated": false
+    },
+    {
+      "cost": -3.133009655368298,
+      "feasible": false,
+      "iteration": 27,
+      "violated": true
+    }
+  ],
+  "is_solution_feasible": false,
+  "seed": 31241
+}

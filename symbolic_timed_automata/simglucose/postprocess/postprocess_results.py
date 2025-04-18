@@ -7,13 +7,18 @@ experiments = ["staliro_unconstrained",
                "staliro_penalties",
                "staliro_sta",
                "nomad_constrained",
-               "nomad_sta"
+               "nomad_sta",
+               "nevergrad_sta",
+               "nevergrad_constrained",
+               "isotropic",
+               "uniform_sta"
                ]
 
-base_path = "../out/three_snacks/falsification/p10/d3.0_i500_r10"
+# base_path = "../out/three_snacks/falsification/p10/d3.0_i500_r10"
+base_path = "/home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification"
 
 results = {}
-result_dump_path = "../out/three_snacks/falsification/results"
+result_dump_path = "/home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/postprocessed_results"
 
 # limits = [100,200,250,300,350,400,500]
 limits = [500]
@@ -30,27 +35,50 @@ for l in limits:
         infeasible_iters = []
         for run in expres["runs"]:
             infeasible_steps = 0
-            for step in run:
-                if step["cost"] > BASE_PENALTY or ("feasible" in step and not step["feasible"]):
-                    infeasible_steps += 1
-                if step["iteration"] >= l:
-                    break
-                if step["cost"] < worst:
-                    if "feasible" not in step or ("feasible" in step and step["feasible"]):
-                        worst = step["cost"]
-                if exp in ["staliro_unconstrained", "staliro_penalties", "staliro_sta", "nomad_sta"]:
-                    if step["violated"]:
-                        falsified += 1
+            violated = False
+            if exp not in ["isotropic", "uniform_sta"]:
+                for step in run:
+                    if step["cost"] > BASE_PENALTY or ("feasible" in step and not step["feasible"]):
+                        infeasible_steps += 1
+                    '''if step["iteration"] >= l:
+                        break'''
+                    if step["cost"] < worst:
                         if "feasible" not in step or ("feasible" in step and step["feasible"]):
-                            unconstr_feasible += 1
-                        iters.append(step["iteration"])
-                        break
-                else:
-                    if step["feasible"] and step["violated"]:
-                        falsified += 1
-                        iters.append(step["iteration"])
-                        break
+                            worst = step["cost"]
+
+                    if exp in ["staliro_unconstrained", "staliro_penalties", "staliro_sta", "nomad_sta", "nevergrad_sta"]:
+                        if step["violated"]:
+                            violated = True
+                            falsified += 1
+                            if "feasible" not in step or ("feasible" in step and step["feasible"]):
+                                unconstr_feasible += 1
+                            iters.append(step["iteration"]+1)
+                            break
+                    else:
+                        if step["feasible"] and step["violated"]:
+                            violated = True
+                            falsified += 1
+                            iters.append(step["iteration"]+1)
+                            break
+                if not violated:
+                    iters.append(step["iteration"]+1)
                 infeasible_iters.append(infeasible_steps)
+            else: # isotropic or uniform_sta
+                evaluations = run["evaluations"]
+                for i, cost in enumerate(evaluations):
+                    if cost < worst:
+                        worst = cost
+                    if cost < 0:
+                        iters.append(i+1)
+                        violated = True
+                        falsified += 1
+                        break
+                if not violated:
+                    iters.append(len(evaluations))
+                infeasible_iters.append(0)
+
+
+
         mean_infeasible_iter = np.mean(np.array(infeasible_iters))
         median_infeasible_iter = np.median(np.array(infeasible_iters))
         mean_fals_iter = np.mean(np.array(iters))

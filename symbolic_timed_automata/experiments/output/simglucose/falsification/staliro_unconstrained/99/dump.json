@@ -1,0 +1,110 @@
+{
+  "elapsed_time": 23.747414588928223,
+  "falsified": true,
+  "history": [
+    {
+      "cost": -1.9187041007378696,
+      "feasible": false,
+      "iteration": 0,
+      "violated": true
+    },
+    {
+      "cost": 20.149079312816255,
+      "feasible": false,
+      "iteration": 1,
+      "violated": false
+    },
+    {
+      "cost": 17.150544505359207,
+      "feasible": false,
+      "iteration": 2,
+      "violated": false
+    },
+    {
+      "cost": 19.18426107900646,
+      "feasible": false,
+      "iteration": 3,
+      "violated": false
+    },
+    {
+      "cost": 16.268132013119143,
+      "feasible": false,
+      "iteration": 4,
+      "violated": false
+    },
+    {
+      "cost": 15.03140332705793,
+      "feasible": false,
+      "iteration": 5,
+      "violated": false
+    },
+    {
+      "cost": 14.708364331917878,
+      "feasible": false,
+      "iteration": 6,
+      "violated": false
+    },
+    {
+      "cost": 22.68246640846573,
+      "feasible": false,
+      "iteration": 7,
+      "violated": false
+    },
+    {
+      "cost": 21.24683402026824,
+      "feasible": false,
+      "iteration": 8,
+      "violated": false
+    },
+    {
+      "cost": 1.6310305101507083,
+      "feasible": false,
+      "iteration": 9,
+      "violated": false
+    },
+    {
+      "cost": 15.539177177161847,
+      "feasible": false,
+      "iteration": 10,
+      "violated": false
+    },
+    {
+      "cost": 21.041758419171614,
+      "feasible": false,
+      "iteration": 11,
+      "violated": false
+    },
+    {
+      "cost": 4.453085516244741,
+      "feasible": false,
+      "iteration": 12,
+      "violated": false
+    },
+    {
+      "cost": 4.7217300248484975,
+      "feasible": false,
+      "iteration": 13,
+      "violated": false
+    },
+    {
+      "cost": -1.278452938608254,
+      "feasible": false,
+      "iteration": 14,
+      "violated": true
+    },
+    {
+      "cost": -1.309622212489728,
+      "feasible": false,
+      "iteration": 15,
+      "violated": true
+    },
+    {
+      "cost": -7.519646177217808,
+      "feasible": false,
+      "iteration": 16,
+      "violated": true
+    }
+  ],
+  "is_solution_feasible": false,
+  "seed": 40837
+}

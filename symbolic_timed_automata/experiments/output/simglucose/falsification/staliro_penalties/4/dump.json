@@ -1,0 +1,3007 @@
+{
+  "elapsed_time": 688.8816831111908,
+  "falsified": false,
+  "history": [
+    {
+      "cost": 3029.448098168946,
+      "iteration": 0,
+      "robustness": 25.637663028302683,
+      "violated": false
+    },
+    {
+      "cost": 3025.079328770237,
+      "iteration": 1,
+      "robustness": 22.52127807256798,
+      "violated": false
+    },
+    {
+      "cost": 3034.1209982611945,
+      "iteration": 2,
+      "robustness": 28.177352133836422,
+      "violated": false
+    },
+    {
+      "cost": 3034.1584721722857,
+      "iteration": 3,
+      "robustness": 29.65844643798033,
+      "violated": false
+    },
+    {
+      "cost": 3012.5148201754923,
+      "iteration": 4,
+      "robustness": 7.14611219453154,
+      "violated": false
+    },
+    {
+      "cost": 3039.38505903594,
+      "iteration": 5,
+      "robustness": 36.2453320804963,
+      "violated": false
+    },
+    {
+      "cost": 2030.8062349625725,
+      "iteration": 6,
+      "robustness": 30.332996464600086,
+      "violated": false
+    },
+    {
+      "cost": 3047.6476334154922,
+      "iteration": 7,
+      "robustness": 41.610054415496194,
+      "violated": false
+    },
+    {
+      "cost": 3034.05107075218,
+      "iteration": 8,
+      "robustness": 29.759821342861812,
+      "violated": false
+    },
+    {
+      "cost": 1021.1957464485849,
+      "iteration": 9,
+      "robustness": 20.70717336306822,
+      "violated": false
+    },
+    {
+      "cost": 3037.5018195388725,
+      "iteration": 10,
+      "robustness": 32.06084265442341,
+      "violated": false
+    },
+    {
+      "cost": 2013.7660504358116,
+      "iteration": 11,
+      "robustness": 11.97599076500569,
+      "violated": false
+    },
+    {
+      "cost": 1023.1411704850859,
+      "iteration": 12,
+      "robustness": 16.339937135718003,
+      "violated": false
+    },
+    {
+      "cost": 3027.51065654809,
+      "iteration": 13,
+      "robustness": 15.54077006632815,
+      "violated": false
+    },
+    {
+      "cost": 1023.1507260338936,
+      "iteration": 14,
+      "robustness": 16.3494926845257,
+      "violated": false
+    },
+    {
+      "cost": 1023.1504440714709,
+      "iteration": 15,
+      "robustness": 16.349210722102896,
+      "violated": false
+    },
+    {
+      "cost": 1022.8837595411806,
+      "iteration": 16,
+      "robustness": 16.082526191812534,
+      "violated": false
+    },
+    {
+      "cost": 3012.7847401160006,
+      "iteration": 17,
+      "robustness": 2.5351623739307456,
+      "violated": false
+    },
+    {
+      "cost": 21.666403505190317,
+      "iteration": 18,
+      "robustness": 21.666403505190317,
+      "violated": false
+    },
+    {
+      "cost": 21.314943066501158,
+      "iteration": 19,
+      "robustness": 21.314943066501158,
+      "violated": false
+    },
+    {
+      "cost": 1028.4225610245526,
+      "iteration": 20,
+      "robustness": 26.58488581073871,
+      "violated": false
+    },
+    {
+      "cost": 2047.3075656816063,
+      "iteration": 21,
+      "robustness": 41.15473223288345,
+      "violated": false
+    },
+    {
+      "cost": 24.552527345310395,
+      "iteration": 22,
+      "robustness": 24.552527345310395,
+      "violated": false
+    },
+    {
+      "cost": 29.369798321785282,
+      "iteration": 23,
+      "robustness": 29.369798321785282,
+      "violated": false
+    },
+    {
+      "cost": 26.62441993189296,
+      "iteration": 24,
+      "robustness": 26.62441993189296,
+      "violated": false
+    },
+    {
+      "cost": 4032.0779547632756,
+      "iteration": 25,
+      "robustness": 28.069916331869493,
+      "violated": false
+    },
+    {
+      "cost": 4024.116594450143,
+      "iteration": 26,
+      "robustness": 5.527269096639799,
+      "violated": false
+    },
+    {
+      "cost": 2032.1292047049894,
+      "iteration": 27,
+      "robustness": 28.842430084575568,
+      "violated": false
+    },
+    {
+      "cost": 5057.064711606523,
+      "iteration": 28,
+      "robustness": 36.36951318049978,
+      "violated": false
+    },
+    {
+      "cost": 3037.2241248308837,
+      "iteration": 29,
+      "robustness": 32.76860639799084,
+      "violated": false
+    },
+    {
+      "cost": 3028.773568928977,
+      "iteration": 30,
+      "robustness": 14.162837222953655,
+      "violated": false
+    },
+    {
+      "cost": 5060.674065821609,
+      "iteration": 31,
+      "robustness": 40.73941277786187,
+      "violated": false
+    },
+    {
+      "cost": 3052.4524122769494,
+      "iteration": 32,
+      "robustness": 45.95319223818532,
+      "violated": false
+    },
+    {
+      "cost": 2038.8954977662218,
+      "iteration": 33,
+      "robustness": 35.14892881819118,
+      "violated": false
+    },
+    {
+      "cost": 3022.198131273117,
+      "iteration": 34,
+      "robustness": 17.64748976620669,
+      "violated": false
+    },
+    {
+      "cost": 4040.956299818018,
+      "iteration": 35,
+      "robustness": 34.916611446896326,
+      "violated": false
+    },
+    {
+      "cost": 4020.3302999893804,
+      "iteration": 36,
+      "robustness": 12.811572031177846,
+      "violated": false
+    },
+    {
+      "cost": 2030.8104600528907,
+      "iteration": 37,
+      "robustness": 25.73807399484319,
+      "violated": false
+    },
+    {
+      "cost": 26.592550728857816,
+      "iteration": 38,
+      "robustness": 26.592550728857816,
+      "violated": false
+    },
+    {
+      "cost": 26.735399805238018,
+      "iteration": 39,
+      "robustness": 26.735399805238018,
+      "violated": false
+    },
+    {
+      "cost": 26.605732401081312,
+      "iteration": 40,
+      "robustness": 26.605732401081312,
+      "violated": false
+    },
+    {
+      "cost": 2024.2833533519308,
+      "iteration": 41,
+      "robustness": 21.313013653213744,
+      "violated": false
+    },
+    {
+      "cost": 1028.4192173014346,
+      "iteration": 42,
+      "robustness": 19.967404762185055,
+      "violated": false
+    },
+    {
+      "cost": 24.525079710222514,
+      "iteration": 43,
+      "robustness": 24.525079710222514,
+      "violated": false
+    },
+    {
+      "cost": 23.734264747762268,
+      "iteration": 44,
+      "robustness": 23.734264747762268,
+      "violated": false
+    },
+    {
+      "cost": 2041.654317192975,
+      "iteration": 45,
+      "robustness": 36.07273665653503,
+      "violated": false
+    },
+    {
+      "cost": 28.219956171590724,
+      "iteration": 46,
+      "robustness": 28.219956171590724,
+      "violated": false
+    },
+    {
+      "cost": 28.239351399223807,
+      "iteration": 47,
+      "robustness": 28.239351399223807,
+      "violated": false
+    },
+    {
+      "cost": 28.163510744497756,
+      "iteration": 48,
+      "robustness": 28.163510744497756,
+      "violated": false
+    },
+    {
+      "cost": 3022.0596209991786,
+      "iteration": 49,
+      "robustness": 6.134718396148273,
+      "violated": false
+    },
+    {
+      "cost": 2023.8692527884075,
+      "iteration": 50,
+      "robustness": 20.403022366149088,
+      "violated": false
+    },
+    {
+      "cost": 5012.450536602072,
+      "iteration": 51,
+      "robustness": -7.925677023001484,
+      "violated": false
+    },
+    {
+      "cost": 3015.304139795403,
+      "iteration": 52,
+      "robustness": 12.626419598857993,
+      "violated": false
+    },
+    {
+      "cost": 3023.2551335255425,
+      "iteration": 53,
+      "robustness": 20.889160075299102,
+      "violated": false
+    },
+    {
+      "cost": 5019.314033773794,
+      "iteration": 54,
+      "robustness": 5.606395808114598,
+      "violated": false
+    },
+    {
+      "cost": 2031.273229675322,
+      "iteration": 55,
+      "robustness": 24.605869928329454,
+      "violated": false
+    },
+    {
+      "cost": 4030.904584949072,
+      "iteration": 56,
+      "robustness": 29.779624198730886,
+      "violated": false
+    },
+    {
+      "cost": 4020.647179033595,
+      "iteration": 57,
+      "robustness": 13.110446926194015,
+      "violated": false
+    },
+    {
+      "cost": 6040.874871129543,
+      "iteration": 58,
+      "robustness": 19.39778151586721,
+      "violated": false
+    },
+    {
+      "cost": 3016.745491448113,
+      "iteration": 59,
+      "robustness": 14.350206460126941,
+      "violated": false
+    },
+    {
+      "cost": 1035.358959561786,
+      "iteration": 60,
+      "robustness": 33.59487524127054,
+      "violated": false
+    },
+    {
+      "cost": 2030.4055158519714,
+      "iteration": 61,
+      "robustness": 27.542102814239115,
+      "violated": false
+    },
+    {
+      "cost": 1033.519215653187,
+      "iteration": 62,
+      "robustness": 27.69029138470296,
+      "violated": false
+    },
+    {
+      "cost": 27.610398337722046,
+      "iteration": 63,
+      "robustness": 27.610398337722046,
+      "violated": false
+    },
+    {
+      "cost": 28.6153235895394,
+      "iteration": 64,
+      "robustness": 28.6153235895394,
+      "violated": false
+    },
+    {
+      "cost": 29.093185693092494,
+      "iteration": 65,
+      "robustness": 29.093185693092494,
+      "violated": false
+    },
+    {
+      "cost": 30.11091740954234,
+      "iteration": 66,
+      "robustness": 30.11091740954234,
+      "violated": false
+    },
+    {
+      "cost": 30.789406781608477,
+      "iteration": 67,
+      "robustness": 30.789406781608477,
+      "violated": false
+    },
+    {
+      "cost": 34.436652047680795,
+      "iteration": 68,
+      "robustness": 34.436652047680795,
+      "violated": false
+    },
+    {
+      "cost": 2043.067512468137,
+      "iteration": 69,
+      "robustness": 38.34586876694121,
+      "violated": false
+    },
+    {
+      "cost": 1023.7256610440596,
+      "iteration": 70,
+      "robustness": 21.561519165573927,
+      "violated": false
+    },
+    {
+      "cost": 33.9968780583324,
+      "iteration": 71,
+      "robustness": 33.9968780583324,
+      "violated": false
+    },
+    {
+      "cost": 34.407097295805926,
+      "iteration": 72,
+      "robustness": 34.407097295805926,
+      "violated": false
+    },
+    {
+      "cost": 4038.920252557402,
+      "iteration": 73,
+      "robustness": 36.977315309946675,
+      "violated": false
+    },
+    {
+      "cost": 3027.0398969079793,
+      "iteration": 74,
+      "robustness": 20.88028182345036,
+      "violated": false
+    },
+    {
+      "cost": 3028.8328984445648,
+      "iteration": 75,
+      "robustness": 27.297203033299823,
+      "violated": false
+    },
+    {
+      "cost": 5044.170805191851,
+      "iteration": 76,
+      "robustness": 20.19257276714481,
+      "violated": false
+    },
+    {
+      "cost": 4040.00697181246,
+      "iteration": 77,
+      "robustness": 33.399065076026744,
+      "violated": false
+    },
+    {
+      "cost": 4031.112258662418,
+      "iteration": 78,
+      "robustness": 22.367313210800432,
+      "violated": false
+    },
+    {
+      "cost": 3011.2046336104586,
+      "iteration": 79,
+      "robustness": 8.774319915236575,
+      "violated": false
+    },
+    {
+      "cost": 3028.3410065545513,
+      "iteration": 80,
+      "robustness": 24.00817888218903,
+      "violated": false
+    },
+    {
+      "cost": 4047.4279587529677,
+      "iteration": 81,
+      "robustness": 28.873285442598558,
+      "violated": false
+    },
+    {
+      "cost": 4031.232081730152,
+      "iteration": 82,
+      "robustness": 16.989896673942624,
+      "violated": false
+    },
+    {
+      "cost": 3031.258205573218,
+      "iteration": 83,
+      "robustness": 27.08036090354858,
+      "violated": false
+    },
+    {
+      "cost": 4029.8100801905084,
+      "iteration": 84,
+      "robustness": 21.9397858356526,
+      "violated": false
+    },
+    {
+      "cost": 2037.5861727139177,
+      "iteration": 85,
+      "robustness": 34.36029711274519,
+      "violated": false
+    },
+    {
+      "cost": 34.442274343608005,
+      "iteration": 86,
+      "robustness": 34.442274343608005,
+      "violated": false
+    },
+    {
+      "cost": 34.495687427723624,
+      "iteration": 87,
+      "robustness": 34.495687427723624,
+      "violated": false
+    },
+    {
+      "cost": 3046.397547578802,
+      "iteration": 88,
+      "robustness": 34.90106635390754,
+      "violated": false
+    },
+    {
+      "cost": 2033.342528071414,
+      "iteration": 89,
+      "robustness": 31.58349890836641,
+      "violated": false
+    },
+    {
+      "cost": 1029.125099233911,
+      "iteration": 90,
+      "robustness": 28.216323908046405,
+      "violated": false
+    },
+    {
+      "cost": 35.255164452148705,
+      "iteration": 91,
+      "robustness": 35.255164452148705,
+      "violated": false
+    },
+    {
+      "cost": 34.523020384186935,
+      "iteration": 92,
+      "robustness": 34.523020384186935,
+      "violated": false
+    },
+    {
+      "cost": 1034.4511858901612,
+      "iteration": 93,
+      "robustness": 33.48449464576774,
+      "violated": false
+    },
+    {
+      "cost": 1028.7705704751052,
+      "iteration": 94,
+      "robustness": 18.601927204020313,
+      "violated": false
+    },
+    {
+      "cost": 36.17570275215974,
+      "iteration": 95,
+      "robustness": 36.17570275215974,
+      "violated": false
+    },
+    {
+      "cost": 40.359597418572875,
+      "iteration": 96,
+      "robustness": 40.359597418572875,
+      "violated": false
+    },
+    {
+      "cost": 5062.057748416798,
+      "iteration": 97,
+      "robustness": 22.62371955941005,
+      "violated": false
+    },
+    {
+      "cost": 4039.4429963952894,
+      "iteration": 98,
+      "robustness": 37.00295878434888,
+      "violated": false
+    },
+    {
+      "cost": 4059.971568875274,
+      "iteration": 99,
+      "robustness": 29.529813505036913,
+      "violated": false
+    },
+    {
+      "cost": 3017.885017446243,
+      "iteration": 100,
+      "robustness": 12.221388631501227,
+      "violated": false
+    },
+    {
+      "cost": 3026.61228803246,
+      "iteration": 101,
+      "robustness": 22.490649205143114,
+      "violated": false
+    },
+    {
+      "cost": 2026.916205120126,
+      "iteration": 102,
+      "robustness": 25.75942780528429,
+      "violated": false
+    },
+    {
+      "cost": 1019.1142268714123,
+      "iteration": 103,
+      "robustness": 18.869634607117646,
+      "violated": false
+    },
+    {
+      "cost": 3020.6877636924632,
+      "iteration": 104,
+      "robustness": 10.586799354875993,
+      "violated": false
+    },
+    {
+      "cost": 6053.440326281501,
+      "iteration": 105,
+      "robustness": 29.536113799460296,
+      "violated": false
+    },
+    {
+      "cost": 4031.0421639095516,
+      "iteration": 106,
+      "robustness": 25.75245757205319,
+      "violated": false
+    },
+    {
+      "cost": 4041.399048078096,
+      "iteration": 107,
+      "robustness": 26.4075234180672,
+      "violated": false
+    },
+    {
+      "cost": 5045.961276342462,
+      "iteration": 108,
+      "robustness": 27.80274141703083,
+      "violated": false
+    },
+    {
+      "cost": 2040.9112620851677,
+      "iteration": 109,
+      "robustness": 39.402429049341066,
+      "violated": false
+    },
+    {
+      "cost": 39.99045655838205,
+      "iteration": 110,
+      "robustness": 39.99045655838205,
+      "violated": false
+    },
+    {
+      "cost": 39.89250241136523,
+      "iteration": 111,
+      "robustness": 39.89250241136523,
+      "violated": false
+    },
+    {
+      "cost": 38.609339823620175,
+      "iteration": 112,
+      "robustness": 38.609339823620175,
+      "violated": false
+    },
+    {
+      "cost": 2037.1544782290184,
+      "iteration": 113,
+      "robustness": 34.990222060489074,
+      "violated": false
+    },
+    {
+      "cost": 36.22026964026247,
+      "iteration": 114,
+      "robustness": 36.22026964026247,
+      "violated": false
+    },
+    {
+      "cost": 36.869636674711444,
+      "iteration": 115,
+      "robustness": 36.869636674711444,
+      "violated": false
+    },
+    {
+      "cost": 40.171118182859885,
+      "iteration": 116,
+      "robustness": 40.171118182859885,
+      "violated": false
+    },
+    {
+      "cost": 2040.9908172295832,
+      "iteration": 117,
+      "robustness": 38.97313798902863,
+      "violated": false
+    },
+    {
+      "cost": 26.29651483611474,
+      "iteration": 118,
+      "robustness": 26.29651483611474,
+      "violated": false
+    },
+    {
+      "cost": 26.37299144213182,
+      "iteration": 119,
+      "robustness": 26.37299144213182,
+      "violated": false
+    },
+    {
+      "cost": 22.363817208123862,
+      "iteration": 120,
+      "robustness": 22.363817208123862,
+      "violated": false
+    },
+    {
+      "cost": 4021.4074422020444,
+      "iteration": 121,
+      "robustness": 18.295373399926078,
+      "violated": false
+    },
+    {
+      "cost": 2039.9372239885624,
+      "iteration": 122,
+      "robustness": 38.82780492478116,
+      "violated": false
+    },
+    {
+      "cost": 5052.666598182387,
+      "iteration": 123,
+      "robustness": 37.19231769557203,
+      "violated": false
+    },
+    {
+      "cost": 4025.5987641269003,
+      "iteration": 124,
+      "robustness": 14.058497434261767,
+      "violated": false
+    },
+    {
+      "cost": 2036.7414174398248,
+      "iteration": 125,
+      "robustness": 33.70887553382926,
+      "violated": false
+    },
+    {
+      "cost": 2028.1508991427006,
+      "iteration": 126,
+      "robustness": 26.323324137109594,
+      "violated": false
+    },
+    {
+      "cost": 3027.1114480440224,
+      "iteration": 127,
+      "robustness": 21.246794324433083,
+      "violated": false
+    },
+    {
+      "cost": 4054.604733030569,
+      "iteration": 128,
+      "robustness": 40.4327578239855,
+      "violated": false
+    },
+    {
+      "cost": 6022.261323677297,
+      "iteration": 129,
+      "robustness": 5.346363542522454,
+      "violated": false
+    },
+    {
+      "cost": 4051.0551825194643,
+      "iteration": 130,
+      "robustness": 40.24652019944294,
+      "violated": false
+    },
+    {
+      "cost": 11.505648106819294,
+      "iteration": 131,
+      "robustness": 11.505648106819294,
+      "violated": false
+    },
+    {
+      "cost": 2005.963679234805,
+      "iteration": 132,
+      "robustness": 2.1454755818290323,
+      "violated": false
+    },
+    {
+      "cost": 2014.0826572313715,
+      "iteration": 133,
+      "robustness": 11.360758168976318,
+      "violated": false
+    },
+    {
+      "cost": 11.380639079617424,
+      "iteration": 134,
+      "robustness": 11.380639079617424,
+      "violated": false
+    },
+    {
+      "cost": 11.63452946925318,
+      "iteration": 135,
+      "robustness": 11.63452946925318,
+      "violated": false
+    },
+    {
+      "cost": 12.17211246307528,
+      "iteration": 136,
+      "robustness": 12.17211246307528,
+      "violated": false
+    },
+    {
+      "cost": 12.933390620910359,
+      "iteration": 137,
+      "robustness": 12.933390620910359,
+      "violated": false
+    },
+    {
+      "cost": 14.209070616036001,
+      "iteration": 138,
+      "robustness": 14.209070616036001,
+      "violated": false
+    },
+    {
+      "cost": 13.683058174939475,
+      "iteration": 139,
+      "robustness": 13.683058174939475,
+      "violated": false
+    },
+    {
+      "cost": 13.304930203951145,
+      "iteration": 140,
+      "robustness": 13.304930203951145,
+      "violated": false
+    },
+    {
+      "cost": 1038.218529932483,
+      "iteration": 141,
+      "robustness": 36.58161419844524,
+      "violated": false
+    },
+    {
+      "cost": 23.425128738131804,
+      "iteration": 142,
+      "robustness": 23.425128738131804,
+      "violated": false
+    },
+    {
+      "cost": 19.753800234013497,
+      "iteration": 143,
+      "robustness": 19.753800234013497,
+      "violated": false
+    },
+    {
+      "cost": 3027.190807213826,
+      "iteration": 144,
+      "robustness": 19.560270338429333,
+      "violated": false
+    },
+    {
+      "cost": 4025.883025767657,
+      "iteration": 145,
+      "robustness": 12.528973707664306,
+      "violated": false
+    },
+    {
+      "cost": 3013.5787838726046,
+      "iteration": 146,
+      "robustness": -2.0297866658567045,
+      "violated": false
+    },
+    {
+      "cost": 3037.341489423579,
+      "iteration": 147,
+      "robustness": 34.01584500870712,
+      "violated": false
+    },
+    {
+      "cost": 5010.0392947789,
+      "iteration": 148,
+      "robustness": 0.466234393016677,
+      "violated": false
+    },
+    {
+      "cost": 3045.443123896689,
+      "iteration": 149,
+      "robustness": 39.00660960850189,
+      "violated": false
+    },
+    {
+      "cost": 3017.9154922289235,
+      "iteration": 150,
+      "robustness": 7.4407589433174195,
+      "violated": false
+    },
+    {
+      "cost": 3013.430074512369,
+      "iteration": 151,
+      "robustness": 9.488659418530219,
+      "violated": false
+    },
+    {
+      "cost": 1023.8444925418478,
+      "iteration": 152,
+      "robustness": 22.925340840814727,
+      "violated": false
+    },
+    {
+      "cost": 2012.1682860747799,
+      "iteration": 153,
+      "robustness": 9.956866674952181,
+      "violated": false
+    },
+    {
+      "cost": 4033.579554551014,
+      "iteration": 154,
+      "robustness": 27.083366984234402,
+      "violated": false
+    },
+    {
+      "cost": 4055.347317511365,
+      "iteration": 155,
+      "robustness": 46.06295347787466,
+      "violated": false
+    },
+    {
+      "cost": 2027.4149234358756,
+      "iteration": 156,
+      "robustness": 24.1684289030801,
+      "violated": false
+    },
+    {
+      "cost": 2020.4231478895742,
+      "iteration": 157,
+      "robustness": 19.687823717271215,
+      "violated": false
+    },
+    {
+      "cost": 1020.1142564986724,
+      "iteration": 158,
+      "robustness": 19.620464024402494,
+      "violated": false
+    },
+    {
+      "cost": 19.7690421921355,
+      "iteration": 159,
+      "robustness": 19.7690421921355,
+      "violated": false
+    },
+    {
+      "cost": 19.70080766754758,
+      "iteration": 160,
+      "robustness": 19.70080766754758,
+      "violated": false
+    },
+    {
+      "cost": 19.546711277940517,
+      "iteration": 161,
+      "robustness": 19.546711277940517,
+      "violated": false
+    },
+    {
+      "cost": 19.57292479706946,
+      "iteration": 162,
+      "robustness": 19.57292479706946,
+      "violated": false
+    },
+    {
+      "cost": 20.827406357423627,
+      "iteration": 163,
+      "robustness": 20.827406357423627,
+      "violated": false
+    },
+    {
+      "cost": 19.925731303620267,
+      "iteration": 164,
+      "robustness": 19.925731303620267,
+      "violated": false
+    },
+    {
+      "cost": 2023.430254020811,
+      "iteration": 165,
+      "robustness": 21.302200385452196,
+      "violated": false
+    },
+    {
+      "cost": 34.35907864836359,
+      "iteration": 166,
+      "robustness": 34.35907864836359,
+      "violated": false
+    },
+    {
+      "cost": 16.069495158424388,
+      "iteration": 167,
+      "robustness": 16.069495158424388,
+      "violated": false
+    },
+    {
+      "cost": 3023.6795786150324,
+      "iteration": 168,
+      "robustness": 16.18179660008184,
+      "violated": false
+    },
+    {
+      "cost": 3024.711269643562,
+      "iteration": 169,
+      "robustness": 10.455255683915823,
+      "violated": false
+    },
+    {
+      "cost": 4041.077165452106,
+      "iteration": 170,
+      "robustness": 35.11003168373725,
+      "violated": false
+    },
+    {
+      "cost": 5041.317515138308,
+      "iteration": 171,
+      "robustness": 16.94003600045582,
+      "violated": false
+    },
+    {
+      "cost": 5040.827923558476,
+      "iteration": 172,
+      "robustness": 29.97982475970494,
+      "violated": false
+    },
+    {
+      "cost": 2022.0445544789234,
+      "iteration": 173,
+      "robustness": 18.92622021454534,
+      "violated": false
+    },
+    {
+      "cost": 1017.4665867994213,
+      "iteration": 174,
+      "robustness": 16.367537935324947,
+      "violated": false
+    },
+    {
+      "cost": 1024.2564834701482,
+      "iteration": 175,
+      "robustness": 23.22006797144438,
+      "violated": false
+    },
+    {
+      "cost": 3037.255455558649,
+      "iteration": 176,
+      "robustness": 32.336902134581194,
+      "violated": false
+    },
+    {
+      "cost": 5033.679683015749,
+      "iteration": 177,
+      "robustness": 22.186954022452824,
+      "violated": false
+    },
+    {
+      "cost": 3039.539974305668,
+      "iteration": 178,
+      "robustness": 32.76889901201304,
+      "violated": false
+    },
+    {
+      "cost": 3021.232951333025,
+      "iteration": 179,
+      "robustness": 17.93388910641707,
+      "violated": false
+    },
+    {
+      "cost": 1030.1050538555728,
+      "iteration": 180,
+      "robustness": 29.69941893080349,
+      "violated": false
+    },
+    {
+      "cost": 2019.4332985067454,
+      "iteration": 181,
+      "robustness": 15.096398788650333,
+      "violated": false
+    },
+    {
+      "cost": 1020.962299599089,
+      "iteration": 182,
+      "robustness": 15.904094575680986,
+      "violated": false
+    },
+    {
+      "cost": 16.106780947526687,
+      "iteration": 183,
+      "robustness": 16.106780947526687,
+      "violated": false
+    },
+    {
+      "cost": 15.61897345460524,
+      "iteration": 184,
+      "robustness": 15.61897345460524,
+      "violated": false
+    },
+    {
+      "cost": 2015.1625488151258,
+      "iteration": 185,
+      "robustness": 11.765779045024757,
+      "violated": false
+    },
+    {
+      "cost": 11.41377953339584,
+      "iteration": 186,
+      "robustness": 11.41377953339584,
+      "violated": false
+    },
+    {
+      "cost": 11.321378171431718,
+      "iteration": 187,
+      "robustness": 11.321378171431718,
+      "violated": false
+    },
+    {
+      "cost": 12.868342542443116,
+      "iteration": 188,
+      "robustness": 12.868342542443116,
+      "violated": false
+    },
+    {
+      "cost": 10.681323508659034,
+      "iteration": 189,
+      "robustness": 10.681323508659034,
+      "violated": false
+    },
+    {
+      "cost": 9.519333903758778,
+      "iteration": 190,
+      "robustness": 9.519333903758778,
+      "violated": false
+    },
+    {
+      "cost": 14.77248222416091,
+      "iteration": 191,
+      "robustness": 14.77248222416091,
+      "violated": false
+    },
+    {
+      "cost": 14.66818422356728,
+      "iteration": 192,
+      "robustness": 14.66818422356728,
+      "violated": false
+    },
+    {
+      "cost": 4040.8103212369006,
+      "iteration": 193,
+      "robustness": 39.02097989519643,
+      "violated": false
+    },
+    {
+      "cost": 3023.850987231529,
+      "iteration": 194,
+      "robustness": 12.326194922879253,
+      "violated": false
+    },
+    {
+      "cost": 4021.1166672889067,
+      "iteration": 195,
+      "robustness": 10.509247306354297,
+      "violated": false
+    },
+    {
+      "cost": 3064.161464948316,
+      "iteration": 196,
+      "robustness": 52.99238886912251,
+      "violated": false
+    },
+    {
+      "cost": 3030.1307219918654,
+      "iteration": 197,
+      "robustness": 17.593686510443064,
+      "violated": false
+    },
+    {
+      "cost": 4021.4170894356002,
+      "iteration": 198,
+      "robustness": 6.760822068413177,
+      "violated": false
+    },
+    {
+      "cost": 3035.6560455535077,
+      "iteration": 199,
+      "robustness": 31.363739271881627,
+      "violated": false
+    },
+    {
+      "cost": 2030.8537075709735,
+      "iteration": 200,
+      "robustness": 29.909011859837648,
+      "violated": false
+    },
+    {
+      "cost": 2028.6513701937192,
+      "iteration": 201,
+      "robustness": 25.22759956857496,
+      "violated": false
+    },
+    {
+      "cost": 3047.0670791706048,
+      "iteration": 202,
+      "robustness": 41.41525415237771,
+      "violated": false
+    },
+    {
+      "cost": 3017.918444420515,
+      "iteration": 203,
+      "robustness": 12.750740551693696,
+      "violated": false
+    },
+    {
+      "cost": 4047.8268492323614,
+      "iteration": 204,
+      "robustness": 31.623316198754026,
+      "violated": false
+    },
+    {
+      "cost": 2018.3677405395363,
+      "iteration": 205,
+      "robustness": 13.080629972443305,
+      "violated": false
+    },
+    {
+      "cost": 14.558779093823347,
+      "iteration": 206,
+      "robustness": 14.558779093823347,
+      "violated": false
+    },
+    {
+      "cost": 14.632234866149687,
+      "iteration": 207,
+      "robustness": 14.632234866149687,
+      "violated": false
+    },
+    {
+      "cost": 14.836251240433668,
+      "iteration": 208,
+      "robustness": 14.836251240433668,
+      "violated": false
+    },
+    {
+      "cost": 13.768418862023239,
+      "iteration": 209,
+      "robustness": 13.768418862023239,
+      "violated": false
+    },
+    {
+      "cost": 1020.2991703901768,
+      "iteration": 210,
+      "robustness": 11.468608336928426,
+      "violated": false
+    },
+    {
+      "cost": 13.85644601573911,
+      "iteration": 211,
+      "robustness": 13.85644601573911,
+      "violated": false
+    },
+    {
+      "cost": 15.231226593660736,
+      "iteration": 212,
+      "robustness": 15.231226593660736,
+      "violated": false
+    },
+    {
+      "cost": 1016.253933926686,
+      "iteration": 213,
+      "robustness": 15.912743140585135,
+      "violated": false
+    },
+    {
+      "cost": 26.280688198203705,
+      "iteration": 214,
+      "robustness": 26.280688198203705,
+      "violated": false
+    },
+    {
+      "cost": 7.364442034499191,
+      "iteration": 215,
+      "robustness": 7.364442034499191,
+      "violated": false
+    },
+    {
+      "cost": 2018.3806264438465,
+      "iteration": 216,
+      "robustness": 7.770658005101893,
+      "violated": false
+    },
+    {
+      "cost": 6064.84882226734,
+      "iteration": 217,
+      "robustness": 42.52736792092719,
+      "violated": false
+    },
+    {
+      "cost": 2022.3745267875004,
+      "iteration": 218,
+      "robustness": 21.70464799175734,
+      "violated": false
+    },
+    {
+      "cost": 5047.88090756968,
+      "iteration": 219,
+      "robustness": 31.69032106492105,
+      "violated": false
+    },
+    {
+      "cost": 5060.20540675268,
+      "iteration": 220,
+      "robustness": 30.706784375276754,
+      "violated": false
+    },
+    {
+      "cost": 3014.7962072503165,
+      "iteration": 221,
+      "robustness": 12.734684470679568,
+      "violated": false
+    },
+    {
+      "cost": 2019.4934217026816,
+      "iteration": 222,
+      "robustness": 16.02840428775329,
+      "violated": false
+    },
+    {
+      "cost": 2028.990990662936,
+      "iteration": 223,
+      "robustness": 27.020139990362978,
+      "violated": false
+    },
+    {
+      "cost": 3042.781666474893,
+      "iteration": 224,
+      "robustness": 38.220974100763954,
+      "violated": false
+    },
+    {
+      "cost": 3014.435846938529,
+      "iteration": 225,
+      "robustness": 10.682956252955691,
+      "violated": false
+    },
+    {
+      "cost": 4046.446063072657,
+      "iteration": 226,
+      "robustness": 32.19712265232005,
+      "violated": false
+    },
+    {
+      "cost": 3036.242420201308,
+      "iteration": 227,
+      "robustness": 33.05594456673339,
+      "violated": false
+    },
+    {
+      "cost": 4019.2405957968263,
+      "iteration": 228,
+      "robustness": 15.603761659684608,
+      "violated": false
+    },
+    {
+      "cost": 2009.0440690421417,
+      "iteration": 229,
+      "robustness": 6.292843292179668,
+      "violated": false
+    },
+    {
+      "cost": 7.343940799731897,
+      "iteration": 230,
+      "robustness": 7.343940799731897,
+      "violated": false
+    },
+    {
+      "cost": 7.0375268069385015,
+      "iteration": 231,
+      "robustness": 7.0375268069385015,
+      "violated": false
+    },
+    {
+      "cost": 1008.5074325953154,
+      "iteration": 232,
+      "robustness": 7.622530525038968,
+      "violated": false
+    },
+    {
+      "cost": 2003.3759932881,
+      "iteration": 233,
+      "robustness": 0.14074633547701865,
+      "violated": false
+    },
+    {
+      "cost": 9.548124702846891,
+      "iteration": 234,
+      "robustness": 9.548124702846891,
+      "violated": false
+    },
+    {
+      "cost": 9.289636046704047,
+      "iteration": 235,
+      "robustness": 9.289636046704047,
+      "violated": false
+    },
+    {
+      "cost": 7.056304380165528,
+      "iteration": 236,
+      "robustness": 7.056304380165528,
+      "violated": false
+    },
+    {
+      "cost": 14.417523563964636,
+      "iteration": 237,
+      "robustness": 14.417523563964636,
+      "violated": false
+    },
+    {
+      "cost": 11.905476634812771,
+      "iteration": 238,
+      "robustness": 11.905476634812771,
+      "violated": false
+    },
+    {
+      "cost": 14.8336639525657,
+      "iteration": 239,
+      "robustness": 14.8336639525657,
+      "violated": false
+    },
+    {
+      "cost": 2022.8747626175987,
+      "iteration": 240,
+      "robustness": 12.264794178854231,
+      "violated": false
+    },
+    {
+      "cost": 3021.471407109225,
+      "iteration": 241,
+      "robustness": 17.13308809008676,
+      "violated": false
+    },
+    {
+      "cost": 4050.312449633397,
+      "iteration": 242,
+      "robustness": 32.51651618946053,
+      "violated": false
+    },
+    {
+      "cost": 3037.7851182698373,
+      "iteration": 243,
+      "robustness": 31.59580786163977,
+      "violated": false
+    },
+    {
+      "cost": 4027.0215953835323,
+      "iteration": 244,
+      "robustness": 21.28306533629454,
+      "violated": false
+    },
+    {
+      "cost": 1035.9955915771807,
+      "iteration": 245,
+      "robustness": 22.257286436020905,
+      "violated": false
+    },
+    {
+      "cost": 3013.9581630595203,
+      "iteration": 246,
+      "robustness": 12.32081088479012,
+      "violated": false
+    },
+    {
+      "cost": 4052.3123223701823,
+      "iteration": 247,
+      "robustness": 35.030807218919904,
+      "violated": false
+    },
+    {
+      "cost": 2024.4158799524682,
+      "iteration": 248,
+      "robustness": 21.657177595168633,
+      "violated": false
+    },
+    {
+      "cost": 3048.3472678969197,
+      "iteration": 249,
+      "robustness": 43.22309454628734,
+      "violated": false
+    },
+    {
+      "cost": 2024.0347164271643,
+      "iteration": 250,
+      "robustness": 21.006117204042297,
+      "violated": false
+    },
+    {
+      "cost": 2039.5994585535498,
+      "iteration": 251,
+      "robustness": 37.88293141098772,
+      "violated": false
+    },
+    {
+      "cost": 2013.4923482810732,
+      "iteration": 252,
+      "robustness": 7.146037520480249,
+      "violated": false
+    },
+    {
+      "cost": 2009.3337517094908,
+      "iteration": 253,
+      "robustness": 6.528883826278019,
+      "violated": false
+    },
+    {
+      "cost": 7.388059054577255,
+      "iteration": 254,
+      "robustness": 7.388059054577255,
+      "violated": false
+    },
+    {
+      "cost": 7.7805382775594865,
+      "iteration": 255,
+      "robustness": 7.7805382775594865,
+      "violated": false
+    },
+    {
+      "cost": 2010.8418073740104,
+      "iteration": 256,
+      "robustness": 8.123008122878602,
+      "violated": false
+    },
+    {
+      "cost": 2005.5054140150057,
+      "iteration": 257,
+      "robustness": 2.4793817444912634,
+      "violated": false
+    },
+    {
+      "cost": 6.4240816309231406,
+      "iteration": 258,
+      "robustness": 6.4240816309231406,
+      "violated": false
+    },
+    {
+      "cost": 5.375348126863287,
+      "iteration": 259,
+      "robustness": 5.375348126863287,
+      "violated": false
+    },
+    {
+      "cost": 8.352307981332999,
+      "iteration": 260,
+      "robustness": 8.352307981332999,
+      "violated": false
+    },
+    {
+      "cost": 20.21175455689574,
+      "iteration": 261,
+      "robustness": 20.21175455689574,
+      "violated": false
+    },
+    {
+      "cost": 9.986649462961807,
+      "iteration": 262,
+      "robustness": 9.986649462961807,
+      "violated": false
+    },
+    {
+      "cost": 9.746265379766157,
+      "iteration": 263,
+      "robustness": 9.746265379766157,
+      "violated": false
+    },
+    {
+      "cost": 2017.1392589748675,
+      "iteration": 264,
+      "robustness": 11.03380592696621,
+      "violated": false
+    },
+    {
+      "cost": 4040.0029008133924,
+      "iteration": 265,
+      "robustness": 28.48411469968309,
+      "violated": false
+    },
+    {
+      "cost": 3022.0057996418986,
+      "iteration": 266,
+      "robustness": 5.604510038632981,
+      "violated": false
+    },
+    {
+      "cost": 4023.803729664433,
+      "iteration": 267,
+      "robustness": 19.327955130386243,
+      "violated": false
+    },
+    {
+      "cost": 2025.1784347655762,
+      "iteration": 268,
+      "robustness": 22.21336160081991,
+      "violated": false
+    },
+    {
+      "cost": 4018.7789844809267,
+      "iteration": 269,
+      "robustness": 12.17539530251473,
+      "violated": false
+    },
+    {
+      "cost": 1038.0170808858113,
+      "iteration": 270,
+      "robustness": 36.80542810399692,
+      "violated": false
+    },
+    {
+      "cost": 4051.497514346179,
+      "iteration": 271,
+      "robustness": 37.07417608049661,
+      "violated": false
+    },
+    {
+      "cost": 2034.2488956137438,
+      "iteration": 272,
+      "robustness": 23.257430887116953,
+      "violated": false
+    },
+    {
+      "cost": 5022.376550291183,
+      "iteration": 273,
+      "robustness": 7.853518829199402,
+      "violated": false
+    },
+    {
+      "cost": 2027.5627260654335,
+      "iteration": 274,
+      "robustness": 24.188866123474,
+      "violated": false
+    },
+    {
+      "cost": 2020.6061219978055,
+      "iteration": 275,
+      "robustness": 18.848309855666116,
+      "violated": false
+    },
+    {
+      "cost": 2030.6568805990003,
+      "iteration": 276,
+      "robustness": 28.583952409700316,
+      "violated": false
+    },
+    {
+      "cost": 2011.9844623169563,
+      "iteration": 277,
+      "robustness": 9.69573135941097,
+      "violated": false
+    },
+    {
+      "cost": 9.755873582694633,
+      "iteration": 278,
+      "robustness": 9.755873582694633,
+      "violated": false
+    },
+    {
+      "cost": 10.099186506962596,
+      "iteration": 279,
+      "robustness": 10.099186506962596,
+      "violated": false
+    },
+    {
+      "cost": 10.406456932046453,
+      "iteration": 280,
+      "robustness": 10.406456932046453,
+      "violated": false
+    },
+    {
+      "cost": 2003.836651815024,
+      "iteration": 281,
+      "robustness": 0.5286313462226673,
+      "violated": false
+    },
+    {
+      "cost": 14.054096570667056,
+      "iteration": 282,
+      "robustness": 14.054096570667056,
+      "violated": false
+    },
+    {
+      "cost": 10.406456932046453,
+      "iteration": 283,
+      "robustness": 10.406456932046453,
+      "violated": false
+    },
+    {
+      "cost": 10.714733607442938,
+      "iteration": 284,
+      "robustness": 10.714733607442938,
+      "violated": false
+    },
+    {
+      "cost": 1030.2775446045662,
+      "iteration": 285,
+      "robustness": 29.631611966479824,
+      "violated": false
+    },
+    {
+      "cost": 20.93748756019916,
+      "iteration": 286,
+      "robustness": 20.93748756019916,
+      "violated": false
+    },
+    {
+      "cost": 15.936340116294275,
+      "iteration": 287,
+      "robustness": 15.936340116294275,
+      "violated": false
+    },
+    {
+      "cost": 2017.6865814436715,
+      "iteration": 288,
+      "robustness": 11.581128395769952,
+      "violated": false
+    },
+    {
+      "cost": 3010.103942223343,
+      "iteration": 289,
+      "robustness": 6.250737459499518,
+      "violated": false
+    },
+    {
+      "cost": 2025.8935070228938,
+      "iteration": 290,
+      "robustness": 25.16206448992608,
+      "violated": false
+    },
+    {
+      "cost": 4037.2478082480766,
+      "iteration": 291,
+      "robustness": 19.477052298180666,
+      "violated": false
+    },
+    {
+      "cost": 3032.3861720318414,
+      "iteration": 292,
+      "robustness": 28.518646507497934,
+      "violated": false
+    },
+    {
+      "cost": 4024.3763468651982,
+      "iteration": 293,
+      "robustness": 20.457165392576456,
+      "violated": false
+    },
+    {
+      "cost": 2029.083540156201,
+      "iteration": 294,
+      "robustness": 24.33679986728488,
+      "violated": false
+    },
+    {
+      "cost": 2016.9637747561374,
+      "iteration": 295,
+      "robustness": 16.130070983506712,
+      "violated": false
+    },
+    {
+      "cost": 3037.4841438071303,
+      "iteration": 296,
+      "robustness": 31.785172543065954,
+      "violated": false
+    },
+    {
+      "cost": 3034.3597905316087,
+      "iteration": 297,
+      "robustness": 30.247271021518188,
+      "violated": false
+    },
+    {
+      "cost": 4020.638160390406,
+      "iteration": 298,
+      "robustness": 12.533994575356232,
+      "violated": false
+    },
+    {
+      "cost": 4035.0921944925303,
+      "iteration": 299,
+      "robustness": 27.907206832731347,
+      "violated": false
+    },
+    {
+      "cost": 4035.134634044463,
+      "iteration": 300,
+      "robustness": 28.95891516969786,
+      "violated": false
+    },
+    {
+      "cost": 10.687534803600144,
+      "iteration": 301,
+      "robustness": 10.687534803600144,
+      "violated": false
+    },
+    {
+      "cost": 10.333227817733004,
+      "iteration": 302,
+      "robustness": 10.333227817733004,
+      "violated": false
+    },
+    {
+      "cost": 10.226384832427783,
+      "iteration": 303,
+      "robustness": 10.226384832427783,
+      "violated": false
+    },
+    {
+      "cost": 1011.0285235311852,
+      "iteration": 304,
+      "robustness": 10.295451597684774,
+      "violated": false
+    },
+    {
+      "cost": 2006.401598827768,
+      "iteration": 305,
+      "robustness": 2.363372949737993,
+      "violated": false
+    },
+    {
+      "cost": 13.047607427613514,
+      "iteration": 306,
+      "robustness": 13.047607427613514,
+      "violated": false
+    },
+    {
+      "cost": 10.178175265524828,
+      "iteration": 307,
+      "robustness": 10.178175265524828,
+      "violated": false
+    },
+    {
+      "cost": 11.72430341137283,
+      "iteration": 308,
+      "robustness": 11.72430341137283,
+      "violated": false
+    },
+    {
+      "cost": 2018.7521329948986,
+      "iteration": 309,
+      "robustness": 16.673246622861342,
+      "violated": false
+    },
+    {
+      "cost": 22.67990039178983,
+      "iteration": 310,
+      "robustness": 22.67990039178983,
+      "violated": false
+    },
+    {
+      "cost": 19.608005358957428,
+      "iteration": 311,
+      "robustness": 19.608005358957428,
+      "violated": false
+    },
+    {
+      "cost": 2020.1168522935413,
+      "iteration": 312,
+      "robustness": 14.011399245639865,
+      "violated": false
+    },
+    {
+      "cost": 3039.613356081114,
+      "iteration": 313,
+      "robustness": 34.600235490477644,
+      "violated": false
+    },
+    {
+      "cost": 5050.313522255532,
+      "iteration": 314,
+      "robustness": 30.846250564576522,
+      "violated": false
+    },
+    {
+      "cost": 2018.6206780587759,
+      "iteration": 315,
+      "robustness": 16.151490279889373,
+      "violated": false
+    },
+    {
+      "cost": 2007.6751209798003,
+      "iteration": 316,
+      "robustness": 2.172194998615012,
+      "violated": false
+    },
+    {
+      "cost": 4023.5915398031857,
+      "iteration": 317,
+      "robustness": 18.270620736037813,
+      "violated": false
+    },
+    {
+      "cost": 1030.4018644973444,
+      "iteration": 318,
+      "robustness": 30.369010055790994,
+      "violated": false
+    },
+    {
+      "cost": 3027.820494301,
+      "iteration": 319,
+      "robustness": 18.547188777594258,
+      "violated": false
+    },
+    {
+      "cost": 4021.29717087838,
+      "iteration": 320,
+      "robustness": 16.90157594298111,
+      "violated": false
+    },
+    {
+      "cost": 2033.07219248749,
+      "iteration": 321,
+      "robustness": 32.30787872634497,
+      "violated": false
+    },
+    {
+      "cost": 2015.8656518027121,
+      "iteration": 322,
+      "robustness": 12.778910635475043,
+      "violated": false
+    },
+    {
+      "cost": 4042.365509648852,
+      "iteration": 323,
+      "robustness": 29.254891237754293,
+      "violated": false
+    },
+    {
+      "cost": 3020.5057776198964,
+      "iteration": 324,
+      "robustness": 18.08974000222699,
+      "violated": false
+    },
+    {
+      "cost": 1012.3537771034026,
+      "iteration": 325,
+      "robustness": 11.949019122621507,
+      "violated": false
+    },
+    {
+      "cost": 1024.1567444218738,
+      "iteration": 326,
+      "robustness": 11.613426548842938,
+      "violated": false
+    },
+    {
+      "cost": 11.676029589296675,
+      "iteration": 327,
+      "robustness": 11.676029589296675,
+      "violated": false
+    },
+    {
+      "cost": 2016.2832056156517,
+      "iteration": 328,
+      "robustness": 12.007077372928165,
+      "violated": false
+    },
+    {
+      "cost": 2007.576078734975,
+      "iteration": 329,
+      "robustness": 3.499946772735157,
+      "violated": false
+    },
+    {
+      "cost": 7.187758724400595,
+      "iteration": 330,
+      "robustness": 7.187758724400595,
+      "violated": false
+    },
+    {
+      "cost": 7.180962510688133,
+      "iteration": 331,
+      "robustness": 7.180962510688133,
+      "violated": false
+    },
+    {
+      "cost": 6.824867237784886,
+      "iteration": 332,
+      "robustness": 6.824867237784886,
+      "violated": false
+    },
+    {
+      "cost": 13.332641013973742,
+      "iteration": 333,
+      "robustness": 13.332641013973742,
+      "violated": false
+    },
+    {
+      "cost": 20.989160017035587,
+      "iteration": 334,
+      "robustness": 20.989160017035587,
+      "violated": false
+    },
+    {
+      "cost": 6.715774907209422,
+      "iteration": 335,
+      "robustness": 6.715774907209422,
+      "violated": false
+    },
+    {
+      "cost": 2013.164958725281,
+      "iteration": 336,
+      "robustness": 7.059505677379661,
+      "violated": false
+    },
+    {
+      "cost": 2023.8645764059609,
+      "iteration": 337,
+      "robustness": 22.15413673419863,
+      "violated": false
+    },
+    {
+      "cost": 4022.7127176832373,
+      "iteration": 338,
+      "robustness": 18.78857196094134,
+      "violated": false
+    },
+    {
+      "cost": 5041.58741016814,
+      "iteration": 339,
+      "robustness": 33.86477281467501,
+      "violated": false
+    },
+    {
+      "cost": 1023.5965740315883,
+      "iteration": 340,
+      "robustness": 22.106873937126267,
+      "violated": false
+    },
+    {
+      "cost": 4030.6858618013457,
+      "iteration": 341,
+      "robustness": 18.39296802210785,
+      "violated": false
+    },
+    {
+      "cost": 3023.2274448073154,
+      "iteration": 342,
+      "robustness": 12.962320811625148,
+      "violated": false
+    },
+    {
+      "cost": 3045.7577416265594,
+      "iteration": 343,
+      "robustness": 31.997862260705205,
+      "violated": false
+    },
+    {
+      "cost": 1025.403168099368,
+      "iteration": 344,
+      "robustness": 23.087483028957152,
+      "violated": false
+    },
+    {
+      "cost": 3017.5029961607065,
+      "iteration": 345,
+      "robustness": 10.049696080560935,
+      "violated": false
+    },
+    {
+      "cost": 3056.1520571312562,
+      "iteration": 346,
+      "robustness": 44.14580191206761,
+      "violated": false
+    },
+    {
+      "cost": 2037.3394012188091,
+      "iteration": 347,
+      "robustness": 33.239052385966744,
+      "violated": false
+    },
+    {
+      "cost": 5050.546257046292,
+      "iteration": 348,
+      "robustness": 33.50283250551118,
+      "violated": false
+    },
+    {
+      "cost": 1007.84390501726,
+      "iteration": 349,
+      "robustness": 6.365256660166665,
+      "violated": false
+    },
+    {
+      "cost": 7.124316494901279,
+      "iteration": 350,
+      "robustness": 7.124316494901279,
+      "violated": false
+    },
+    {
+      "cost": 7.1306179809132715,
+      "iteration": 351,
+      "robustness": 7.1306179809132715,
+      "violated": false
+    },
+    {
+      "cost": 6.3831147189609965,
+      "iteration": 352,
+      "robustness": 6.3831147189609965,
+      "violated": false
+    },
+    {
+      "cost": 1998.9400707924985,
+      "iteration": 353,
+      "robustness": -5.107684620491767,
+      "violated": false
+    },
+    {
+      "cost": 10.571407622406952,
+      "iteration": 354,
+      "robustness": 10.571407622406952,
+      "violated": false
+    },
+    {
+      "cost": 6.359568563175884,
+      "iteration": 355,
+      "robustness": 6.359568563175884,
+      "violated": false
+    },
+    {
+      "cost": 1016.092112209875,
+      "iteration": 356,
+      "robustness": 3.3404951612407956,
+      "violated": false
+    },
+    {
+      "cost": 1006.999092920391,
+      "iteration": 357,
+      "robustness": 6.57691916290662,
+      "violated": false
+    },
+    {
+      "cost": 1043.3554323296296,
+      "iteration": 358,
+      "robustness": 32.10997107943996,
+      "violated": false
+    },
+    {
+      "cost": 6.450268858355301,
+      "iteration": 359,
+      "robustness": 6.450268858355301,
+      "violated": false
+    },
+    {
+      "cost": 2014.7213237056853,
+      "iteration": 360,
+      "robustness": 8.61587065778383,
+      "violated": false
+    },
+    {
+      "cost": 4042.7370995680694,
+      "iteration": 361,
+      "robustness": 36.30795942376518,
+      "violated": false
+    },
+    {
+      "cost": 3012.27649180471,
+      "iteration": 362,
+      "robustness": 8.077877851078881,
+      "violated": false
+    },
+    {
+      "cost": 3010.151255663443,
+      "iteration": 363,
+      "robustness": 2.545234160048807,
+      "violated": false
+    },
+    {
+      "cost": 5044.028531653127,
+      "iteration": 364,
+      "robustness": 29.82083248539982,
+      "violated": false
+    },
+    {
+      "cost": 36.17817990299082,
+      "iteration": 365,
+      "robustness": 36.17817990299082,
+      "violated": false
+    },
+    {
+      "cost": 5051.307996402768,
+      "iteration": 366,
+      "robustness": 41.148098918169865,
+      "violated": false
+    },
+    {
+      "cost": 2036.0003506040841,
+      "iteration": 367,
+      "robustness": 30.689815205131865,
+      "violated": false
+    },
+    {
+      "cost": 2031.7741420847194,
+      "iteration": 368,
+      "robustness": 30.12254977420139,
+      "violated": false
+    },
+    {
+      "cost": 4019.347901682089,
+      "iteration": 369,
+      "robustness": 18.33741728281464,
+      "violated": false
+    },
+    {
+      "cost": 3995.187011448827,
+      "iteration": 370,
+      "robustness": -15.625750245249677,
+      "violated": false
+    },
+    {
+      "cost": 3020.398080866487,
+      "iteration": 371,
+      "robustness": 5.245534692710464,
+      "violated": false
+    },
+    {
+      "cost": 2032.3470790866138,
+      "iteration": 372,
+      "robustness": 29.3442965857991,
+      "violated": false
+    },
+    {
+      "cost": 1006.8815699959592,
+      "iteration": 373,
+      "robustness": 6.48801881023212,
+      "violated": false
+    },
+    {
+      "cost": 6.320190050491178,
+      "iteration": 374,
+      "robustness": 6.320190050491178,
+      "violated": false
+    },
+    {
+      "cost": 6.341092208673089,
+      "iteration": 375,
+      "robustness": 6.341092208673089,
+      "violated": false
+    },
+    {
+      "cost": 3021.341632035311,
+      "iteration": 376,
+      "robustness": 7.137513256614341,
+      "violated": false
+    },
+    {
+      "cost": 8.352220293772916,
+      "iteration": 377,
+      "robustness": 8.352220293772916,
+      "violated": false
+    },
+    {
+      "cost": 1021.0597890632398,
+      "iteration": 378,
+      "robustness": 13.84443089407074,
+      "violated": false
+    },
+    {
+      "cost": 6.359031882855675,
+      "iteration": 379,
+      "robustness": 6.359031882855675,
+      "violated": false
+    },
+    {
+      "cost": 6.032089183744347,
+      "iteration": 380,
+      "robustness": 6.032089183744347,
+      "violated": false
+    },
+    {
+      "cost": 1007.5590489468335,
+      "iteration": 381,
+      "robustness": 6.952766646517674,
+      "violated": false
+    },
+    {
+      "cost": 1045.5986248815964,
+      "iteration": 382,
+      "robustness": 32.56040017703272,
+      "violated": false
+    },
+    {
+      "cost": 6.153958648057952,
+      "iteration": 383,
+      "robustness": 6.153958648057952,
+      "violated": false
+    },
+    {
+      "cost": 2013.2144191953792,
+      "iteration": 384,
+      "robustness": 7.108966147477744,
+      "violated": false
+    },
+    {
+      "cost": 4052.3492017693616,
+      "iteration": 385,
+      "robustness": 37.22044402915091,
+      "violated": false
+    },
+    {
+      "cost": 3022.2803779569886,
+      "iteration": 386,
+      "robustness": 19.574316254068407,
+      "violated": false
+    },
+    {
+      "cost": 4021.6060221088946,
+      "iteration": 387,
+      "robustness": 16.179097799288627,
+      "violated": false
+    },
+    {
+      "cost": 4011.2416158041965,
+      "iteration": 388,
+      "robustness": 9.501191826821369,
+      "violated": false
+    },
+    {
+      "cost": 3033.8375016700097,
+      "iteration": 389,
+      "robustness": 31.269938397113577,
+      "violated": false
+    },
+    {
+      "cost": 3031.878995584438,
+      "iteration": 390,
+      "robustness": 27.50483449216462,
+      "violated": false
+    },
+    {
+      "cost": 3025.0934694106754,
+      "iteration": 391,
+      "robustness": 6.169349587994674,
+      "violated": false
+    },
+    {
+      "cost": 6045.343290106522,
+      "iteration": 392,
+      "robustness": 29.749526976648838,
+      "violated": false
+    },
+    {
+      "cost": 4017.087884851719,
+      "iteration": 393,
+      "robustness": 10.731689487571572,
+      "violated": false
+    },
+    {
+      "cost": 3025.281630342466,
+      "iteration": 394,
+      "robustness": 21.830378130432294,
+      "violated": false
+    },
+    {
+      "cost": 1008.6781768540563,
+      "iteration": 395,
+      "robustness": 8.103123788041117,
+      "violated": false
+    },
+    {
+      "cost": 4015.679648035224,
+      "iteration": 396,
+      "robustness": 11.83337189008671,
+      "violated": false
+    },
+    {
+      "cost": 1008.172006414912,
+      "iteration": 397,
+      "robustness": 5.862951727292682,
+      "violated": false
+    },
+    {
+      "cost": 6.157368049751867,
+      "iteration": 398,
+      "robustness": 6.157368049751867,
+      "violated": false
+    },
+    {
+      "cost": 6.528509952657245,
+      "iteration": 399,
+      "robustness": 6.528509952657245,
+      "violated": false
+    },
+    {
+      "cost": 6.951164275379909,
+      "iteration": 400,
+      "robustness": 6.951164275379909,
+      "violated": false
+    },
+    {
+      "cost": 2000.9370876402056,
+      "iteration": 401,
+      "robustness": -2.0792261862268617,
+      "violated": false
+    },
+    {
+      "cost": 9.867437060563404,
+      "iteration": 402,
+      "robustness": 9.867437060563404,
+      "violated": false
+    },
+    {
+      "cost": 6.365572088079361,
+      "iteration": 403,
+      "robustness": 6.365572088079361,
+      "violated": false
+    },
+    {
+      "cost": 1017.0616332797722,
+      "iteration": 404,
+      "robustness": 4.310016231138022,
+      "violated": false
+    },
+    {
+      "cost": 11.785052684828628,
+      "iteration": 405,
+      "robustness": 11.785052684828628,
+      "violated": false
+    },
+    {
+      "cost": 1041.4502663890228,
+      "iteration": 406,
+      "robustness": 31.451414076457837,
+      "violated": false
+    },
+    {
+      "cost": 6.046315719950442,
+      "iteration": 407,
+      "robustness": 6.046315719950442,
+      "violated": false
+    },
+    {
+      "cost": 2013.114606019432,
+      "iteration": 408,
+      "robustness": 7.009152971530497,
+      "violated": false
+    },
+    {
+      "cost": 2020.9351135409067,
+      "iteration": 409,
+      "robustness": 16.25934671779197,
+      "violated": false
+    },
+    {
+      "cost": 2029.796341054277,
+      "iteration": 410,
+      "robustness": 25.945388827181006,
+      "violated": false
+    },
+    {
+      "cost": 2026.0320345049392,
+      "iteration": 411,
+      "robustness": 23.78140407812201,
+      "violated": false
+    },
+    {
+      "cost": 3048.038430271813,
+      "iteration": 412,
+      "robustness": 37.78041949865218,
+      "violated": false
+    },
+    {
+      "cost": 5038.628404284938,
+      "iteration": 413,
+      "robustness": 23.86229478020161,
+      "violated": false
+    },
+    {
+      "cost": 4026.1116637137397,
+      "iteration": 414,
+      "robustness": 19.60882067567738,
+      "violated": false
+    },
+    {
+      "cost": 2032.3776615959089,
+      "iteration": 415,
+      "robustness": 26.988947831649284,
+      "violated": false
+    },
+    {
+      "cost": 3034.161678652868,
+      "iteration": 416,
+      "robustness": 30.605724542131952,
+      "violated": false
+    },
+    {
+      "cost": 3035.7801412751733,
+      "iteration": 417,
+      "robustness": 29.409454028021145,
+      "violated": false
+    },
+    {
+      "cost": 3027.184948956841,
+      "iteration": 418,
+      "robustness": 22.059115966428422,
+      "violated": false
+    },
+    {
+      "cost": 3044.0751913715094,
+      "iteration": 419,
+      "robustness": 38.59904898588431,
+      "violated": false
+    },
+    {
+      "cost": 2015.4745588150906,
+      "iteration": 420,
+      "robustness": 12.475064382833494,
+      "violated": false
+    },
+    {
+      "cost": 1006.8545649095112,
+      "iteration": 421,
+      "robustness": 6.268765504858351,
+      "violated": false
+    },
+    {
+      "cost": 6.108023163302619,
+      "iteration": 422,
+      "robustness": 6.108023163302619,
+      "violated": false
+    },
+    {
+      "cost": 6.108394701608688,
+      "iteration": 423,
+      "robustness": 6.108394701608688,
+      "violated": false
+    },
+    {
+      "cost": 6.493756876600742,
+      "iteration": 424,
+      "robustness": 6.493756876600742,
+      "violated": false
+    },
+    {
+      "cost": 2004.885916860818,
+      "iteration": 425,
+      "robustness": 4.432344724017057,
+      "violated": false
+    },
+    {
+      "cost": 9.268222420066905,
+      "iteration": 426,
+      "robustness": 9.268222420066905,
+      "violated": false
+    },
+    {
+      "cost": 6.694937052382016,
+      "iteration": 427,
+      "robustness": 6.694937052382016,
+      "violated": false
+    },
+    {
+      "cost": 6.756132745171044,
+      "iteration": 428,
+      "robustness": 6.756132745171044,
+      "violated": false
+    },
+    {
+      "cost": 2011.5266594411644,
+      "iteration": 429,
+      "robustness": 9.93975042282382,
+      "violated": false
+    },
+    {
+      "cost": 17.241762689311727,
+      "iteration": 430,
+      "robustness": 17.241762689311727,
+      "violated": false
+    },
+    {
+      "cost": 8.82663246935499,
+      "iteration": 431,
+      "robustness": 8.82663246935499,
+      "violated": false
+    },
+    {
+      "cost": 6.808464499415294,
+      "iteration": 432,
+      "robustness": 6.808464499415294,
+      "violated": false
+    },
+    {
+      "cost": 4028.1313380555366,
+      "iteration": 433,
+      "robustness": 26.12621466006371,
+      "violated": false
+    },
+    {
+      "cost": 4032.1101275455644,
+      "iteration": 434,
+      "robustness": 15.35370361152151,
+      "violated": false
+    },
+    {
+      "cost": 3022.9522646648597,
+      "iteration": 435,
+      "robustness": 17.704062930888185,
+      "violated": false
+    },
+    {
+      "cost": 6041.538483927512,
+      "iteration": 436,
+      "robustness": 26.536962851552317,
+      "violated": false
+    },
+    {
+      "cost": 3021.3218472409644,
+      "iteration": 437,
+      "robustness": 19.134649616258827,
+      "violated": false
+    },
+    {
+      "cost": 4028.9912383106516,
+      "iteration": 438,
+      "robustness": 17.79259046607561,
+      "violated": false
+    },
+    {
+      "cost": 4018.9789864302616,
+      "iteration": 439,
+      "robustness": 9.696493194281501,
+      "violated": false
+    },
+    {
+      "cost": 4035.5968286781676,
+      "iteration": 440,
+      "robustness": 20.989771968257372,
+      "violated": false
+    },
+    {
+      "cost": 5064.086543054005,
+      "iteration": 441,
+      "robustness": 39.683095013291236,
+      "violated": false
+    },
+    {
+      "cost": 2028.4963526967792,
+      "iteration": 442,
+      "robustness": 25.435955589275864,
+      "violated": false
+    },
+    {
+      "cost": 4033.251075886175,
+      "iteration": 443,
+      "robustness": 19.12807154840202,
+      "violated": false
+    },
+    {
+      "cost": 3028.732042522289,
+      "iteration": 444,
+      "robustness": 25.296149528355386,
+      "violated": false
+    },
+    {
+      "cost": 1007.7999085585392,
+      "iteration": 445,
+      "robustness": 6.372706896872941,
+      "violated": false
+    },
+    {
+      "cost": 6.745655034457386,
+      "iteration": 446,
+      "robustness": 6.745655034457386,
+      "violated": false
+    },
+    {
+      "cost": 6.72156046780961,
+      "iteration": 447,
+      "robustness": 6.72156046780961,
+      "violated": false
+    },
+    {
+      "cost": 6.6292868465057495,
+      "iteration": 448,
+      "robustness": 6.6292868465057495,
+      "violated": false
+    },
+    {
+      "cost": 8.646346881231636,
+      "iteration": 449,
+      "robustness": 8.646346881231636,
+      "violated": false
+    },
+    {
+      "cost": 9.8868565570734,
+      "iteration": 450,
+      "robustness": 9.8868565570734,
+      "violated": false
+    },
+    {
+      "cost": 4.617065383241595,
+      "iteration": 451,
+      "robustness": 4.617065383241595,
+      "violated": false
+    },
+    {
+      "cost": 1016.4487610775607,
+      "iteration": 452,
+      "robustness": 3.697144028926502,
+      "violated": false
+    },
+    {
+      "cost": 5.0688619850809005,
+      "iteration": 453,
+      "robustness": 5.0688619850809005,
+      "violated": false
+    },
+    {
+      "cost": 16.110567106838076,
+      "iteration": 454,
+      "robustness": 16.110567106838076,
+      "violated": false
+    },
+    {
+      "cost": 11.754681489297838,
+      "iteration": 455,
+      "robustness": 11.754681489297838,
+      "violated": false
+    },
+    {
+      "cost": 2014.1705589698997,
+      "iteration": 456,
+      "robustness": 7.94096094562174,
+      "violated": false
+    },
+    {
+      "cost": 2999.36523660604,
+      "iteration": 457,
+      "robustness": -5.752372335847568,
+      "violated": false
+    },
+    {
+      "cost": 4021.125218536532,
+      "iteration": 458,
+      "robustness": 15.81139139371416,
+      "violated": false
+    },
+    {
+      "cost": 4037.447377690341,
+      "iteration": 459,
+      "robustness": 30.54674374397426,
+      "violated": false
+    },
+    {
+      "cost": 4044.6106341921345,
+      "iteration": 460,
+      "robustness": 37.686695947640686,
+      "violated": false
+    },
+    {
+      "cost": 2002.3739060771939,
+      "iteration": 461,
+      "robustness": 0.18302330895933494,
+      "violated": false
+    },
+    {
+      "cost": 2016.3775349852053,
+      "iteration": 462,
+      "robustness": 14.594558848429756,
+      "violated": false
+    },
+    {
+      "cost": 2016.182043061417,
+      "iteration": 463,
+      "robustness": 11.99105807074001,
+      "violated": false
+    },
+    {
+      "cost": 4035.556508710231,
+      "iteration": 464,
+      "robustness": 29.28017469120239,
+      "violated": false
+    },
+    {
+      "cost": 31.93936269497044,
+      "iteration": 465,
+      "robustness": 31.93936269497044,
+      "violated": false
+    },
+    {
+      "cost": 3037.6010706726033,
+      "iteration": 466,
+      "robustness": 27.035380768453805,
+      "violated": false
+    },
+    {
+      "cost": 2039.7293521751967,
+      "iteration": 467,
+      "robustness": 34.44007582770115,
+      "violated": false
+    },
+    {
+      "cost": 5027.984556068472,
+      "iteration": 468,
+      "robustness": 18.029965168609294,
+      "violated": false
+    },
+    {
+      "cost": 1005.9556441849654,
+      "iteration": 469,
+      "robustness": 4.379424541382846,
+      "violated": false
+    },
+    {
+      "cost": 4.9698704961456315,
+      "iteration": 470,
+      "robustness": 4.9698704961456315,
+      "violated": false
+    },
+    {
+      "cost": 4.8502613645878085,
+      "iteration": 471,
+      "robustness": 4.8502613645878085,
+      "violated": false
+    },
+    {
+      "cost": 4.849025062623255,
+      "iteration": 472,
+      "robustness": 4.849025062623255,
+      "violated": false
+    },
+    {
+      "cost": 4.52619014846664,
+      "iteration": 473,
+      "robustness": 4.52619014846664,
+      "violated": false
+    },
+    {
+      "cost": 4.999941391297412,
+      "iteration": 474,
+      "robustness": 4.999941391297412,
+      "violated": false
+    },
+    {
+      "cost": 7.116660128817372,
+      "iteration": 475,
+      "robustness": 7.116660128817372,
+      "violated": false
+    },
+    {
+      "cost": 5.32302465936057,
+      "iteration": 476,
+      "robustness": 5.32302465936057,
+      "violated": false
+    },
+    {
+      "cost": 2010.418296019109,
+      "iteration": 477,
+      "robustness": 8.607639835360459,
+      "violated": false
+    },
+    {
+      "cost": 22.05260242657522,
+      "iteration": 478,
+      "robustness": 22.05260242657522,
+      "violated": false
+    },
+    {
+      "cost": 5.732060041525543,
+      "iteration": 479,
+      "robustness": 5.732060041525543,
+      "violated": false
+    },
+    {
+      "cost": 2013.4127357716518,
+      "iteration": 480,
+      "robustness": 7.183137747373806,
+      "violated": false
+    },
+    {
+      "cost": 5024.801669648334,
+      "iteration": 481,
+      "robustness": 18.992683402402633,
+      "violated": false
+    },
+    {
+      "cost": 4025.467438249476,
+      "iteration": 482,
+      "robustness": 8.238075269187675,
+      "violated": false
+    },
+    {
+      "cost": 3017.9539533176066,
+      "iteration": 483,
+      "robustness": 11.980055249346933,
+      "violated": false
+    },
+    {
+      "cost": 2027.5165528127607,
+      "iteration": 484,
+      "robustness": 26.52622142273198,
+      "violated": false
+    },
+    {
+      "cost": 3028.221142496426,
+      "iteration": 485,
+      "robustness": 16.918135365127256,
+      "violated": false
+    },
+    {
+      "cost": 4003.8644210360267,
+      "iteration": 486,
+      "robustness": -1.397321049191845,
+      "violated": false
+    },
+    {
+      "cost": 5051.131996423793,
+      "iteration": 487,
+      "robustness": 20.039523104003194,
+      "violated": false
+    },
+    {
+      "cost": 29.895237623697938,
+      "iteration": 488,
+      "robustness": 29.895237623697938,
+      "violated": false
+    },
+    {
+      "cost": 2041.3423432424377,
+      "iteration": 489,
+      "robustness": 40.011685167489105,
+      "violated": false
+    },
+    {
+      "cost": 5028.573693695148,
+      "iteration": 490,
+      "robustness": 19.648413456646125,
+      "violated": false
+    },
+    {
+      "cost": 4053.6177845596076,
+      "iteration": 491,
+      "robustness": 47.91175395456884,
+      "violated": false
+    },
+    {
+      "cost": 4065.3065400693004,
+      "iteration": 492,
+      "robustness": 41.41767000053272,
+      "violated": false
+    },
+    {
+      "cost": 1006.1032425041963,
+      "iteration": 493,
+      "robustness": 4.928273905145488,
+      "violated": false
+    },
+    {
+      "cost": 5.425329554836381,
+      "iteration": 494,
+      "robustness": 5.425329554836381,
+      "violated": false
+    },
+    {
+      "cost": 5.517612958932588,
+      "iteration": 495,
+      "robustness": 5.517612958932588,
+      "violated": false
+    },
+    {
+      "cost": 5.676080615609806,
+      "iteration": 496,
+      "robustness": 5.676080615609806,
+      "violated": false
+    },
+    {
+      "cost": 9.489828641774139,
+      "iteration": 497,
+      "robustness": 9.489828641774139,
+      "violated": false
+    },
+    {
+      "cost": 6.070992255097039,
+      "iteration": 498,
+      "robustness": 6.070992255097039,
+      "violated": false
+    },
+    {
+      "cost": 8.016927431105628,
+      "iteration": 499,
+      "robustness": 8.016927431105628,
+      "violated": false
+    }
+  ],
+  "seed": 62716
+}

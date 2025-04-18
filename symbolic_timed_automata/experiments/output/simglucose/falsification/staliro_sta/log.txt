@@ -1,0 +1,470 @@
+Computing abstraction of constraint breakfast_to_snack_1
+Computing abstraction of constraint breakfast_to_lunch
+Computing abstraction of constraint snack_1_to_lunch
+Computing abstraction of constraint snack3_to_breakfast
+Computing abstraction of constraint dinner_to_breakfast_no_snack_3
+Computing abstraction of constraint dinner_to_snack_3
+Computing abstraction of constraint lunch_to_snack_2_no_snack_1
+Computing abstraction of constraint lunch_to_snack_2_with_s1
+Computing abstraction of constraint lunch_with_snack_1_to_dinner
+Computing abstraction of constraint snack_2_to_dinner
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 2.7440222862609005 
+iteration 2 cost: -3.0731229486438423 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 17.838022812353174 
+iteration 2 cost: 23.665596753583245 
+iteration 3 cost: 9.058234395669572 
+iteration 4 cost: 5.634853779163436 
+iteration 5 cost: 9.473494495696627 
+iteration 6 cost: 27.173398134865437 
+iteration 7 cost: 6.831873215817197 
+iteration 8 cost: 22.699688520486063 
+iteration 9 cost: 26.863137045078247 
+iteration 10 cost: 28.423646224553437 
+iteration 11 cost: 19.565807841595444 
+iteration 12 cost: 17.727946925416887 
+iteration 13 cost: -2.8676514051431354 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 14.913643802468783 
+iteration 2 cost: 31.29632392824965 
+iteration 3 cost: 23.142602786146284 
+iteration 4 cost: 11.42947441437802 
+iteration 5 cost: 17.702258675936406 
+iteration 6 cost: 26.28668021035473 
+iteration 7 cost: -9.172177172327977 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 8.124035651447599 
+iteration 2 cost: 38.70903497772781 
+iteration 3 cost: -8.557574348405971 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 13.260850181570078 
+iteration 2 cost: 6.132330360234334 
+iteration 3 cost: 16.7220011182836 
+iteration 4 cost: 21.64879863322949 
+iteration 5 cost: 10.08096281436461 
+iteration 6 cost: 22.719762747983992 
+iteration 7 cost: 16.37271997534188 
+iteration 8 cost: 10.51989979594586 
+iteration 9 cost: 0.3276590217577393 
+iteration 10 cost: 15.144633641113629 
+iteration 11 cost: 29.754433681216184 
+iteration 12 cost: 26.730695496523822 
+iteration 13 cost: 15.139123714788823 
+iteration 14 cost: 12.931878966770824 
+iteration 15 cost: 6.141311276831701 
+iteration 16 cost: 12.495298583810012 
+iteration 17 cost: 10.565463253267481 
+iteration 18 cost: 21.03461266947828 
+iteration 19 cost: 29.640751830721143 
+iteration 20 cost: 29.565012426251116 
+iteration 21 cost: 29.565012426251116 
+iteration 22 cost: 28.90496287544586 
+iteration 23 cost: 29.257754427765434 
+iteration 24 cost: 29.257754427765434 
+iteration 25 cost: 30.165364180352185 
+iteration 26 cost: 30.039913075532496 
+iteration 27 cost: 30.039913075532496 
+iteration 28 cost: 14.396251380565872 
+iteration 29 cost: 6.893880043746961 
+iteration 30 cost: 21.372220017145622 
+iteration 31 cost: 5.6315994115379056 
+iteration 32 cost: 5.6315994115379056 
+iteration 33 cost: 5.6315994115379056 
+iteration 34 cost: 5.6315994115379056 
+iteration 35 cost: 5.6315994115379056 
+iteration 36 cost: 5.6315994115379056 
+iteration 37 cost: 5.6315994115379056 
+iteration 38 cost: -2.4251850957235916 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 21.754864911745784 
+iteration 2 cost: 28.330791764901676 
+iteration 3 cost: 4.029593125710932 
+iteration 4 cost: 15.603036583764123 
+iteration 5 cost: 17.771755279012268 
+iteration 6 cost: 6.015444055207169 
+iteration 7 cost: 18.111251007907327 
+iteration 8 cost: 12.070924496726079 
+iteration 9 cost: -0.4278933545025012 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 28.442671808226947 
+iteration 2 cost: 21.753872511783186 
+iteration 3 cost: 27.3008685869233 
+iteration 4 cost: 25.686579529321435 
+iteration 5 cost: 21.34732282039164 
+iteration 6 cost: 9.18598912752887 
+iteration 7 cost: 32.1400720946765 
+iteration 8 cost: 15.738346232424036 
+iteration 9 cost: 8.913654187249222 
+iteration 10 cost: 13.416077739118975 
+iteration 11 cost: 23.79429577912059 
+iteration 12 cost: 19.177229165060382 
+iteration 13 cost: -0.21147435366211198 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 9.068516480087183 
+iteration 2 cost: -14.890820731245775 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: -4.932133317804258 == VIOLATED
+iteration 2 cost: 14.424110630535012 
+iteration 3 cost: 21.26959442164612 
+iteration 4 cost: 25.12931975067241 
+iteration 5 cost: 25.314358032422703 
+iteration 6 cost: 2.5532224058725888 
+iteration 7 cost: 15.075747388810399 
+iteration 8 cost: 21.257113468893337 
+iteration 9 cost: -13.03830925907728 == VIOLATED
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+Process ID: 67898
+Simulation starts ...
+Simulation Completed!
+iteration 1 cost: 9.796895998742912 
+iteration 2 cost: 31.002290921234646 
+iteration 3 cost: 6.547151221375557 
+iteration 4 cost: 0.07055906029533787 
+iteration 5 cost: 24.715497475040564 
+iteration 6 cost: 5.976470118384043 
+iteration 7 cost: 21.588662873057118 
+iteration 8 cost: 27.64391439211154 
+iteration 9 cost: 5.048119557586503 
+iteration 10 cost: 6.634256725328044 
+iteration 11 cost: 9.437931297452806 
+iteration 12 cost: 3.5501389191350654 
+iteration 13 cost: 11.555150350221936 
+iteration 14 cost: 38.906241346373236 
+iteration 15 cost: 13.957025632831773 
+iteration 16 cost: 13.299383261513555 
+iteration 17 cost: 1.5614993647442645 
+iteration 18 cost: 25.81380295576139 
+iteration 19 cost: -2.69345508105377 == VIOLATED

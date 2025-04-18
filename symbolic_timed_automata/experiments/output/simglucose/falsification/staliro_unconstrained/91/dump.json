@@ -1,0 +1,20 @@
+{
+  "elapsed_time": 2.792027711868286,
+  "falsified": true,
+  "history": [
+    {
+      "cost": 14.155475300719942,
+      "feasible": false,
+      "iteration": 0,
+      "violated": false
+    },
+    {
+      "cost": -7.6613344680992554,
+      "feasible": false,
+      "iteration": 1,
+      "violated": true
+    }
+  ],
+  "is_solution_feasible": false,
+  "seed": 40741
+}

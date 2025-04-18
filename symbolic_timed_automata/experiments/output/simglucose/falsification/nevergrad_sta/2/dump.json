@@ -1,6 +1,6 @@
 {
-  "elapsed_time": 6.548707485198975,
-  "falsified": false,
+  "elapsed_time": 14.921033143997192,
+  "falsified": true,
   "history": [
     {
       "cost": 12.446460273713868,
@@ -26,6 +26,36 @@
       "cost": 11.331649009317019,
       "iteration": 4,
       "violated": false
+    },
+    {
+      "cost": 11.331649009317019,
+      "iteration": 5,
+      "violated": false
+    },
+    {
+      "cost": 9.283033025994953,
+      "iteration": 6,
+      "violated": false
+    },
+    {
+      "cost": 7.7422622160697046,
+      "iteration": 7,
+      "violated": false
+    },
+    {
+      "cost": 7.7422622160697046,
+      "iteration": 8,
+      "violated": false
+    },
+    {
+      "cost": 3.3294678361929897,
+      "iteration": 9,
+      "violated": false
+    },
+    {
+      "cost": -2.529436236903777,
+      "iteration": 10,
+      "violated": true
     }
   ],
   "seed": 54978

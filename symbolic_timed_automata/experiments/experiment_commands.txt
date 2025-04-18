@@ -1,0 +1,48 @@
+1. Random Isotropic Sampling
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/random/falsify_isotropic_sampling.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/isotropic -i 1000 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/isotropic/log.txt
+
+
+====
+2. Uniform Random Sampling with STA
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/random/uniform_sampling_sta.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/uniform_sta -i 1000 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/uniform_sta/log.txt
+
+====
+3. Staliro unconstrained
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/falsify_staliro_unconstrained.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/staliro_unconstrained -i 500 -r 100 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/staliro_unconstrained/log.txt
+
+====
+4. Staliro with penalties
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/falsify_staliro_penalties.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/staliro_penalties -i 500 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/staliro_penalties/log.txt
+
+====
+5. Staliro with STA
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/falsify_staliro_sta.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/staliro_sta -i 500 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/staliro_sta/log.txt
+
+
+====
+6. NOMAD with black-box constraints
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/falsify_nomad_constrained.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nomad_constrained -i 500 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nomad_constrained/log.txt
+
+
+====
+7. NOMAD with STA
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/falsify_nomad_sta.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nomad_sta -i 500 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nomad_sta/log.txt
+
+
+====
+8. Nevergrad with black-box constraints
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/falsify_nevergrad_constrained.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nevergrad_constrained -i 500 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nevergrad_constrained/log.txt
+
+
+====
+9. Nevergrad with STA
+
+time python3 /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/simglucose/falsification/falsify_nevergrad_sta.py -o /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nevergrad_sta -i 500 -r 10 > /home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/simglucose/falsification/nevergrad_sta/log.txt

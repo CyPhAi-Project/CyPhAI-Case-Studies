@@ -1,0 +1,93 @@
+{
+  "isotropic": {
+    "falsified": 0,
+    "mean_fals_iters": 1000.0,
+    "mean_infeasible_iters": 0.0,
+    "mean_infeasible_iters_rate": 0.0,
+    "median_fals_iters": 1000.0,
+    "median_infeasible_iters": 0.0,
+    "std_fals_iters": 0.0,
+    "worst": 3.6190050379185266
+  },
+  "nevergrad_constrained": {
+    "falsified": 1,
+    "mean_fals_iters": 480.1,
+    "mean_infeasible_iters": 449.1,
+    "mean_infeasible_iters_rate": 0.9354301187252656,
+    "median_fals_iters": 500.0,
+    "median_infeasible_iters": 500.0,
+    "std_fals_iters": 59.7,
+    "worst": -0.7878114404410042
+  },
+  "nevergrad_sta": {
+    "falsified": 10,
+    "mean_fals_iters": 28.7,
+    "mean_infeasible_iters": 0.0,
+    "mean_infeasible_iters_rate": 0.0,
+    "median_fals_iters": 21.0,
+    "median_infeasible_iters": 0.0,
+    "std_fals_iters": 20.985947679340097,
+    "worst": -3.824199480352675
+  },
+  "nomad_constrained": {
+    "falsified": 7,
+    "mean_fals_iters": 383.3,
+    "mean_infeasible_iters": 260.3,
+    "mean_infeasible_iters_rate": 0.6791025306548396,
+    "median_fals_iters": 436.5,
+    "median_infeasible_iters": 282.5,
+    "std_fals_iters": 123.13573811042835,
+    "worst": -0.8255768438442459
+  },
+  "nomad_sta": {
+    "falsified": 10,
+    "mean_fals_iters": 29.4,
+    "mean_infeasible_iters": 0.0,
+    "mean_infeasible_iters_rate": 0.0,
+    "median_fals_iters": 33.5,
+    "median_infeasible_iters": 0.0,
+    "std_fals_iters": 15.583324420674812,
+    "worst": -11.423506349466095
+  },
+  "staliro_penalties": {
+    "falsified": 1,
+    "mean_fals_iters": 493.2,
+    "mean_infeasible_iters": 345.8,
+    "mean_infeasible_iters_rate": 0.7011354420113545,
+    "median_fals_iters": 500.0,
+    "median_infeasible_iters": 341.0,
+    "std_fals_iters": 20.4,
+    "worst": -1.4282761627033125
+  },
+  "staliro_sta": {
+    "falsified": 10,
+    "mean_fals_iters": 10.7,
+    "mean_infeasible_iters": 0.0,
+    "mean_infeasible_iters_rate": 0.0,
+    "median_fals_iters": 8.0,
+    "median_infeasible_iters": 0.0,
+    "std_fals_iters": 10.705606008068857,
+    "worst": -14.890820731245775
+  },
+  "staliro_unconstrained": {
+    "falsified": 100,
+    "feasible_solutions": 0,
+    "mean_fals_iters": 19.8,
+    "mean_infeasible_iters": 19.71,
+    "mean_infeasible_iters_rate": 0.9954545454545455,
+    "median_fals_iters": 11.0,
+    "median_infeasible_iters": 11.0,
+    "std_fals_iters": 22.85038292895767,
+    "worst": 7.964747221857252
+  },
+  "uniform_sta": {
+    "falsified": 10,
+    "mean_fals_iters": 30.9,
+    "mean_infeasible_iters": 0.0,
+    "mean_infeasible_iters_rate": 0.0,
+    "median_fals_iters": 17.5,
+    "median_infeasible_iters": 0.0,
+    "std_fals_iters": 36.800679341555636,
+    "worst": -16.196892000668086
+  }
+}

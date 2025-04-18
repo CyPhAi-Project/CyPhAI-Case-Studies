@@ -1,0 +1,107 @@
+{
+  "elapsed_time": 27.236464738845825,
+  "falsified": true,
+  "history": [
+    {
+      "cost": 3.6874852882038596,
+      "iteration": 0,
+      "violated": false
+    },
+    {
+      "cost": 3.137518321155909,
+      "iteration": 1,
+      "violated": false
+    },
+    {
+      "cost": 3.137518321155909,
+      "iteration": 2,
+      "violated": false
+    },
+    {
+      "cost": 2.8257277928453135,
+      "iteration": 3,
+      "violated": false
+    },
+    {
+      "cost": 4.890364681156527,
+      "iteration": 4,
+      "violated": false
+    },
+    {
+      "cost": 2.8257277928453135,
+      "iteration": 5,
+      "violated": false
+    },
+    {
+      "cost": 3.4342000656370715,
+      "iteration": 6,
+      "violated": false
+    },
+    {
+      "cost": 2.913104209661171,
+      "iteration": 7,
+      "violated": false
+    },
+    {
+      "cost": 2.8257277928453135,
+      "iteration": 8,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 9,
+      "violated": false
+    },
+    {
+      "cost": 6.091742421856949,
+      "iteration": 10,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 11,
+      "violated": false
+    },
+    {
+      "cost": 1.2601011924136998,
+      "iteration": 12,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 13,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 14,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 15,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 16,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 17,
+      "violated": false
+    },
+    {
+      "cost": 0.8033070396986233,
+      "iteration": 18,
+      "violated": false
+    },
+    {
+      "cost": -3.824199480352675,
+      "iteration": 19,
+      "violated": true
+    }
+  ],
+  "seed": 31241
+}

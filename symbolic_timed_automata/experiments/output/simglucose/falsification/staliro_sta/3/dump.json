@@ -1,0 +1,42 @@
+{
+  "elapsed_time": 9.615327596664429,
+  "falsified": true,
+  "history": [
+    {
+      "cost": 14.913643802468783,
+      "iteration": 0,
+      "violated": false
+    },
+    {
+      "cost": 31.29632392824965,
+      "iteration": 1,
+      "violated": false
+    },
+    {
+      "cost": 23.142602786146284,
+      "iteration": 2,
+      "violated": false
+    },
+    {
+      "cost": 11.42947441437802,
+      "iteration": 3,
+      "violated": false
+    },
+    {
+      "cost": 17.702258675936406,
+      "iteration": 4,
+      "violated": false
+    },
+    {
+      "cost": 26.28668021035473,
+      "iteration": 5,
+      "violated": false
+    },
+    {
+      "cost": -9.172177172327977,
+      "iteration": 6,
+      "violated": true
+    }
+  ],
+  "seed": 49882
+}

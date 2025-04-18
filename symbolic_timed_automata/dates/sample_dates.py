@@ -1,6 +1,8 @@
 import math
 import random
 from collections import defaultdict
+from typing import Dict
+import plotly.express as px
 
 import numpy as np
 from syma.automaton.symbolic_timed_automaton import SymbolicTimedAutomaton
@@ -32,7 +34,7 @@ fig = px.scatter(x=dates_t1, y=dates_t2, opacity=0.8, labels={'x':'t1', 'y':'t2'
 fig.update_traces(marker=dict(size=1, line=dict(width=0.5, color='DarkSlateGrey')))
 fig.show()
 '''
-
+output_path = "/home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/experiments/output/two_ears/sample_dates"
 def sample_isotropic(length: int, n_signals:int):
     signals = []
     for i_signal in range(n_signals):
@@ -68,12 +70,12 @@ def sample_isotropic(length: int, n_signals:int):
     return signals
 
 
-STA_OUT_FNAME = "symbolic_timed_automata/dates/output/dates_sta.prism"
-ABSTRACT_TRAJ_FNAME = "symbolic_timed_automata/dates/output/dates_sta_abstract_trajectories.json"
-CONCRETE_TRAJ_FNAME = "symbolic_timed_automata/dates/output/dates_sta_concrete_trajectories.json"
+STA_OUT_FNAME = f"{output_path}/dates_sta.prism"
+ABSTRACT_TRAJ_FNAME = f"{output_path}/dates_sta_abstract_trajectories.json"
+CONCRETE_TRAJ_FNAME = f"{output_path}/dates_sta_concrete_trajectories.json"
 
-SIGNAL_LENGTH = 3
-TOT_N_SIGNALS = 10**4
+SIGNAL_LENGTH = 4
+TOT_N_SIGNALS = 7*10**4
 N_WORDS_BATCH = 10**4
 DEBUG = False
 
@@ -123,11 +125,11 @@ def generate_signals_as_tuples_isotropic(n_signals:int, abstractions: list[Const
     return res
 
 
-def plot_results(words_count: dict):
+def old_plot_results(words_count: dict):
     hashes_list = list(words_count.keys())
     hashes_list.sort()
 
-    bin_size = 1
+    bin_size = 4
 
     x = list(range(int(len(hashes_list)/bin_size)))
 
@@ -165,18 +167,94 @@ def plot_results(words_count: dict):
     fig.show()
 
 
+def plot_results(words_count: Dict[str, int], bin_size: int = 4, show_x_labels: bool = False):
+    """
+    Plot word counts in grouped bars with customizable bin size.
+
+    Args:
+        words_count: Dictionary mapping word hashes to their counts
+        bin_size: Number of individual items to group together in each bar
+        show_x_labels: Whether to show x-axis labels (will be very crowded if True)
+    """
+    # Sort the hashes and prepare data
+    hashes_list = sorted(words_count.keys())
+
+    # Create grouped data
+    x_groups = list(range(len(hashes_list) // bin_size))
+    y_values = [
+        sum(words_count[hash] for hash in hashes_list[i:i + bin_size])
+        for i in range(0, len(hashes_list), bin_size)
+    ]
+
+    # Create hover text showing the range of hashes in each bin
+    hover_text = [
+        f"Bin {i + 1}: Hashes {i * bin_size}-{(i + 1) * bin_size - 1}<br>"
+        f"Total count: {y_values[i]}"
+        for i in range(len(x_groups))
+    ]
+
+    # Create the plot
+    fig = px.bar(
+        x=x_groups,
+        y=y_values,
+        labels={'x': 'Grouped Word Hashes', 'y': 'Total Count'},
+        hover_name=hover_text,
+        color=y_values,
+        color_continuous_scale='Blues'
+    )
+
+    # Update layout for better visualization
+    fig.update_layout(
+        title=f"Word Count Distribution (Grouped by {bin_size})",
+        xaxis_title=f"Word Hash Groups (each representing {bin_size} hashes)",
+        yaxis_title="Total Count",
+        template="plotly_white",
+        coloraxis_showscale=False,  # Hide color scale since we're using it just for visual aid
+        hovermode="x unified"
+    )
+
+    # Customize x-axis
+    fig.update_xaxes(
+        showticklabels=show_x_labels,
+        tickmode='array',
+        tickvals=x_groups[::max(1, len(x_groups) // 20)],  # Show ~20 labels if enabled
+        ticktext=[f"Group {i + 1}" for i in x_groups[::max(1, len(x_groups) // 20)]]
+    )
+
+    # Improve bar appearance
+    fig.update_traces(
+        marker_line_color='rgba(0,0,0,0.2)',
+        marker_line_width=1,
+        opacity=0.8,
+        width=0.9  # Adjust bar width
+    )
+
+    # Add a helpful annotation about binning
+    fig.add_annotation(
+        x=0.5,
+        y=1.05,
+        xref="paper",
+        yref="paper",
+        text=f"Each bar represents {bin_size} word hashes",
+        showarrow=False,
+        font=dict(size=10)
+    )
+
+    fig.show()
+
+
 if __name__ == "__main__":
     np.random.seed(104)
     random.seed(104)
     from constraints import abstractions
 
-    '''sta: SymbolicTimedAutomaton = build_two_ears_sta()
+    sta: SymbolicTimedAutomaton = build_two_ears_sta()
 
 
     sta_input_gen: InputGenerator = InputGenerator(sta, STA_OUT_FNAME, "symbolic_timed_automata/lib/wordgen", length=SIGNAL_LENGTH)
 
 
-    #words = set()
+
     words_count_sta = defaultdict(lambda:0)
     n_batches = int(TOT_N_SIGNALS / N_WORDS_BATCH)
     for batch in range(n_batches):
@@ -193,7 +271,7 @@ if __name__ == "__main__":
     avg_samples_per_words = np.mean(list(words_count_sta.values()))
     print(f"Average number of samples per word: {avg_samples_per_words}")
     std_samples_per_words = np.std(list(words_count_sta.values()))
-    print(f"Standard error of average of samples per word: {std_samples_per_words}")'''
+    print(f"Standard error of average of samples per word: {std_samples_per_words}")
 
 
 
@@ -202,12 +280,12 @@ if __name__ == "__main__":
     words_count_isotropic = defaultdict(lambda:0)
     n_batches = int(TOT_N_SIGNALS / N_WORDS_BATCH)
     for batch in range(n_batches):
-        print(f"Discovered words after {batch * N_WORDS_BATCH} samples: {len(words_count_isotropic)}")
+        if batch > 0:
+            print(f"Discovered words after {batch * N_WORDS_BATCH} samples: {len(words_count_isotropic)}")
         words_hashes_isotropic = generate_signals_as_tuples_isotropic(n_signals=N_WORDS_BATCH,abstractions=abstractions)
         for hash in words_hashes_isotropic:
             words_count_isotropic[hash] += 1
-
-
+    print(f"Discovered words after {batch * N_WORDS_BATCH} samples: {len(words_count_isotropic)}")
 
     plot_results(words_count_isotropic)
 

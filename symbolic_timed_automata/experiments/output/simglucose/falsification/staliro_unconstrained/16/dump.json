@@ -1,0 +1,38 @@
+{
+  "elapsed_time": 7.048948049545288,
+  "falsified": true,
+  "history": [
+    {
+      "cost": 17.166625625716975,
+      "feasible": false,
+      "iteration": 0,
+      "violated": false
+    },
+    {
+      "cost": 23.717861561395566,
+      "feasible": false,
+      "iteration": 1,
+      "violated": false
+    },
+    {
+      "cost": 34.87821716483887,
+      "feasible": false,
+      "iteration": 2,
+      "violated": false
+    },
+    {
+      "cost": 12.723745949032391,
+      "feasible": false,
+      "iteration": 3,
+      "violated": false
+    },
+    {
+      "cost": -3.908598850099821,
+      "feasible": false,
+      "iteration": 4,
+      "violated": true
+    }
+  ],
+  "is_solution_feasible": false,
+  "seed": 49853
+}
