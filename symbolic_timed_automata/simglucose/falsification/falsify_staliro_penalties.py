@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import numpy as np
 
 import staliro
-import stlrom
+# import stlrom
 from staliro import optimizers
 from staliro.specifications import rtamt
 from staliro.options import TestOptions
@@ -18,7 +18,7 @@ from simglucose.simulation.sim_engine import sim
 from symbolic_timed_automata.simglucose.cli import get_command_line_arguments
 from symbolic_timed_automata.simglucose.params import get_meal_space, get_whole_space
 from symbolic_timed_automata.simglucose.simglucose_simobj import PATIENT_NAMES, build_sim_obj
-from symbolic_timed_automata.simglucose.utils import get_penalties
+from symbolic_timed_automata.simglucose.utils import get_penalties, evaluate_robustness
 
 
 def build_cost_function(patient_name, horizon, meal_space):
@@ -26,18 +26,19 @@ def build_cost_function(patient_name, horizon, meal_space):
     def robustness_with_constraint_penalties(inputs: staliro.Sample) -> staliro.Result[float, str]:
         meals = [
             (inputs.static["breakfast_time"], inputs.static["breakfast_size"]),
-            (inputs.static["snack1_time"], inputs.static["snack1_size"]),
+            (inputs.static["snack_1_time"], inputs.static["snack_1_size"]),
             (inputs.static["lunch_time"], inputs.static["lunch_size"]),
-            (inputs.static["snack2_time"], inputs.static["snack2_size"]),
+            (inputs.static["snack_2_time"], inputs.static["snack_2_size"]),
             (inputs.static["dinner_time"], inputs.static["dinner_size"]),
-            (inputs.static["snack3_time"], inputs.static["snack3_size"]),
+            (inputs.static["snack_3_time"], inputs.static["snack_3_size"]),
         ]
         penalties = get_penalties(meal_space, inputs)
 
         sim_obj = build_sim_obj(meals, patient_name, sim_time_minutes=horizon)
         sim_result = sim(sim_obj)
 
-        robustness, trace = _evaluate_robustness(sim_result, "BG", horizon)
+        # robustness, trace = _evaluate_robustness(sim_result, "BG", horizon)
+        robustness, trace = evaluate_robustness(sim_result, "BG", horizon, for_penalties=True)
         res_value = robustness + penalties["total"]
         # extra = "feasible" if res_value == robustness else "not feasible"
         print("Robustness: ", robustness)
@@ -48,7 +49,7 @@ def build_cost_function(patient_name, horizon, meal_space):
     return robustness_with_constraint_penalties
 
 
-def _evaluate_robustness(sim_result, bg, horizon):
+'''def _evaluate_robustness(sim_result, bg, horizon):
     stl_monitor = stlrom.STLDriver()
     # Spec from "Towards a verified artificial pancreas: Challenges and solutions for runtime verification.", RV 2015
     spec = f"""
@@ -77,7 +78,7 @@ def _evaluate_robustness(sim_result, bg, horizon):
 
     robustness = stl_monitor.get_online_rob("safety", 0.0)[1]
     return robustness, dict(times=times, states=bg_trace, robustness=robustness)
-
+'''
 
 if __name__ == "__main__":
     args = get_command_line_arguments()
@@ -91,7 +92,7 @@ if __name__ == "__main__":
     if args.output is not None:
         output_path = args.output
     else:
-        output_path = "../out/falsification/staliro_penalties"
+        output_path = "../../experiments/output/simglucose/falsification/staliro_penalties"
 
     BG = "BG"
     BG_COL = 0

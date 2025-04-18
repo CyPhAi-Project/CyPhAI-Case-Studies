@@ -73,8 +73,8 @@ ABSTRACT_TRAJ_FNAME = "symbolic_timed_automata/dates/output/dates_sta_abstract_t
 CONCRETE_TRAJ_FNAME = "symbolic_timed_automata/dates/output/dates_sta_concrete_trajectories.json"
 
 SIGNAL_LENGTH = 3
-TOT_N_SIGNALS = 10**6
-N_WORDS_BATCH = 10**5
+TOT_N_SIGNALS = 10**4
+N_WORDS_BATCH = 10**4
 DEBUG = False
 
 
@@ -155,7 +155,7 @@ def plot_results(words_count: dict):
 
     # Update layout for better visualization
     fig.update_layout(
-        title="Bar Chart Example",
+        title="Bar Chart",
         xaxis_title="Words",
         yaxis_title="Samples",
         template="plotly_white"  # Use a clean template

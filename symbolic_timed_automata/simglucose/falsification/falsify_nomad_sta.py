@@ -10,9 +10,13 @@ from symbolic_timed_automata.simglucose.cli import get_command_line_arguments
 from symbolic_timed_automata.simglucose.generate_meals import build_meals
 from symbolic_timed_automata.simglucose.params import NUM_MEALS
 from symbolic_timed_automata.simglucose.simglucose_simobj import PATIENT_NAMES
-from symbolic_timed_automata.simglucose.sta.build_automaton_six_meals import build_sa_three_snacks
 from syma.generation.input_generator import InputGenerator
 from symbolic_timed_automata.simglucose.falsification.blackbox.simglucose_sta_blackbox import SimGlucoseSTABlackBox
+from symbolic_timed_automata.simglucose.sta.build_simglucose_sta import build_simglucose_sta
+
+WORDGEN_PATH = "/home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/lib/wordgen"
+
+
 
 if __name__ == "__main__":
     args = get_command_line_arguments()
@@ -25,15 +29,15 @@ if __name__ == "__main__":
     if args.output is not None:
         output_path = args.output
     else:
-        output_path = "../out/falsification/nomad_sta"
+        output_path = "../../experiments/output/simglucose/falsification/nomad_sta"
 
-    sta = build_sa_three_snacks(dist_factor=args.dist_factor)
+    sta = build_simglucose_sta(dist_factor=args.dist_factor)
     STA_OUT_FNAME = f"{output_path}/sta_product.prism"
     ABSTRACT_TRAJ_FNAME = f"{output_path}/abstract_trajectories.json"
     CONCRETE_TRAJ_FNAME = f"{output_path}/concrete_trajectories.json"
 
     sta_input_gen: InputGenerator = InputGenerator(
-        sta, STA_OUT_FNAME, "../../lib/wordgen",
+        sta, STA_OUT_FNAME, WORDGEN_PATH,
         length=NUM_MEALS,
         postprocessing_fun=build_meals
     )
@@ -53,8 +57,10 @@ if __name__ == "__main__":
     falsified = 0
 
     for run_idx, run_seed in enumerate(runs_seeds):
+        print(f"Starting NOMAD run #{run_idx + 1}")
         np.random.seed(run_seed)
         random.seed(run_seed)
+
 
 
         sg_black_box = SimGlucoseSTABlackBox(

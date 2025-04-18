@@ -1,0 +1,502 @@
+[
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 6.454818,
+            "vars": {
+                "m": 63.011354786104086
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 5.887023,
+            "vars": {
+                "m": 19.874636676639607
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 1.816185,
+            "vars": {
+                "m": 26.827160053983857
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_breakfast_no_snack_3",
+            "delay": 4.562545,
+            "vars": {
+                "m": 71.70560672228603
+            },
+            "constraint": "((m) >= (55.0)) and ((m) <= (115.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 6.770028,
+            "vars": {
+                "m": 28.930811830606658
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 5.379521,
+            "vars": {
+                "m": 60.33802475908459
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 8.361995,
+            "vars": {
+                "m": 9.322118026767459
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 4.592234,
+            "vars": {
+                "m": 100.37850835544533
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 2.058623,
+            "vars": {
+                "m": 80.8149326623557
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_snack_3",
+            "delay": 1.982443,
+            "vars": {
+                "m": 51.61840263711046
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack3_to_breakfast",
+            "delay": 4.934951,
+            "vars": {
+                "m": 109.22825478658378
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 8.547803,
+            "vars": {
+                "m": 41.66294189982579
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 8.613287,
+            "vars": {
+                "m": 84.39563647506112
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 4.26302,
+            "vars": {
+                "m": 57.300086189245484
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 2.102454,
+            "vars": {
+                "m": 45.87764198083648
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_snack_3",
+            "delay": 1.914276,
+            "vars": {
+                "m": 0.2278303382641167
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack3_to_breakfast",
+            "delay": 5.213062,
+            "vars": {
+                "m": 103.38406338909449
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 6.578239,
+            "vars": {
+                "m": 75.67522790299789
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 6.993799,
+            "vars": {
+                "m": 6.552185362754086
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 5.202837,
+            "vars": {
+                "m": 82.84200934841925
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 1.923798,
+            "vars": {
+                "m": 80.11051599773621
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_snack_3",
+            "delay": 2.773069,
+            "vars": {
+                "m": 51.45463830498066
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack3_to_breakfast",
+            "delay": 5.019114,
+            "vars": {
+                "m": 48.69139554418949
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 6.805171,
+            "vars": {
+                "m": 54.241797145908194
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 6.762778,
+            "vars": {
+                "m": 53.488614154969355
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 5.853953,
+            "vars": {
+                "m": 28.484506203818402
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 2.601632,
+            "vars": {
+                "m": 14.038237824034342
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_snack_3",
+            "delay": 1.562595,
+            "vars": {
+                "m": 83.82456136645217
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack3_to_breakfast",
+            "delay": 5.799628,
+            "vars": {
+                "m": 48.5791062315816
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 6.572349,
+            "vars": {
+                "m": 26.435294536415345
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 7.16637,
+            "vars": {
+                "m": 42.73835150331301
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 5.113836,
+            "vars": {
+                "m": 95.41905268389004
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 3.565852,
+            "vars": {
+                "m": 82.63613927658847
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_snack_3",
+            "delay": 1.052119,
+            "vars": {
+                "m": 19.87538777819616
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack3_to_breakfast",
+            "delay": 3.480465,
+            "vars": {
+                "m": 76.9578426647458
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 8.761392,
+            "vars": {
+                "m": 101.78189758482932
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 7.465928,
+            "vars": {
+                "m": 11.817991147668327
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 4.85105,
+            "vars": {
+                "m": 0.5582569711099439
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 3.26521,
+            "vars": {
+                "m": 72.12106744146858
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_breakfast_no_snack_3",
+            "delay": 3.14938,
+            "vars": {
+                "m": 24.18571331185465
+            },
+            "constraint": "((m) >= (55.0)) and ((m) <= (115.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 7.959837,
+            "vars": {
+                "m": 69.4872189885122
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 4.245198,
+            "vars": {
+                "m": 100.52513428662557
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 7.894674,
+            "vars": {
+                "m": 30.070986192668496
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 4.737329,
+            "vars": {
+                "m": 62.63781905473091
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 1.691652,
+            "vars": {
+                "m": 39.22244337101495
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_breakfast_no_snack_3",
+            "delay": 5.055642,
+            "vars": {
+                "m": 0.44555956120548745
+            },
+            "constraint": "((m) >= (55.0)) and ((m) <= (115.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 8.009679,
+            "vars": {
+                "m": 79.99247441269006
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 4.468397,
+            "vars": {
+                "m": 46.54759947342195
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 8.494511,
+            "vars": {
+                "m": 19.966335445474467
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 3.991005,
+            "vars": {
+                "m": 105.58834315696424
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 3.245575,
+            "vars": {
+                "m": 54.179423128227015
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_breakfast_no_snack_3",
+            "delay": 2.778232,
+            "vars": {
+                "m": 104.25356601068164
+            },
+            "constraint": "((m) >= (55.0)) and ((m) <= (115.0))"
+        },
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 7.41617,
+            "vars": {
+                "m": 9.176570569918455
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 5.244618,
+            "vars": {
+                "m": 45.550580697059935
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        }
+    ],
+    [
+        {
+            "action": "breakfast_to_lunch",
+            "delay": 8.037795,
+            "vars": {
+                "m": 65.5038102666086
+            },
+            "constraint": "((m) >= (25.0)) and ((m) <= (85.0))"
+        },
+        {
+            "action": "lunch_to_snack_2_no_snack_1",
+            "delay": 4.23231,
+            "vars": {
+                "m": 79.87484874447927
+            },
+            "constraint": "((m) >= (40.0)) and ((m) <= (100.0))"
+        },
+        {
+            "action": "snack_2_to_dinner",
+            "delay": 1.888159,
+            "vars": {
+                "m": 36.061181921107064
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        },
+        {
+            "action": "dinner_to_breakfast_no_snack_3",
+            "delay": 4.893938,
+            "vars": {
+                "m": 78.3279722157779
+            },
+            "constraint": "((m) >= (55.0)) and ((m) <= (115.0))"
+        },
+        {
+            "action": "breakfast_to_snack_1",
+            "delay": 5.987939,
+            "vars": {
+                "m": 2.478807212327875
+            },
+            "constraint": "((m) >= (10.0)) and ((m) <= (70.0))"
+        },
+        {
+            "action": "snack_1_to_lunch",
+            "delay": 4.590367,
+            "vars": {
+                "m": 38.311297231801774
+            },
+            "constraint": "((m) >= (5.0)) and ((m) <= (25.0))"
+        }
+    ]
+]

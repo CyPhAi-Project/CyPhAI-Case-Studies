@@ -1,0 +1,32 @@
+{
+  "elapsed_time": 6.763979196548462,
+  "falsified": false,
+  "history": [
+    {
+      "cost": 17.838022812353174,
+      "iteration": 0,
+      "violated": false
+    },
+    {
+      "cost": 24.207628792722645,
+      "iteration": 1,
+      "violated": false
+    },
+    {
+      "cost": 9.058234395669572,
+      "iteration": 2,
+      "violated": false
+    },
+    {
+      "cost": 5.634853779163436,
+      "iteration": 3,
+      "violated": false
+    },
+    {
+      "cost": 9.473494495696627,
+      "iteration": 4,
+      "violated": false
+    }
+  ],
+  "seed": 54978
+}

@@ -1,0 +1,70 @@
+{
+  "falsified": 0,
+  "params": {
+    "dist_factor": 3.0,
+    "horizon": 1440,
+    "max_opt_iters": 5,
+    "patient_name": 10,
+    "repetitions": 2,
+    "seeds": [
+      8262,
+      54978
+    ]
+  },
+  "runs": [
+    [
+      {
+        "cost": 31.14672238555113,
+        "iteration": 0,
+        "violated": false
+      },
+      {
+        "cost": 31.297534325746597,
+        "iteration": 1,
+        "violated": false
+      },
+      {
+        "cost": 31.14672238555113,
+        "iteration": 2,
+        "violated": false
+      },
+      {
+        "cost": 30.51669038353417,
+        "iteration": 3,
+        "violated": false
+      },
+      {
+        "cost": 30.505679610069024,
+        "iteration": 4,
+        "violated": false
+      }
+    ],
+    [
+      {
+        "cost": 12.446460273713868,
+        "iteration": 0,
+        "violated": false
+      },
+      {
+        "cost": 12.38167949914758,
+        "iteration": 1,
+        "violated": false
+      },
+      {
+        "cost": 12.38167949914758,
+        "iteration": 2,
+        "violated": false
+      },
+      {
+        "cost": 11.97705132630216,
+        "iteration": 3,
+        "violated": false
+      },
+      {
+        "cost": 11.331649009317019,
+        "iteration": 4,
+        "violated": false
+      }
+    ]
+  ]
+}

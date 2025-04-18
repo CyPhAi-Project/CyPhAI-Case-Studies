@@ -13,17 +13,17 @@ import numpy as np
 from symbolic_timed_automata.simglucose.cli import get_command_line_arguments
 from symbolic_timed_automata.simglucose.params import NUM_MEALS
 from symbolic_timed_automata.simglucose.simglucose_simobj import PATIENT_NAMES, build_sim_obj, FoxPIDController, FOXPID_PARAMS
-from symbolic_timed_automata.simglucose.sta.build_automaton_six_meals import build_sa_three_snacks
 from symbolic_timed_automata.simglucose.generate_meals import generate_meals, build_meals
 from syma.generation.input_generator import InputGenerator
+
+from symbolic_timed_automata.simglucose.sta.build_simglucose_sta import build_simglucose_sta
 from symbolic_timed_automata.simglucose.utils import evaluate_robustness
 
+WORDGEN_PATH = "/home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/lib/wordgen"
 
 def batch_simglucose(patient_name,
                      meal_plans: list,
                      horizon) -> list[DataFrame]:
-
-    #sta_input_gen.to_file(meal_plans, f"{output_path}/meal_plans.json")
 
     sim_obj_list = []
     try:
@@ -51,6 +51,8 @@ def batch_simglucose(patient_name,
 
 
 if __name__ == "__main__":
+    print(f"Falsification with STA-based Uniform Random Sampling")
+
     args = get_command_line_arguments()
 
     np.random.seed(args.master_seed)
@@ -61,7 +63,7 @@ if __name__ == "__main__":
     if args.output is not None:
         output_path = args.output
     else:
-        output_path = "../out/sampling/sta"
+        output_path = "../../experiments/output/simglucose/falsification/uniform_sta"
 
     n_meal_plans = args.max_opt_iters
     params_dict = dict(patient_name=args.patient_name,
@@ -72,13 +74,13 @@ if __name__ == "__main__":
                        seeds=runs_seeds)
 
     # Build STA and signal generator
-    sta = build_sa_three_snacks(dist_factor=args.dist_factor)
+    sta = build_simglucose_sta(dist_factor=args.dist_factor)
     STA_OUT_FNAME = f"{output_path}/sta_product.prism"
     abstract_traj_fname = f"{output_path}/abstract_trajectories.json"
     concrete_traj_fname = f"{output_path}/concrete_trajectories.json"
 
     sta_input_gen: InputGenerator = InputGenerator(
-        sta, STA_OUT_FNAME, "../../../lib/wordgen",
+        sta, STA_OUT_FNAME, WORDGEN_PATH,
         length=NUM_MEALS,
         postprocessing_fun=build_meals
     )

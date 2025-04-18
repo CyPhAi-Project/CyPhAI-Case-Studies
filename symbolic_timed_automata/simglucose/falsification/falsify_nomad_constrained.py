@@ -22,7 +22,7 @@ if __name__ == "__main__":
     if args.output is not None:
         output_path = args.output
     else:
-        output_path = "../out/falsification/nomad_sta"
+        output_path = "../../experiments/output/simglucose/falsification/nomad_constrained"
 
     patient_name = PATIENT_NAMES[args.patient_name]
 
@@ -31,7 +31,8 @@ if __name__ == "__main__":
                        max_opt_iters=args.max_opt_iters,
                        repetitions=args.repetitions,
                        dist_factor=args.dist_factor,
-                       seeds=runs_seeds)
+                       seeds=runs_seeds,
+                       initial_feasible=args.initial_feasible)
 
     dump_data = dict(runs=[], params=params_dict, falsified=0)
     start_time = time.time()
@@ -39,12 +40,13 @@ if __name__ == "__main__":
     falsified = 0
 
     for run_idx, run_seed in enumerate(runs_seeds):
+        print(f"Starting NOMAD run #{run_idx + 1}")
         np.random.seed(run_seed)
         random.seed(run_seed)
 
 
         sg_black_box = SimGlucoseBlackBox(
-            patient_name, args.horizon, args.dist_factor)
+            patient_name, args.horizon, args.dist_factor, initial_feasible=args.initial_feasible)
 
         solver = NOMADSolver()
         solver_params = {"solver_params":

@@ -24,11 +24,11 @@ def build_simglucose_wrapper(patient, horizon:int):
         patient_name = patient
         meals = [
             (inputs.static["breakfast_time"], inputs.static["breakfast_size"]),
-            (inputs.static["snack1_time"], inputs.static["snack1_size"]),
+            (inputs.static["snack_1_time"], inputs.static["snack_1_size"]),
             (inputs.static["lunch_time"], inputs.static["lunch_size"]),
-            (inputs.static["snack2_time"], inputs.static["snack2_size"]),
+            (inputs.static["snack_2_time"], inputs.static["snack_2_size"]),
             (inputs.static["dinner_time"], inputs.static["dinner_size"]),
-            (inputs.static["snack3_time"], inputs.static["snack3_size"]),
+            (inputs.static["snack_3_time"], inputs.static["snack_3_size"]),
         ]
         sim_obj = build_sim_obj(meals, patient_name, sim_time_minutes=horizon)
         trace = sim(sim_obj)
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     if args.output is not None:
         output_path = args.output
     else:
-        output_path = "../out/falsification/staliro_unconstrained"
+        output_path = "../../experiments/output/simglucose/falsification/staliro_unconstrained"
 
     BG = "BG"
     BG_COL = 0

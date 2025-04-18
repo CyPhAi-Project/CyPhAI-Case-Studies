@@ -1,3 +1,4 @@
+import random
 from typing import *
 
 import numpy as np
@@ -41,22 +42,23 @@ class SimGlucoseSTABlackBox(BlackBox):
                 sym_var = f"{self.input_generator.sta.var_names[j - 1]}_{i}"
                 self.search_space[sym_var] = (0, 1)
                 self._opt_var_names.append(sym_var)
+        self.initial_meal = None
+        self.set_random_initial_values()
 
-
-
-
-
-
-
+    def set_random_initial_values(self) -> None:
+        self.initial_meal = dict()
+        for param_id in self.get_optimization_parameters_ids():
+            self.initial_meal[param_id] = round(random.uniform(0, 1),2)
 
     def evaluate(self, parameters: Dict[str, float], check_input=True) -> Dict[str, float]:
-        meals = self.input_generator.generate_from_dict(parameters)
+        # meals = self.input_generator.generate_from_dict(parameters)
+        meals = self.input_generator.generate_from_point_in_hypercube(parameters)
 
         result = {}
         sim_obj = build_sim_obj(meals, self.patient_name, sim_time_minutes=self.horizon)
         sim_result = sim(sim_obj)
 
-        robustness = evaluate_robustness(sim_result)
+        robustness = evaluate_robustness(sim_result, self.bg, self.horizon)
         result["robustness"] = robustness
         result["falsifies"] = robustness
         self.iteration += 1
@@ -92,15 +94,15 @@ class SimGlucoseSTABlackBox(BlackBox):
         return np.array(
             [self.get_optimization_parameter_upper_bound(p_id) for p_id in self.get_optimization_parameters_ids()])
 
-    def _initial_meal(self):
+    '''def _initial_meal(self):
         return {'delay_1': 0.56, 'delay_2': 0.5, 'delay_3': 0.45, 'delay_4': 0.75, 'delay_5': 0.0, 'delay_6': 0.0,
          'm_1': 0.55, 'm_2': 0.45, 'm_3': 0.21, 'm_4': 0.46, 'm_5': 0.15, 'm_6': 0.5,
          'transition_1': 0.04, 'transition_2': 0.0, 'transition_3': 0.74, 'transition_4': 0.45, 'transition_5': 0.0,
                 'transition_6': 0.0}
-         #return { var_name: 0.5 for var_name in self.get_optimization_parameters_ids() }
+         #return { var_name: 0.5 for var_name in self.get_optimization_parameters_ids() }'''
 
     def get_optimization_parameter_initial_value(self, param_id) -> float:
-        return self._initial_meal()[param_id]
+        return self.initial_meal[param_id]
         # return (self.get_optimization_parameter_lower_bound(param_id)
         # + self.get_optimization_parameter_upper_bound(param_id)) /2
 

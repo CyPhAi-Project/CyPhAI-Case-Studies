@@ -23,6 +23,9 @@ from symbolic_timed_automata.simglucose.sta.build_automaton_six_meals import bui
 from symbolic_timed_automata.simglucose.generate_meals import build_meals
 from syma.generation.input_generator import InputGenerator
 
+from symbolic_timed_automata.simglucose.sta.build_simglucose_sta import build_simglucose_sta
+
+WORDGEN_PATH = "/home/marco/work/research/dev/CyPhAI-Case-Studies/symbolic_timed_automata/lib/wordgen"
 def build_simglucose_wrapper(input_generator: InputGenerator, patient_name, horizon: int) -> Callable[[Blackbox.Inputs], Trace]:
     def simglucose_wrapper(inputs: Blackbox.Inputs) -> Trace:
         # we assume the input is a dictionary like
@@ -57,7 +60,7 @@ if __name__ == "__main__":
     if args.output is not None:
         output_path = args.output
     else:
-        output_path = "../out/falsification/staliro_sta"
+        output_path = "../../experiments/output/simglucose/falsification/staliro_sta"
     BG = "BG"
     BG_COL = 0
     requirement = f"always ({BG} > 70.0 and {BG} < 350.0)"
@@ -66,13 +69,14 @@ if __name__ == "__main__":
     patient_name = PATIENT_NAMES[args.patient_name]
 
 
-    sta = build_sa_three_snacks(dist_factor=args.dist_factor)
+    # sta = build_sa_three_snacks(dist_factor=args.dist_factor)
+    sta = build_simglucose_sta(dist_factor=args.dist_factor)
     STA_OUT_FNAME = f"{output_path}/sta_product.prism"
     ABSTRACT_TRAJ_FNAME = f"{output_path}/abstract_trajectories.json"
     CONCRETE_TRAJ_FNAME = f"{output_path}/concrete_trajectories.json"
 
     sta_input_gen: InputGenerator = InputGenerator(
-                sta, STA_OUT_FNAME, "../../lib/wordgen",
+                sta, STA_OUT_FNAME, WORDGEN_PATH,
                 length=NUM_MEALS,
                 postprocessing_fun=build_meals
         )

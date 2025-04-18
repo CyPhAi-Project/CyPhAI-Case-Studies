@@ -25,7 +25,8 @@ def get_command_line_arguments():
     parser.add_argument('-d', '--dist-factor',  type=float,
                         dest='dist_factor',
                         help="Reduction factor for the range of meal glucose. The default value is 3.",
-                        required=True)
+                        default=3.0,
+                        required=False)
 
     parser.add_argument('-i', '--max-opt-iters', type=int,
                         dest='max_opt_iters',
@@ -48,6 +49,12 @@ def get_command_line_arguments():
                         dest='batch_size',
                         default=100,
                         help="The batch size for simulating many random meal plans. The default value is 100.",
+                        required=False)
+
+    parser.add_argument('--initial-feasible', type=bool,
+                        dest='initial_feasible',
+                        default=True,
+                        help="If the initial point of the optimization must be already feasible. The default value is True.",
                         required=False)
 
     return parser.parse_args()

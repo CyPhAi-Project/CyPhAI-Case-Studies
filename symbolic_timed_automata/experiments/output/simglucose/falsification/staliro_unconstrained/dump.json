@@ -1,0 +1,36 @@
+{
+  "falsified": 1,
+  "params": {
+    "dist_factor": 3.0,
+    "horizon": 1440,
+    "max_opt_iters": 5,
+    "paitent_name": 10,
+    "repetitions": 1,
+    "seeds": [
+      8262
+    ]
+  },
+  "runs": [
+    [
+      {
+        "cost": 8.334452923758107,
+        "feasible": false,
+        "iteration": 0,
+        "violated": false
+      },
+      {
+        "cost": 11.887954641708518,
+        "feasible": false,
+        "iteration": 1,
+        "violated": false
+      },
+      {
+        "cost": -3.055826435925738,
+        "feasible": false,
+        "iteration": 2,
+        "violated": true
+      }
+    ]
+  ],
+  "total_elapsed_time": 4.703383445739746
+}

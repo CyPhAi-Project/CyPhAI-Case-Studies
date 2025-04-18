@@ -1,0 +1,81 @@
+{
+  "falsified": 0,
+  "params": {
+    "dist_factor": 3.0,
+    "horizon": 1440,
+    "initial_feasible": true,
+    "max_opt_iters": 5,
+    "paitent_name": 10,
+    "repetitions": 2,
+    "seeds": [
+      8262,
+      54978
+    ]
+  },
+  "runs": [
+    [
+      {
+        "cost": 13.019591682658742,
+        "feasible": true,
+        "iteration": 0,
+        "violated": false
+      },
+      {
+        "cost": 12.930218582033135,
+        "feasible": true,
+        "iteration": 1,
+        "violated": false
+      },
+      {
+        "cost": 12.930218582035138,
+        "feasible": true,
+        "iteration": 2,
+        "violated": false
+      },
+      {
+        "cost": 12.51154692287281,
+        "feasible": true,
+        "iteration": 3,
+        "violated": false
+      },
+      {
+        "cost": 12.144542397427458,
+        "feasible": true,
+        "iteration": 4,
+        "violated": false
+      }
+    ],
+    [
+      {
+        "cost": 29.224139757039296,
+        "feasible": true,
+        "iteration": 0,
+        "violated": false
+      },
+      {
+        "cost": 29.961532343975136,
+        "feasible": true,
+        "iteration": 1,
+        "violated": false
+      },
+      {
+        "cost": 39.982990872079654,
+        "feasible": false,
+        "iteration": 2,
+        "violated": false
+      },
+      {
+        "cost": 36.75957351271502,
+        "feasible": false,
+        "iteration": 3,
+        "violated": false
+      },
+      {
+        "cost": 27.11633555732601,
+        "feasible": true,
+        "iteration": 4,
+        "violated": false
+      }
+    ]
+  ]
+}

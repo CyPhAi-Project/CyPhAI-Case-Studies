@@ -1,0 +1,47 @@
+{
+  "falsified": 0,
+  "params": {
+    "dist_factor": 3.0,
+    "horizon": 1440,
+    "max_opt_iters": 5,
+    "paitent_name": 10,
+    "repetitions": 1,
+    "seeds": [
+      8262
+    ]
+  },
+  "runs": [
+    [
+      {
+        "cost": 3023.9335886734793,
+        "iteration": 0,
+        "robustness": 8.43310224584053,
+        "violated": false
+      },
+      {
+        "cost": 4036.871096044258,
+        "iteration": 1,
+        "robustness": 25.53138848342074,
+        "violated": false
+      },
+      {
+        "cost": 3032.1867524678255,
+        "iteration": 2,
+        "robustness": 27.477197184636623,
+        "violated": false
+      },
+      {
+        "cost": 4031.3391595886465,
+        "iteration": 3,
+        "robustness": 1.6614431183230067,
+        "violated": false
+      },
+      {
+        "cost": 1021.7638410439288,
+        "iteration": 4,
+        "robustness": 20.41344127036092,
+        "violated": false
+      }
+    ]
+  ]
+}
