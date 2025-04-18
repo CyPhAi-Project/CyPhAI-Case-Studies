@@ -1,4 +1,5 @@
 import random
+import time
 from collections import defaultdict
 
 import numpy as np
@@ -108,9 +109,10 @@ def plot_probability_comparison(exact_probs, uniform_probs, x_labels):
     return fig
 
 if __name__ == "__main__":
-    if False:
+    if True:
         np.random.seed(104)
         random.seed(104)
+        run_start_time = time.time()
 
         sta: SymbolicTimedAutomaton = build_two_ears_sta_formats()
 
@@ -149,6 +151,8 @@ if __name__ == "__main__":
 
         print(uniform_probs)
         print(words_lst)
+        run_elapsed_time = time.time() - run_start_time
+        print(f"Total elapsed time: {run_elapsed_time}")
     else:
 
 

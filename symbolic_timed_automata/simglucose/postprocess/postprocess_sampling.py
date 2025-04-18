@@ -57,7 +57,7 @@ fig.add_trace(go.Bar(
     x=(bin_edges_sta[:-1] + bin_edges_sta[1:]) / 2,
     y=hist_sta,
     name='STA',
-    opacity=0.6,
+    opacity=0.7,
     marker=dict(color='lightblue')
 ))
 
@@ -118,7 +118,7 @@ ci_iso = st.t.interval(confidence=confidence/100, df=len(robustness_isotropic) -
 print(f"STA: 99% Confidence Interval: {ci_sta}")
 print(f"ISO: 99% Confidence Interval: {ci_iso}")
 
-# Add vertical lines for confidence intervals of STA
+'''# Add vertical lines for confidence intervals of STA
 fig.add_trace(go.Scatter(
     x=[ci_sta[0], ci_sta[0]],
     y=[0, max(y_sta) * 1.1],
@@ -153,7 +153,7 @@ fig.add_trace(go.Scatter(
     name=f"99% CI Upper (ISO): {ci_iso[1]:.2f}",
     showlegend=False,
     line=dict(color="red", width=2, dash="dash")
-))
+))'''
 
 # Update layout
 fig.update_layout(
@@ -161,13 +161,13 @@ fig.update_layout(
     xaxis_title="Robustness",
     yaxis_title='Density',  # '"Probability Density",
     barmode='overlay',
-    legend=dict(x=0.6, y=0.9, font=dict(size=16)),
+    legend=dict(x=0.7, y=0.9, font=dict(size=16)),
     template="plotly_white",
     xaxis=dict(title_font=dict(size=20), tickfont=dict(size=16)),
     yaxis=dict(title_font=dict(size=20), tickfont=dict(size=16))
 )
 
 
-fig.write_image("sta_vs_isotropic_sampling_simglucose.pdf", width=1000, height=500, scale=2)
+fig.write_image("sta_vs_isotropic_sampling_simglucose.pdf", width=1000, height=400, scale=2)
 # Show the plot
 fig.show()

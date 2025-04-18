@@ -33,6 +33,8 @@ for l in limits:
         worst = float("Inf")
         iters = []
         infeasible_iters = []
+        tot_generation_time = 0.0
+        tot_simulation_time = 0.0
         for run in expres["runs"]:
             infeasible_steps = 0
             violated = False
@@ -76,6 +78,8 @@ for l in limits:
                 if not violated:
                     iters.append(len(evaluations))
                 infeasible_iters.append(0)
+                tot_generation_time += run["run_generation_time"]
+                tot_simulation_time += run["run_simulation_time"]
 
 
 
@@ -94,6 +98,10 @@ for l in limits:
                                 median_infeasible_iters=median_infeasible_iter)
         if exp == "staliro_unconstrained":
             lim_results[exp]["feasible_solutions"] = unconstr_feasible
+
+        if exp in ["isotropic", "uniform_sta"]:
+            lim_results[exp]['tot_generation_time'] = tot_generation_time
+            lim_results[exp]['tot_simulation_time'] = tot_simulation_time
 
     results[l] = lim_results
 

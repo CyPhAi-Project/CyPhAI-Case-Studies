@@ -7,6 +7,8 @@
     "median_fals_iters": 1000.0,
     "median_infeasible_iters": 0.0,
     "std_fals_iters": 0.0,
+    "tot_generation_time": 0.08191466331481934,
+    "tot_simulation_time": 6430.879777908325,
     "worst": 3.6190050379185266
   },
   "nevergrad_constrained": {
@@ -88,6 +90,8 @@
     "median_fals_iters": 17.5,
     "median_infeasible_iters": 0.0,
     "std_fals_iters": 36.800679341555636,
+    "tot_generation_time": 2.9475815296173096,
+    "tot_simulation_time": 6386.882718086243,
     "worst": -16.196892000668086
   }
 }
