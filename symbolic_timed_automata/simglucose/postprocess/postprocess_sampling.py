@@ -39,9 +39,9 @@ x_iso = np.linspace(min(robustness_isotropic) - 1, max(robustness_isotropic) + 1
 y_iso = (1 / (std_iso * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x_iso - mean_iso) / std_iso) ** 2)
 
 # Bin data
-# bins = 50
+bins = 100
 w = 2
-bins = [-22 + w*k for k in range(50)]
+# bins = [-22 + w*k for k in range(50)]
 
 bins_sta = np.histogram_bin_edges(robustness_sta, bins=bins)
 bins_iso = np.histogram_bin_edges(robustness_isotropic, bins=bins)

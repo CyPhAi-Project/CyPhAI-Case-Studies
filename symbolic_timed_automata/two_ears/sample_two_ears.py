@@ -64,36 +64,6 @@ def truncate_decimal(number, digits):
     return math.floor(number * 10**digits) / 10**digits
 
 
-def sample_isotropic_old(length: int, n_signals:int) -> list:
-    signals = []
-    for i_signal in range(n_signals):
-        signal = []
-        t = 0
-        for i_step in range(length):
-            action = 'a' if np.random.random() < 0.16666666666666666 else 'b'
-            # = np.random.choice(actions)
-            #action = actions_choices[i_signal][i_step]
-            if action == 'a':
-                vars = sample_values_a()
-            else: # 'b':
-                vars = sample_values_b()
-            while True:
-                # Compute delay so that the timing constraints are satisfied
-                if len(signal) == 0 or signal[-1]['action'] != action:
-                    delay = np.random.uniform(low=0, high=CLOCK_UB)
-                    t = delay
-                else:
-                    delay = np.random.uniform(low=0, high=CLOCK_UB-t)
-                    t += delay
-
-                if len(signal) == 0 or signal[-1]['delay'] + delay < CLOCK_UB:
-                    break
-
-            signal.append(dict(vars=vars, action=action, delay=delay))
-        sig_list = [ (st['delay'], st['vars'][0], st['vars'][1], st['action']) for st in signal]
-        signals.append(sig_list)
-    return signals
-
 def sample_values_a():
     while True:
         v = np.random.uniform(low=0, high=2, size=2)
